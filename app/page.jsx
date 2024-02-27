@@ -2,9 +2,12 @@
 import Image from "next/image";
 import ProjectComponent from "./components/ProjectComponent";
 import { projectList, services, tools } from "./data/content";
-import HomeHero from "./components/HomeHero.jsx"
-import HomeFeature from "./components/HomeFeature.jsx"
-import HomeServices from "./components/HomeServices.jsx"
+import HomeHero from "./components/HomeHero.jsx";
+import HomeFeature from "./components/HomeFeature.jsx";
+import HomeServices from "./components/HomeServices.jsx";
+import TestimonialFeature from "./components/TestimonialFeature.jsx";
+import BeforeFooter from "./components/BeforeFooter.jsx";
+import { TypewriterEffect } from "./components/typewriter-effect";
 
 export default function Home() {
   const serviceImage = [
@@ -22,10 +25,10 @@ export default function Home() {
 
   return (
     <main className=" ">
-      <HomeHero/>
-      
-      <HomeFeature/>
-      
+      <HomeHero />
+
+      <HomeFeature />
+
       {/* <section className="bg-white text-black w-11/12 mx-auto py-40">
         <div className="lg:w-3/6">
           <p className="text-4xl font-semibold">
@@ -58,15 +61,14 @@ export default function Home() {
         </div>
       </section> */}
       <section className="py-40 w-11/12 mx-auto">
-       
-
-        
         <div className="mx-auto ">
-        <HomeServices/>
-         
+          <HomeServices />
+          <TestimonialFeature />
         </div>
       </section>
-      <section className="w-11/12 mx-auto rounded-3xl bg-black text-white">
+      <BeforeFooter />
+
+      {/* <section className="w-11/12 mx-auto rounded-3xl bg-black text-white">
         <div className="w-4/6 mx-auto py-20">
           <p className="text-4xl">Tell us about your project</p>
           <button className="px-3 py-2 my-10 text-black bg-white rounded-lg">
@@ -81,7 +83,7 @@ export default function Home() {
             found us.
           </p>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }
