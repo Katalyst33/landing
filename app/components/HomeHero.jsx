@@ -1,6 +1,25 @@
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import { TypewriterEffect } from "./typewriter-effect";
 
 export default function Example() {
+  const words = [
+    {
+      text: "Your",
+    },
+    {
+      text: "Business",
+    },
+    {
+      text: "needs",
+    },
+    {
+      text: "the",
+    },
+    {
+      text: "Katalyst.",
+      className: "text-blue-500 dark:text-blue-500",
+    },
+  ];
   return (
     <div className="relative isolate overflow-hidden ">
       <svg
@@ -60,10 +79,8 @@ export default function Example() {
               </span>
             </a>
           </div>
-          <h1 className="mt-10 text-4xl font-bold tracking-tight text-grey-800 sm:text-6xl">
-            Your Business needs the{" "}
-            <span className="text-blue-700">Katalyst </span> to drive it forward
-          </h1>
+          <TypewriterEffect words={words} />
+
           <p className="mt-6 text-lg leading-8 text-gray-800">
             By leveraging cutting-edge technologies and industry best practices,
             we empower your business to adapt, evolve, and thrive in an
