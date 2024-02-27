@@ -2,10 +2,10 @@
 import Image from "next/image";
 import ProjectComponent from "./components/ProjectComponent";
 import { projectList, services, tools } from "./data/content";
-import HomeHero from "./components/HomeHero.jsx";
-import HomeFeature from "./components/HomeFeature.jsx";
-import HomeServices from "./components/HomeServices.jsx";
-import { TypewriterEffect } from "./components/typewriter-effect";
+import HomeHero from "./components/HomeHero.jsx"
+import HomeFeature from "./components/HomeFeature.jsx"
+import HomeServices from "./components/HomeServices.jsx"
+import {TypewriterEffect} from "./components/typewriter-effect";
 
 export default function Home() {
   const serviceImage = [
@@ -14,45 +14,44 @@ export default function Home() {
         "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1697018970/medium-shot-couple-with-laptop_f077br.jpg",
     },
   ];
-
-  //
   const homeImage = [
     {
       homeImage:
         "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1697268006/rear-view-programmer-working-all-night-long_x0yjx4.jpg",
     },
   ];
-  const words = [
-    {
-      text: "Build",
-    },
-    {
-      text: "awesome",
-    },
-    {
-      text: "apps",
-    },
-    {
-      text: "with",
-    },
-    {
-      text: "Aceternity.",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-  ];
+    const words = [
+        {
+            text: "Build",
+        },
+        {
+            text: "awesome",
+        },
+        {
+            text: "apps",
+        },
+        {
+            text: "with",
+        },
+        {
+            text: "Aceternity.",
+            className: "text-blue-500 dark:text-blue-500",
+        },
+    ];
 
   return (
     <main className=" ">
       <div className={`bg-black p-10`}>
-        <TypewriterEffect words={words} />
+         <TypewriterEffect words={words}/>
       </div>
-      <HomeHero />
+      <HomeHero/>
 
-      <HomeFeature />
+      <HomeFeature/>
+
 
       <section className="py-40 w-11/12 mx-auto">
         <div className="mx-auto ">
-          <HomeServices />
+        <HomeServices/>
         </div>
       </section>
       <section className="w-11/12 mx-auto rounded-3xl bg-black text-white">
