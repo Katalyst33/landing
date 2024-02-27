@@ -57,8 +57,7 @@ export default function Example() {
             Your Business needs the <span className='text-blue-700'>Katalyst </span>  to drive it forward
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-800">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-            fugiat veniam occaecat fugiat aliqua.
+          By leveraging cutting-edge technologies and industry best practices, we empower your business to adapt, evolve, and thrive in an ever-changing landscape. Partner with Katalyst Technologies, and together, we'll unlock the full potential of your business.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
             <a
@@ -71,14 +70,15 @@ export default function Example() {
               Learn more <span aria-hidden="true">→</span>
             </a>
           </div>
+{/* Add typewriter */}
         </div>
         <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
           <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
             <img
-              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+              src="https://res.cloudinary.com/dqwfjxn8g/image/upload/v1708847745/2149370134_edqpp7.jpg"
               alt="App screenshot"
               width={2432}
-              height={1442}
+              height={100}
               className="w-[76rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
             />
           </div>

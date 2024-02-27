@@ -5,7 +5,8 @@ import { projectList, services, tools } from "./data/content";
 import HomeHero from "./components/HomeHero.jsx"
 import HomeFeature from "./components/HomeFeature.jsx"
 import HomeServices from "./components/HomeServices.jsx"
-import {TypewriterEffect} from "./components/typewriter-effect";
+import TestimonialFeature from "./components/TestimonialFeature.jsx"
+import BeforeFooter from "./components/BeforeFooter.jsx"
 
 export default function Home() {
   const serviceImage = [
@@ -20,41 +21,57 @@ export default function Home() {
         "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1697268006/rear-view-programmer-working-all-night-long_x0yjx4.jpg",
     },
   ];
-    const words = [
-        {
-            text: "Build",
-        },
-        {
-            text: "awesome",
-        },
-        {
-            text: "apps",
-        },
-        {
-            text: "with",
-        },
-        {
-            text: "Aceternity.",
-            className: "text-blue-500 dark:text-blue-500",
-        },
-    ];
 
   return (
     <main className=" ">
-      <div className={`bg-black p-10`}>
-         <TypewriterEffect words={words}/>
-      </div>
       <HomeHero/>
-
+      
       <HomeFeature/>
-
-
-      <section className="py-40 w-11/12 mx-auto">
-        <div className="mx-auto ">
-        <HomeServices/>
+      
+      {/* <section className="bg-white text-black w-11/12 mx-auto py-40">
+        <div className="lg:w-3/6">
+          <p className="text-4xl font-semibold">
+            Harnessing technology for a brighter future
+          </p>
+          <p className="mt-3 text-lg text-gray-700">
+            We believe technology is the answer to the world’s greatest
+            challenges. It’s also the cause, so we find ourselves in bit of a
+            catch 22 situation.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-4">
+          {projectList.map((project, index) => (
+            <div key={index}>
+              <ProjectComponent key={project.id} {...project} />
+            </div>
+          ))}
         </div>
       </section>
-      <section className="w-11/12 mx-auto rounded-3xl bg-black text-white">
+      <section className="bg-gray-50 py-24">
+        <div className="lg:w-4/6 w-5/6 mx-auto ">
+          <p className="font-semibold text-2xl lg:text-3xl italic">
+            The thing I particularly appreciate about Katalyst Tech service is
+            the level of understanding they have for what we want from our web
+            application and how best to deliver it. Everything from idea
+            generation to the crafting of the web app is on point, helping us to
+            communicate with our customers through our web app.
+          </p>
+          <p className="font-semibold text-3xl mt-2">Anbe</p>
+        </div>
+      </section> */}
+      <section className="py-40 w-11/12 mx-auto">
+       
+
+        
+        <div className="mx-auto ">
+        <HomeServices/>
+        <TestimonialFeature/>
+         
+        </div>
+      </section>
+      <BeforeFooter/>
+
+      {/* <section className="w-11/12 mx-auto rounded-3xl bg-black text-white">
         <div className="w-4/6 mx-auto py-20">
           <p className="text-4xl">Tell us about your project</p>
           <button className="px-3 py-2 my-10 text-black bg-white rounded-lg">
@@ -69,7 +86,7 @@ export default function Home() {
             found us.
           </p>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

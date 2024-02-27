@@ -2,21 +2,20 @@ const Footer = () => {
   return (
     <section className="bg-white text-black py-40">
       <div className="lg:flex w-4/5 mx-auto justify-between">
-        <div className="flex flex-wrap gap-32">
+        <div className="flex  flex-wrap gap-32">
           <div className="flex flex-col gap-2">
             <p className="font-semibold">Work</p>
-            <p>Anbe</p>
-            <p>Wildstream</p>
-            <p>Work</p>
-            <p>See all</p>
+            <p>Our Projects</p>
+            <p>Request a Quote</p>
+            <p>Testimonies</p>
           </div>
           <div className="flex flex-col gap-2">
             <p className="font-semibold">Company</p>
             <p>About</p>
-            <p>Process</p>
-            <p>Contact</p>
+            <p>Work Process</p>
+            <p>Contact Us</p>
           </div>
-          <div className="flex flex-col gap-2 -mt-14 lg:mt-0">
+          <div className="flex flex-col gap-2 lg:mt-0">
             <p className="font-semibold">Socials</p>
             <p>Github</p>
             <p>LinkedIn</p>
