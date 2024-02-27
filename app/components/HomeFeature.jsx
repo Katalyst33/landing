@@ -2,43 +2,43 @@ import { ArrowPathIcon, CloudArrowUpIcon, LockClosedIcon } from '@heroicons/reac
 
 const features = [
   {
-    name: 'Push to deploy',
+    name: 'Custom Software Development',
     description:
-      'Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.',
+      'Tailored software solutions designed to meet specific business needs, including web applications, mobile apps, and enterprise software development.',
     href: '#',
     icon: CloudArrowUpIcon,
   },
   {
-    name: 'SSL certificates',
+    name: 'Cloud Services and Solutions',
     description:
-      'Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.',
+      'Assistance with migrating to the cloud, cloud infrastructure management, and implementing cloud-based applications for enhanced scalability, flexibility, and cost-effectiveness.',
     href: '#',
     icon: LockClosedIcon,
   },
   {
-    name: 'Simple queues',
+    name: 'Data Analytics and Business Intelligence',
     description:
-      'Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.',
+      'Utilizing advanced analytics tools and techniques to extract insights from data, driving informed decision-making and optimizing business processes.',
     href: '#',
     icon: ArrowPathIcon,
   }, {
-    name: 'Push to deploy',
+    name: 'IT Infrastructure Management',
     description:
-      'Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.',
+      'Comprehensive management and maintenance of IT infrastructure, including network setup, cybersecurity solutions, server management, and IT support services.',
     href: '#',
     icon: CloudArrowUpIcon,
   },
   {
-    name: 'SSL certificates',
+    name: 'E-commerce Solutions',
     description:
-      'Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.',
+      'Design, development, and optimization of e-commerce platforms to facilitate online sales, improve customer experiences, and drive revenue growth for businesses operating in the digital marketplace.',
     href: '#',
     icon: LockClosedIcon,
   },
   {
-    name: 'Simple queues',
+    name: 'Digital Transformation Consulting',
     description:
-      'Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.',
+      'Strategic guidance and support for organizations looking to modernize their operations, embrace emerging technologies, and adapt to evolving market trends.',
     href: '#',
     icon: ArrowPathIcon,
   },
@@ -47,15 +47,22 @@ const features = [
 export default function Example() {
   return (
     <div className=" ">
+       
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-gray-800">Our Services</h2>
+        <div className="mt-24 sm:mt-32 lg:mt-16">
+            <a href="#" className="inline-flex space-x-6">
+              <span className="rounded-full px-3 py-1 text-sm font-semibold leading-6 text-primary-400 ring-1 ring-inset ring-secondary-500/20">
+                Our Services
+              </span>
+           
+            </a>
+          </div>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-500 sm:text-4xl">
             Everything you need to reinvogorate your Business Online
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-900">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-            pulvinar et feugiat blandit at. In mi viverra elit nunc.
+          With a focus on collaboration, innovation, and excellence, we are dedicated to helping you stay ahead in today's competitive landscape. Discover how Katalyst Technologies can empower your business to thrive in the digital age.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -64,7 +71,7 @@ export default function Example() {
               <div key={feature.name} className="flex flex-col">
                 <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
                   <feature.icon className="h-5 w-5 flex-none text-gray-900" aria-hidden="true" />
-                  {feature.name}
+               <h1 className=' text-xl text-gray-900' >    {feature.name}</h1>
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
                   <p className="flex-auto">{feature.description}</p>
