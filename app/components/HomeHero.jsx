@@ -1,6 +1,25 @@
-import { ChevronRightIcon } from '@heroicons/react/20/solid'
+import { ChevronRightIcon } from "@heroicons/react/20/solid";
+import { TypewriterEffect } from "./typewriter-effect";
 
 export default function Example() {
+  const words = [
+    {
+      text: "Your",
+    },
+    {
+      text: "Business",
+    },
+    {
+      text: "needs",
+    },
+    {
+      text: "the",
+    },
+    {
+      text: "Katalyst.",
+      className: "text-blue-500 dark:text-blue-500",
+    },
+  ];
   return (
     <div className="relative isolate overflow-hidden ">
       <svg
@@ -25,7 +44,12 @@ export default function Example() {
             strokeWidth={0}
           />
         </svg>
-        <rect width="100%" height="100%" strokeWidth={0} fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)" />
+        <rect
+          width="100%"
+          height="100%"
+          strokeWidth={0}
+          fill="url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)"
+        />
       </svg>
       <div
         className="absolute left-[calc(50%-4rem)] top-10 -z-10 transform-gpu blur-3xl sm:left-[calc(50%-18rem)] lg:left-48 lg:top-[calc(50%-30rem)] xl:left-[calc(50%-24rem)]"
@@ -35,29 +59,33 @@ export default function Example() {
           className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"
           style={{
             clipPath:
-              'polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)',
+              "polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)",
           }}
         />
       </div>
-      <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
-        <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
-          
-          <div className="mt-24 sm:mt-32 lg:mt-16">
+      <div className="mx-auto max-w-7xl px-6 pb-24  sm:pb-32 lg:flex lg:px-8 ">
+        <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl">
+          <div>
             <a href="#" className="inline-flex space-x-6">
               <span className="rounded-full px-3 py-1 text-sm font-semibold leading-6 text-primary-400 ring-1 ring-inset ring-secondary-500/20">
                 About Us
               </span>
               <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-800">
                 <span>Just shipped v1.0</span>
-                <ChevronRightIcon className="h-5 w-5 text-gray-800" aria-hidden="true" />
+                <ChevronRightIcon
+                  className="h-5 w-5 text-gray-800"
+                  aria-hidden="true"
+                />
               </span>
             </a>
           </div>
-          <h1 className="mt-10 text-4xl font-bold tracking-tight text-grey-800 sm:text-6xl">
-            Your Business needs the <span className='text-blue-700'>Katalyst </span>  to drive it forward
-          </h1>
+          <TypewriterEffect words={words} />
+
           <p className="mt-6 text-lg leading-8 text-gray-800">
-          By leveraging cutting-edge technologies and industry best practices, we empower your business to adapt, evolve, and thrive in an ever-changing landscape. Partner with Katalyst Technologies, and together, we'll unlock the full potential of your business.
+            By leveraging cutting-edge technologies and industry best practices,
+            we empower your business to adapt, evolve, and thrive in an
+            ever-changing landscape. Partner with Katalyst Technologies, and
+            together, we'll unlock the full potential of your business.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
             <a
@@ -66,24 +94,28 @@ export default function Example() {
             >
               Book Appointment
             </a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-800">
+            <a
+              href="#"
+              className="text-sm font-semibold leading-6 text-gray-800"
+            >
               Learn more <span aria-hidden="true">→</span>
             </a>
           </div>
-{/* Add typewriter */}
+          {/* Add typewriter */}
         </div>
-        <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
+
+        <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10  lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
           <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
             <img
-              src="https://res.cloudinary.com/dqwfjxn8g/image/upload/v1708847745/2149370134_edqpp7.jpg"
+              src="/image/hero-team.jpg"
               alt="App screenshot"
-              width={2432}
-              height={100}
-              className="w-[76rem] rounded-md bg-white/5 shadow-2xl ring-1 ring-white/10"
+              width={600}
+              height={1442}
+              className=" h-[700px] object-contain  rounded-md "
             />
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
