@@ -32,7 +32,7 @@ export default function about() {
   const workImage = [
     {
       workImage:
-        "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1697018973/group-afro-americans-working-together_zjjg49.jpg",
+        "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1699510986/Udemba/close-up-people-learning-together-office_cyrj8d.jpg",
     },
   ];
   const Teamcard = (props) => {
@@ -42,7 +42,7 @@ export default function about() {
           priority={true}
           src={props.image}
           alt="Picture or Brian Azukaeme"
-          className="lg:w-52 rounded-lg "
+          className="lg:w-52  "
         />
         <div className="absolute bottom-6 text-white left-4">
           <p>{props.name}</p>
@@ -55,32 +55,31 @@ export default function about() {
   return (
     <main>
       <section className="container mx-auto">
-        <div className="grid lg:grid-cols-5 col-span-5">
-          <div className="col-span-3">
-            <p className="mb-2">Our Work</p>
-            <p className="text-4xl font-semibold">Projects we have handled</p>
+        <div>
+          <div className="container px-6" >
+            <p className="mb-2 font-semibold">Our Work</p>
+            <p className="text-4xl font-semibold">Projects we have handled  </p>
             <p className="mt-3 text-lg text-gray-700">
-              Here are some amazing projects we have worked on over the years
-            </p>
+            At Katalyst Technologies, we take immense pride in the projects we undertake and the solutions we deliver. Our portfolio reflects our commitment to excellence, innovation, and client satisfaction. With a diverse range of projects spanning various industries and technological domains, we strive to showcase our expertise in custom software development, cloud services, data analytics, and more. Explore our work to witness how we leverage technology to drive success for our clients. </p>
           </div>
           <div className="col-span-2">
             <div className="col-span-2">
               {workImage.map((image, index) => (
                 <Image
                   key={index}
-                  className="rounded-full mt-10 w-96 h-96 object-cover"
+                  className=" mt-10 mb-10 px-2 h-96 object-cover"
                   src={image.workImage}
                   priority={true}
                   alt="Description of the image"
-                  width={1800}
-                  height={400}
+                  width={2000}
+                  height={1400}
                 />
               ))}
             </div>
           </div>
         </div>
 
-        <div className="mt-32 lg:flex justify-center">
+        <div className="mt-2 lg:flex justify-center">
           <div className="lg:border-r border-gray-500 px-20 mb-10 lg:mb-0">
             <p className="text-xl font-semibold mb-2">Over 30</p>
             <p>Completed solutions</p>

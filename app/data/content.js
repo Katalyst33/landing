@@ -12,50 +12,50 @@ export const projectList = [
   },
   {
     id: 2,
-    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1691917489/Skillset_hql5da.png",
+    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709144956/mba_tmg13w.png",
     year: 2023,
-    title: "Online Banker",
+    title: "Martoni Concepts",
     projectUrl: "#",
     description:
       "Online Banker stands as a pioneering reporting platform, giving users the leverage to report financial discrepancies and crimes. With each report, necessary actions are set in motion, reaching the relevant authorities. Alongside its vital functions, the platform excels in design aesthetics and user-friendliness.",
     tech: "React, Node.js",
   },
-  // {
-  //   id: 3,
-  //   logo: "", // Add a logo URL if available
-  //   year: 2022,
-  //   title: "Anbe Nigeria",
-  //   description:
-  //     "An influential player in the construction, oil, and gas sector, Anbe Nigeria required a web presence that reflected its stature. Collaborating with giants like Shell, Chevron, and ExxonMobil, our design for Anbe, crafted with Vue.js, manifests sophistication and efficiency, integrated with features like project showcases, client testimonials, and real-time contract updates.",
-  //   tech: "Vue.js, Bootstrap",
-  // },
+  {
+    id: 3,
+    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709144957/bdcam_v5iahv.png", // Add a logo URL if available
+    year: 2022,
+    title: "Anbe Nigeria",
+    description:
+      "An influential player in the construction, oil, and gas sector, Anbe Nigeria required a web presence that reflected its stature. Collaborating with giants like Shell, Chevron, and ExxonMobil, our design for Anbe, crafted with Vue.js, manifests sophistication and efficiency, integrated with features like project showcases, client testimonials, and real-time contract updates.",
+    tech: "Vue.js, Bootstrap",
+  },
   {
     id: 4,
-    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1697013455/aisha-keys-new_wd20h9.png",
+    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709144956/sprynx_jck3pa.png",
     year: 2021,
-    title: "Aisha Keys",
+    title: "Sprynx Multi",
     projectUrl: "#",
 
     description:
-      "Aisha Keys, standing tall in Dubai's real estate sector, deserved an online representation that mirrored its grandeur. Our team, leveraging Elementor, designed a website that provides property listings, 360-degree virtual tours, and efficient booking procedures.",
+      "A cutting-edge web app tailored for Sprynx Multi, a renowned car wash and detailing company. We delivered a seamless booking system, complete with diverse washing packages. Designed using the progressive Nuxt.js framework, the platform boasts of intuitive user experience and efficient performance.",
     tech: "WordPress, Elementor",
   },
   {
     id: 5,
-    logo: "./logos/damola.svg",
+    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709144956/nass_gj3j4n.png",
     year: 2021,
-    title: "Damola.ai",
+    title: "Nass Contracting",
     projectUrl: "#",
 
     description:
-      "Damola is not merely an AI assistant; it epitomizes African innovation. Birthed from the synergy of brilliant Nigerian minds, Damola.ai stands as a testament to Africa's technological prowess and potential. Our design emphasizes user-centric interactivity, wrapped in a visually pleasing interface.",
-    tech: "Python, Tensorflow, React",
+      "Nass Contracting Company Limited, an esteemed engineering and contracting firm, entrusted us with the development of their website. As your premier partner in building and general contracting services, Nass Contracting Company Limited required a digital platform that reflects their rich history of excellence and commitment to quality. Leveraging WordPress with Elementor, we meticulously crafted a bespoke website that embodies Nass Contracting's ethos of innovation and client satisfaction.",
+    tech: "WordPress, Elementor",
   },
   {
     id: 6,
     logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1697013405/buck-logo_elubi9.svg", // Add a logo URL if available
     year: 2022,
-    title: "BuckXchange",
+    title: "BuckApex",
     description:
       "BuckXchange revolutionizes the currency exchange process, offering users a platform to seamlessly swap currencies from anywhere. Beyond its core functionality, its design radiates modern aesthetics, ensuring users not only perform tasks but relish the experience.",
     tech: "React Native, Node.js",
@@ -79,6 +79,16 @@ export const projectList = [
     description:
       "Wildstream is the voice of emerging artists. This music streaming platform empowers artists to share their craft with the world, free of charge. Crafted with Vue, the platform provides listeners an unparalleled experience, with curated playlists, real-time recommendations, and seamless streaming.",
     tech: "Vue.js, Node.js",
+    projectUrl: "#",
+  },
+  {
+    id: 8,
+    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709144957/bdcam_v5iahv.png",
+    year: 2023,
+    title: "Behind DCAM",
+    description:
+      "DCAM Wedding Films, a leading media company in Abuja, partnered with us to develop their website. We used WordPress with Elementor to create a platform showcasing their unique blend of documentary-style and contemporary fashion-inspired wedding films. With meticulous attention to detail, we captured the essence of each couple's special day, delivering unforgettable cinematic experiences. We're proud to have collaborated with DCAM Wedding Films on this project, enhancing their online presence and storytelling capabilities.",
+    tech: "WordPress, Elementor",
     projectUrl: "#",
   },
 ];
