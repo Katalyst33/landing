@@ -5,7 +5,8 @@ import man3 from "../../public/team1.jpg";
 import LinkIcon from "/app/components/icons/LinkIcon";
 import Link from "next/link";
 import AboutHero from "../components/AboutHero.jsx"
-
+import AboutServices from "../components/AboutServices.jsx"
+import AboutApproach from "../components/AboutApproach.jsx"
 
 export default function about() {
   const teamlist = [
@@ -56,8 +57,8 @@ export default function about() {
     <main className="container mx-auto lg:px-10">
         <AboutHero/>
 
-      
-
+<AboutServices/>
+<AboutApproach/>
       <section className="bg-black text-white rounded-3xl py-20 my-40">
         <div className="w-5/6 mx-auto">
           <p>Our Mission</p>
@@ -91,31 +92,7 @@ export default function about() {
         </div>
       </section>
 
-      <section className="bg-gray-50 py-24 mt-40">
-        <div className="w-5/6 mx-auto">
-          <p className="font-semibold text-xl">Our Approach</p>
-          <p className="lg:w-3/6 text-lg mt-2">
-            We’ve been honing our skills in Design and Web development in Nigera
-            since 2015. In that time we’ve learnt that effective web design
-            isn’t just about you. It’s about your customers too.
-          </p>
-
-          <div className="mt-32 lg:flex justify-center">
-            <div className="lg:border-r border-gray-500 px-20 mb-10 lg:mb-0">
-              <p className="text-xl font-semibold mb-2">Branding</p>
-              <p>Completed solutions</p>
-            </div>
-            <div className="lg:border-r border-gray-500 px-20 mb-10 lg:mb-0">
-              <p className="text-xl font-semibold mb-2">Digital pages</p>
-              <p>users of solutions</p>
-            </div>
-            <div className="px-20">
-              <p className="text-xl font-semibold mb-2">Content</p>
-              <p>in invoice</p>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       <section className="w-11/12 mx-auto rounded-3xl bg-black text-white">
         <div className="w-4/6 mx-auto py-20">

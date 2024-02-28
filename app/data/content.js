@@ -1,14 +1,14 @@
 export const projectList = [
   {
     id: 1,
-    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1691660881/sprynx_new_logo-color-01_uir9hg.png",
+    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709158161/l1_zozsfn.png",
     year: 2022,
     projectUrl: "#",
 
-    title: "Sprynx Multi",
+    title: "Merilebon Academy School Project",
     description:
-      "A cutting-edge web app tailored for Sprynx Multi, a renowned car wash and detailing company. We delivered a seamless booking system, complete with diverse washing packages. Designed using the progressive Nuxt.js framework, the platform boasts of intuitive user experience and efficient performance.",
-    tech: "Nuxt.js, Vue.js",
+      "Merilebon Academy entrusted us to design their website, built with WordPress and Elementor. Our focus was on showcasing their commitment to providing a nurturing and fulfilling educational experience. By meeting with each student and offering places selectively, Merilebon ensures a happy and successful learning environment. Prospective parents and pupils are encouraged to visit the academy to experience firsthand why Merilebon is the right choice.",
+    tech: "WordPress, PHP, Elementor, Laravel",
   },
   {
     id: 2,
@@ -18,16 +18,16 @@ export const projectList = [
     projectUrl: "#",
     description:
       "Online Banker stands as a pioneering reporting platform, giving users the leverage to report financial discrepancies and crimes. With each report, necessary actions are set in motion, reaching the relevant authorities. Alongside its vital functions, the platform excels in design aesthetics and user-friendliness.",
-    tech: "React, Node.js",
+    tech: "WordPress, PHP, Elementor, Laravel",
   },
   {
     id: 3,
-    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709144957/bdcam_v5iahv.png", // Add a logo URL if available
+    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709147566/anbe-logo_yldl8e.png", // Add a logo URL if available
     year: 2022,
     title: "Anbe Nigeria",
     description:
       "An influential player in the construction, oil, and gas sector, Anbe Nigeria required a web presence that reflected its stature. Collaborating with giants like Shell, Chevron, and ExxonMobil, our design for Anbe, crafted with Vue.js, manifests sophistication and efficiency, integrated with features like project showcases, client testimonials, and real-time contract updates.",
-    tech: "Vue.js, Bootstrap",
+    tech: "Vue.js, Tailwind",
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ export const projectList = [
 
     description:
       "A cutting-edge web app tailored for Sprynx Multi, a renowned car wash and detailing company. We delivered a seamless booking system, complete with diverse washing packages. Designed using the progressive Nuxt.js framework, the platform boasts of intuitive user experience and efficient performance.",
-    tech: "WordPress, Elementor",
+    tech: "Nuxt, Node.js, Tailwind",
   },
   {
     id: 5,
@@ -73,7 +73,7 @@ export const projectList = [
   },
   {
     id: 8,
-    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1697013719/192x192_h8sd9h.png",
+    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709147905/192x192_dtogvu.png",
     year: 2023,
     title: "Wildstream",
     description:
