@@ -7,6 +7,7 @@ import Link from "next/link";
 import AboutHero from "../components/AboutHero.jsx"
 import AboutServices from "../components/AboutServices.jsx"
 import AboutApproach from "../components/AboutApproach.jsx"
+import AboutImages from "../components/AboutImages.jsx"
 
 export default function about() {
   const teamlist = [
@@ -59,9 +60,10 @@ export default function about() {
 
 <AboutServices/>
 <AboutApproach/>
+<AboutImages/>
       <section className="bg-black text-white rounded-3xl py-20 my-40">
         <div className="w-5/6 mx-auto">
-          <p>Our Mission</p>
+          <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl lg:col-span-2 xl:col-auto">Our Mission</p>
           <p className="text-2xl font-semibold mb-4">
             Breathe of life for digital Ideas
           </p>
@@ -78,8 +80,8 @@ export default function about() {
 
       <hr className="my-10 text-gray-700  mx-auto" />
 
-      <section className="container mx-auto">
-        <p className="text-2xl text-center lg:text-left font-semibold mb-12 lg:mb-0 pb-2">
+      <section className="container mb-10 mx-auto">
+        <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
           Team
         </p>
 
@@ -94,9 +96,9 @@ export default function about() {
 
      
 
-      <section className="w-11/12 mx-auto rounded-3xl bg-black text-white">
+      <section className=" mx-auto rounded-3xl bg-black text-white">
         <div className="w-4/6 mx-auto py-20">
-          <p className="text-4xl">Tell us about your project</p>
+          <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl lg:col-span-2 xl:col-auto">Tell us about your project</p>
           <button className="px-3 py-2 my-10 text-black bg-white rounded-lg">
             Leave us a message
           </button>
