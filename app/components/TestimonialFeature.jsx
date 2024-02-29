@@ -3,6 +3,7 @@ import { useCallback } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import "../styles/testimonial.scss";
+import {ChevronLeftIcon, ChevronRight} from "lucide-react";
 
 const testimonials = [
   {
@@ -69,12 +70,14 @@ export default function Example() {
 
   return (
     <div>
-      <div className="flex">
+      <div className="flex justify-end gap-x-10 lg:gap-x-20 py-4">
         <button className="embla__prev" onClick={scrollPrev}>
-          Prev
+          <ChevronLeftIcon />
+
         </button>
         <button className="embla__next" onClick={scrollNext}>
-          Next
+
+          <ChevronRight/>
         </button>
       </div>
       <div>
@@ -83,7 +86,7 @@ export default function Example() {
             <div className="embla__container ">
               {testimonials.map((testimonial) => (
                 <div key={testimonial.name}>
-                  <div className={`bg-red-500 p-10 lg:w-[1200px] mx-2`}>
+                  <div className={` p-10 w-[400px] md:w-[600px] lg:w-[1200px] mx-2`}>
                     <Testify data={testimonial} />
                   </div>
                 </div>
@@ -134,8 +137,8 @@ function Testify(props) {
               />
               <use href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" x={86} />
             </svg>
-            <blockquote className="text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
-              <p>{props.data.description}</p>
+            <blockquote className="lg:text-xl lg:font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
+              <p className={``}>{props.data.description}</p>
             </blockquote>
             <figcaption className="mt-8 text-base">
               <div className="font-semibold text-white">{props.data.name}</div>

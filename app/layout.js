@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <body className={outfit.className} suppressHydrationWarning={true}>
         <div className={`bg-white text-neutral-950`}>
           <Header />
-          <div className=" container mx-auto pt-20">{children}</div>
+          <div className="lg:container mx-auto pt-20">{children}</div>
 
           <Footer />
         </div>

@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="add slider">
-      <change afterPath="$PROJECT_DIR$/app/styles/testimonial.scss" afterDir="false" />
+    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="make responsive">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AboutImages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AboutImages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AboutServices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AboutServices.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/BeforeFooter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/BeforeFooter.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/TestimonialFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/TestimonialFeature.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/testimonial.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/testimonial.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709210594377</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="make responsive">
+      <option name="closed" value="true" />
+      <created>1709211644380</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709211644380</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,7 +131,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add slider" />
-    <option name="LAST_COMMIT_MESSAGE" value="add slider" />
+    <MESSAGE value="make responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="make responsive" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

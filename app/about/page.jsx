@@ -4,10 +4,10 @@ import man2 from "../../public/team1.jpg";
 import man3 from "../../public/team1.jpg";
 import LinkIcon from "/app/components/icons/LinkIcon";
 import Link from "next/link";
-import AboutHero from "../components/AboutHero.jsx"
-import AboutServices from "../components/AboutServices.jsx"
-import AboutApproach from "../components/AboutApproach.jsx"
-import AboutImages from "../components/AboutImages.jsx"
+import AboutHero from "../components/AboutHero.jsx";
+import AboutServices from "../components/AboutServices.jsx";
+import AboutApproach from "../components/AboutApproach.jsx";
+import AboutImages from "../components/AboutImages.jsx";
 
 export default function about() {
   const teamlist = [
@@ -56,14 +56,16 @@ export default function about() {
   };
   return (
     <main className="container mx-auto lg:px-10">
-        <AboutHero/>
+      <AboutHero />
 
-<AboutServices/>
-<AboutApproach/>
-<AboutImages/>
+      <AboutServices />
+      <AboutApproach />
+      <AboutImages />
       <section className="bg-black text-white rounded-3xl py-20 my-40">
         <div className="w-5/6 mx-auto">
-          <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl lg:col-span-2 xl:col-auto">Our Mission</p>
+          <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl lg:col-span-2 xl:col-auto">
+            Our Mission
+          </p>
           <p className="text-2xl font-semibold mb-4">
             Breathe of life for digital Ideas
           </p>
@@ -94,11 +96,11 @@ export default function about() {
         </div>
       </section>
 
-     
-
       <section className=" mx-auto rounded-3xl bg-black text-white">
         <div className="w-4/6 mx-auto py-20">
-          <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl lg:col-span-2 xl:col-auto">Tell us about your project</p>
+          <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl lg:col-span-2 xl:col-auto">
+            Tell us about your project
+          </p>
           <button className="px-3 py-2 my-10 text-black bg-white rounded-lg">
             Leave us a message
           </button>

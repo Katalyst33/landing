@@ -1,11 +1,14 @@
 
 .embla {
   overflow: hidden;
+
 }
 
 .embla__slide {
   flex: 0 0 100%;
-  min-width: 400px;
+  min-width: 100px;
+  background-color: aqua;
+  padding: 20px;
 }
 
 
@@ -16,4 +19,6 @@
 .embla__container {
   display: flex;
 }
+
+
 

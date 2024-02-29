@@ -32,7 +32,7 @@ const features = [
 
 export default function Example() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white ">
       <div className=" ">
         <div className="px-6">
           <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
