@@ -1,7 +1,8 @@
 export const projectList = [
   {
     id: 1,
-    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709158161/l1_zozsfn.png",
+    logo: "/logos/merilebon.webp",
+
     year: 2022,
     projectUrl: "#",
 
@@ -12,7 +13,7 @@ export const projectList = [
   },
   {
     id: 2,
-    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709144956/mba_tmg13w.png",
+    logo: "/logos/martoni.webp",
     year: 2023,
     title: "Martoni Concepts",
     projectUrl: "#",
@@ -22,7 +23,8 @@ export const projectList = [
   },
   {
     id: 3,
-    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709147566/anbe-logo_yldl8e.png", // Add a logo URL if available
+    logo: "/logos/Anbe.webp",
+
     year: 2022,
     title: "Anbe Nigeria",
     description:
@@ -31,7 +33,8 @@ export const projectList = [
   },
   {
     id: 4,
-    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709144956/sprynx_jck3pa.png",
+    logo: "/logos/sprynx.png",
+
     year: 2021,
     title: "Sprynx Multi",
     projectUrl: "#",
@@ -42,7 +45,7 @@ export const projectList = [
   },
   {
     id: 5,
-    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709144956/nass_gj3j4n.png",
+    logo: "/logos/nass.png",
     year: 2021,
     title: "Nass Contracting",
     projectUrl: "#",
@@ -53,17 +56,17 @@ export const projectList = [
   },
   {
     id: 6,
-    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1697013405/buck-logo_elubi9.svg", // Add a logo URL if available
+    logo: "/logos/buck-apex-logo.png",
     year: 2022,
     title: "BuckApex",
     description:
-      "BuckXchange revolutionizes the currency exchange process, offering users a platform to seamlessly swap currencies from anywhere. Beyond its core functionality, its design radiates modern aesthetics, ensuring users not only perform tasks but relish the experience.",
+      "BuckApex revolutionizes the currency exchange process, offering users a platform to seamlessly swap currencies from anywhere. Beyond its core functionality, its design radiates modern aesthetics, ensuring users not only perform tasks but relish the experience.",
     tech: "React Native, Node.js",
     projectUrl: "#",
   },
   {
     id: 7,
-    logo: "./logos/h2o.svg",
+    logo: "/logos/h2o.svg",
     year: 2023,
     title: "H2O Nigeria",
     description:
@@ -73,7 +76,7 @@ export const projectList = [
   },
   {
     id: 8,
-    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709147905/192x192_dtogvu.png",
+    logo: "/logos/wildstream.webp",
     year: 2023,
     title: "Wildstream",
     description:
@@ -83,7 +86,7 @@ export const projectList = [
   },
   {
     id: 8,
-    logo: "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709144957/bdcam_v5iahv.png",
+    logo: "/logos/bdcam.png",
     year: 2023,
     title: "Behind DCAM",
     description:
