@@ -13,7 +13,7 @@ export default function HeaderMain() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white border-b">
+    <header className="bg-white border-b lg:px-32 px-4">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between py-4"
         aria-label="Global"
@@ -59,14 +59,14 @@ export default function HeaderMain() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+            <Link href="/" className="-m-1.5 p-1.5 flex items-center">
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                src="/logos/katalyst-logo.png"
                 alt=""
               />
-            </a>
+              <h1 className=" text-black">Katalyst Technologies</h1>
+            </Link>
             <button
               type="button"
               className="-m-2.5 rounded-md p-2.5 text-gray-700"
