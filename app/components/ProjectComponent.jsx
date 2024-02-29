@@ -5,11 +5,11 @@ const ProjectComponent = (props) => {
     <main className="rounded-lg border border-gray-300 p-8 mb-8 lg:mb-0">
       <div className="relative w-28 h-32">
         <Image
-          className="h-auto w-auto object-contain"
+          className="h-20 w-auto object-contain"
           src={props.logo}
           alt="logo"
           width={160}
-          height={128}
+          height={20}
           priority={true}
         />
       </div>

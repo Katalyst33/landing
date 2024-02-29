@@ -13,18 +13,19 @@ export default function HeaderMain() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white">
+    <header className="bg-white border-b">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between py-4"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <Link href="/">
+          <Link className="flex items-center" href="/">
             <img
-              src="https://res.cloudinary.com/dqwfjxn8g/image/upload/v1697007940/logoFull-01_scumwo.png"
+              src="/logos/katalyst-logo.png"
               alt="Katalyst Logo"
-              className="w-20"
+              className="h-10"
             />
+            <h1>Katalyst Technologies</h1>
           </Link>
         </div>
         <div className="flex lg:hidden">
