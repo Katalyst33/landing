@@ -80,6 +80,7 @@ export default function Example() {
             </a>
           </div>
           <TypewriterEffect words={words} />
+          {/* Your Business needs the best.....Your business needs cutting edge technology */}
 
           <p className="mt-6 text-lg leading-8 text-gray-800">
             By leveraging cutting-edge technologies and industry best practices,

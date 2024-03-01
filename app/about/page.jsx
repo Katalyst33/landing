@@ -8,6 +8,9 @@ import AboutHero from "../components/AboutHero.jsx"
 import AboutServices from "../components/AboutServices.jsx"
 import AboutApproach from "../components/AboutApproach.jsx"
 import AboutImages from "../components/AboutImages.jsx"
+import OurTeam from "../components/OurTeam.jsx"
+import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
+
 
 export default function about() {
   const teamlist = [
@@ -17,6 +20,11 @@ export default function about() {
       name: "Brian Azukaeme",
       role: "Senior Front-end Engineer",
       slug: "brian-azukaeme",
+      socials: [
+        { url: "https://www.linkedin.com/in/azukaeme-brian-4329b0246/", icon: <FaLinkedin size={24} color="#FFFFFF" /> },
+        { url: "https://twitter.com/i_amfury", icon: <FaTwitter size={24} color="#FFFFFF" /> },
+        { url: "https://github.com/MadFury94", icon: <FaGithub size={24} color="#FFFFFF" /> }
+      ]
     },
     {
       id: 2,
@@ -24,6 +32,11 @@ export default function about() {
       name: "Chima Peter",
       role: "Mobile App Developer",
       slug: "chima-peter",
+      socials: [
+        { url: "https://www.linkedin.com/brian", icon: <FaLinkedin size={24} color="#FFFFFF" /> },
+        { url: "https://twitter.com/brian", icon: <FaTwitter size={24} color="#FFFFFF" /> },
+        { url: "https://github.com/brian", icon: <FaGithub size={24} color="#FFFFFF" /> }
+      ]
     },
     {
       id: 3,
@@ -31,6 +44,11 @@ export default function about() {
       name: "Samuel Nmeje",
       role: "Senior Front-end Engineer",
       slug: "samuel-nmeje",
+      socials: [
+        { url: "https://www.linkedin.com/brian", icon: <FaLinkedin size={24} color="#FFFFFF" /> },
+        { url: "https://twitter.com/brian", icon: <FaTwitter size={24} color="#FFFFFF" /> },
+        { url: "https://github.com/brian", icon: <FaGithub size={24} color="#FFFFFF" /> }
+      ]
     },
   ];
   const Teamcard = (props) => {
@@ -50,6 +68,13 @@ export default function about() {
             <LinkIcon size="1em" color="fill-blue-500" />
           </div>
           <p>{props.role}</p>
+          <div className="flex gap-x-2 mt-2 ">
+          {props.socials.map((social, index) => (
+            <a className="" href={social.url} key={index} target="_blank" rel="noopener noreferrer">
+              {social.icon}
+            </a>
+          ))}
+        </div>
         </div>
       </div>
     );
@@ -65,7 +90,7 @@ export default function about() {
         <div className="w-5/6 mx-auto">
           <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl lg:col-span-2 xl:col-auto">Our Mission</p>
           <p className="text-2xl font-semibold mb-4">
-            Breathe of life for digital Ideas
+            Breath of life for digital Ideas
           </p>
           <p>
             We strongly believe in contributing towards making Nigeria a Digital
@@ -81,23 +106,24 @@ export default function about() {
       <hr className="my-10 text-gray-700  mx-auto" />
 
       <section className="container mb-10 mx-auto">
-        <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
+        <p className="max-w-2xl mb-5 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
           Team
         </p>
 
         <div>
-          <div className="grid md:grid-cols-2 gap-x-8 lg:grid-cols-4 px-4 md:px-0">
+          <div className="grid md:grid-cols-2 gap-x-8 lg:grid-cols-4 px-10 md:px-0">
             {teamlist.map((n) => {
               return <Teamcard key={n.id} {...n} />;
             })}{" "}
           </div>
         </div>
       </section>
+      <OurTeam/>
 
      
 
       <section className=" mx-auto rounded-3xl bg-black text-white">
-        <div className="w-4/6 mx-auto py-20">
+        <div className="px-10 mx-auto py-20">
           <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl lg:col-span-2 xl:col-auto">Tell us about your project</p>
           <button className="px-3 py-2 my-10 text-black bg-white rounded-lg">
             Leave us a message
