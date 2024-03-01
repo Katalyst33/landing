@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="added slider">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/AboutApproach.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AboutApproach.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/AboutImages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AboutImages.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/AboutServices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AboutServices.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/BeforeFooter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/BeforeFooter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/HomeFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HomeFeature.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/HomeHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HomeHero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/HomeServices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HomeServices.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/TestimonialFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/TestimonialFeature.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AboutHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AboutHero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +19,29 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1709251309" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="carousel" />
+                    <option name="lastUsedInstant" value="1709251308" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="agtt6ekx" />
@@ -47,7 +64,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "carousel",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/centurion-pc/k-apps/katalyst-tech/app/components",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
