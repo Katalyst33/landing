@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="added slider">
+    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="fixed layout  padding">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/AboutHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AboutHero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AboutApproach.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/about/AboutApproach.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AboutHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/about/AboutHero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AboutImages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/about/AboutImages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AboutServices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/about/AboutServices.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/HomeFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeFeature.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/HomeHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeHero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/HomeServices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeServices.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/TestimonialSlider.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/typewriter.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +101,9 @@
       <recent name="$PROJECT_DIR$/app/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/styles" />
+      <recent name="$PROJECT_DIR$/app/components/home" />
+      <recent name="$PROJECT_DIR$/app/components/about" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/components" />
     </key>
@@ -146,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709251163074</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed layout  padding">
+      <option name="closed" value="true" />
+      <created>1709251638303</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709251638303</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +178,8 @@
     <MESSAGE value="add slider" />
     <MESSAGE value="make responsive" />
     <MESSAGE value="added slider" />
-    <option name="LAST_COMMIT_MESSAGE" value="added slider" />
+    <MESSAGE value="fixed layout  padding" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed layout  padding" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
