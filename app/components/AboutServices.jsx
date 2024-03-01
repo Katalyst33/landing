@@ -30,7 +30,7 @@ const features = [
   },
 ]
 
-export default function Example() {
+export default function AboutServices() {
   return (
     <div className="bg-white ">
       <div className=" ">

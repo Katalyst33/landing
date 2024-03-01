@@ -1,7 +1,7 @@
 import { ChevronRightIcon } from "@heroicons/react/20/solid";
 import { TypewriterEffect } from "./typewriter-effect";
 
-export default function Example() {
+export default function HomeHero() {
   const words = [
     {
       text: "Your",

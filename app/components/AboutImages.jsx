@@ -1,4 +1,4 @@
-export default function Example() {
+export default function AboutImages() {
     return (
       <div className="">
             <div className="overflow-hidden">

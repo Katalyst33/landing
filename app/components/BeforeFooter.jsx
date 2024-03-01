@@ -1,4 +1,4 @@
-export default function Example() {
+export default function BeforeFooter() {
     return (
       <div className="">
         <div className="px-6  sm:px-6  lg:px-8">

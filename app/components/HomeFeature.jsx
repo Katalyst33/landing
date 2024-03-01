@@ -44,10 +44,10 @@ const features = [
   },
 ]
 
-export default function Example() {
+export default function HomeFeature() {
   return (
     <div className=" ">
-       
+
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
         <div className="mt-24 sm:mt-32 lg:mt-16">
@@ -55,7 +55,7 @@ export default function Example() {
               <span className="rounded-full px-3 py-1 text-sm font-semibold leading-6 text-primary-400 ring-1 ring-inset ring-secondary-500/20">
                 Our Services
               </span>
-           
+
             </a>
           </div>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-500 sm:text-4xl">

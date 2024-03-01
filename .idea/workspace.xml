@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="make responsive">
+    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="added slider">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/AboutApproach.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AboutApproach.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/AboutImages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AboutImages.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/AboutServices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/AboutServices.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/BeforeFooter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/BeforeFooter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/HomeFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HomeFeature.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/HomeHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HomeHero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/HomeServices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HomeServices.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/TestimonialFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/TestimonialFeature.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/testimonial.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/testimonial.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709211644380</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added slider">
+      <option name="closed" value="true" />
+      <created>1709251163074</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709251163074</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +138,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add slider" />
     <MESSAGE value="make responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="make responsive" />
+    <MESSAGE value="added slider" />
+    <option name="LAST_COMMIT_MESSAGE" value="added slider" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

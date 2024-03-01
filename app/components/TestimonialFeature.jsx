@@ -57,7 +57,7 @@ const testimonials = [
   },
 ];
 
-export default function Example() {
+export default function TestimonialFeature() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
   const scrollPrev = useCallback(() => {
