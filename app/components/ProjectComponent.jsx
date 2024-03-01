@@ -20,7 +20,7 @@ const ProjectComponent = (props) => {
           <span className=""> {props.year}</span>
         </p>
       </div>
-      <p>{props.description}</p>
+      <p className="text-justify">{props.description}</p>
       <div className="flex justify-between">
         <p className="font-semibold text-sm mt-4 italic"> {props.tech}</p>
         <a

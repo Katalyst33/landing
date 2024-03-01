@@ -62,7 +62,7 @@ export default function about() {
               Our Work
             </span>
             <p className="text-4xl font-semibold">Projects we have handled </p>
-            <p className="mt-3 text-lg text-gray-700">
+            <p className="mt-3 text-lg text-gray-700 text-justify">
               At Katalyst Technologies, we take immense pride in the projects we
               undertake and the solutions we deliver. Our portfolio reflects our
               commitment to excellence, innovation, and client satisfaction.
