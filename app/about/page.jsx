@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import man1 from "../../public/team1.jpg";
 import man2 from "../../public/team1.jpg";
@@ -8,7 +9,6 @@ import AboutHero from "../components/about/AboutHero.jsx";
 import AboutServices from "../components/about/AboutServices.jsx";
 import AboutApproach from "../components/about/AboutApproach.jsx";
 import AboutImages from "../components/about/AboutImages.jsx";
-import OurTeam from "../components/OurTeam.jsx";
 import TeamCard from "../components/about/TeamCard.jsx";
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 
@@ -151,7 +151,7 @@ export default function about() {
           Excepturi repudiandae alias ut. Totam aut facilis. Praesentium in
           neque vel omnis. Eos error odio. Qui fugit voluptatibus eum culpa.
         </p>
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-2   lg:grid-cols-3 gap-10">
           {teamlist.map((n) => (
             <TeamCard data={n} />
           ))}
