@@ -41,9 +41,7 @@ export default function AboutServices() {
     <div className="py-10 ">
       <div className=" ">
         <div className="px-6">
-          <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
-            Exploring Our Core Values
-          </p>
+          <p className="title">Exploring Our Core Values</p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
             At Katalyst Technologies, our foundation is built upon a set of core
             values that guide everything we do. These values serve as the

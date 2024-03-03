@@ -175,12 +175,19 @@ export default function AboutHero() {
           />
           <div className="mx-auto  px-6  ">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-              <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
-              Innovating Beyond Boundaries
-              </h1>
+              <h1 className="title">Innovating Beyond Boundaries</h1>
               <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-lg leading-8 text-gray-600">
-                At Katalyst Technologies, we believe in pushing the boundaries of innovation to drive transformative change. With a relentless commitment to excellence, we combine cutting-edge technology with unparalleled expertise to deliver solutions that revolutionize industries and empower businesses. Our journey is defined by a passion for innovation, a dedication to our clients' success, and a vision to shape a future where possibilities are limitless. Join us on this journey as we continue to redefine what's possible in the world of technology.
+                  At Katalyst Technologies, we believe in pushing the boundaries
+                  of innovation to drive transformative change. With a
+                  relentless commitment to excellence, we combine cutting-edge
+                  technology with unparalleled expertise to deliver solutions
+                  that revolutionize industries and empower businesses. Our
+                  journey is defined by a passion for innovation, a dedication
+                  to our clients' success, and a vision to shape a future where
+                  possibilities are limitless. Join us on this journey as we
+                  continue to redefine what's possible in the world of
+                  technology.
                 </p>
               </div>
               <img
@@ -192,16 +199,6 @@ export default function AboutHero() {
           </div>
           <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32" />
         </div>
-
-
-
-
-
-
-
-
-
-
       </main>
     </div>
   );
