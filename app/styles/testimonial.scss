@@ -1,0 +1,24 @@
+
+.embla {
+  overflow: hidden;
+
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 100px;
+  background-color: aqua;
+  padding: 20px;
+}
+
+
+.embla__viewport {
+  //overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+
+

@@ -2,9 +2,9 @@
 import Image from "next/image";
 import ProjectComponent from "./components/ProjectComponent";
 import { projectList, services, tools } from "./data/content";
-import HomeHero from "./components/HomeHero.jsx";
-import HomeFeature from "./components/HomeFeature.jsx";
-import HomeServices from "./components/HomeServices.jsx";
+import HomeHero from "./components/home/HomeHero.jsx";
+import HomeFeature from "./components/home/HomeFeature.jsx";
+import HomeServices from "./components/home/HomeServices.jsx";
 import TestimonialFeature from "./components/TestimonialFeature.jsx";
 import BeforeFooter from "./components/BeforeFooter.jsx";
 import { TypewriterEffect } from "./components/typewriter-effect";

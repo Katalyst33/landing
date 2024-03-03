@@ -1,5 +1,5 @@
 
-export default function Example() {
+export default function HomeServices() {
   return (
     <div className="relative isolate overflow-hidden ">
       <svg
@@ -40,13 +40,13 @@ export default function Example() {
       </div>
       <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
         <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
-          
+
           <div className="mt-24 sm:mt-32 lg:mt-16">
             <a href="#" className="inline-flex space-x-6">
               <span className="rounded-full px-3 py-1 text-sm font-semibold leading-6 text-primary-400 ring-1 ring-inset ring-secondary-500/20">
                 Concluded Projects
               </span>
-             
+
             </a>
           </div>
           <h1 className="mt-10 text-4xl font-bold tracking-tight text-grey-800 sm:text-6xl">
@@ -68,7 +68,7 @@ export default function Example() {
           </div>
         </div>
         <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
-        
+
         </div>
       </div>
     </div>
