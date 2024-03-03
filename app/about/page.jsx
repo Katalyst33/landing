@@ -4,10 +4,10 @@ import man2 from "../../public/team1.jpg";
 import man3 from "../../public/team1.jpg";
 import LinkIcon from "/app/components/icons/LinkIcon";
 import Link from "next/link";
-import AboutHero from "../components/AboutHero.jsx"
-import AboutServices from "../components/AboutServices.jsx"
-import AboutApproach from "../components/AboutApproach.jsx"
-import AboutImages from "../components/AboutImages.jsx"
+import AboutHero from "../components/about/AboutHero.jsx"
+import AboutServices from "../components/about/AboutServices.jsx"
+import AboutApproach from "../components/about/AboutApproach.jsx"
+import AboutImages from "../components/about/AboutImages.jsx"
 import OurTeam from "../components/OurTeam.jsx"
 import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 
