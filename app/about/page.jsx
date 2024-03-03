@@ -39,9 +39,9 @@ export default function about() {
     {
       id: 2,
       image: man2,
-      name: "Chima Peter",
+      name: "Obee",
       role: "Mobile App Developer",
-      slug: "chima-peter",
+      slug: "obee-won",
       location: "Madrid, Spain",
 
       socials: [
