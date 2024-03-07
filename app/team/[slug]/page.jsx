@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import { everyOne } from "../../data/team";
+import { everyOne } from '../../data/team';
 export default function TeamPost({ params }) {
   let selected = {};
 

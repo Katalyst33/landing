@@ -1,37 +1,37 @@
-"use client";
-import Image from "next/image";
-import man1 from "../../public/team1.jpg";
-import man2 from "../../public/team1.jpg";
-import man3 from "../../public/team1.jpg";
-import LinkIcon from "/app/components/icons/LinkIcon";
-import Link from "next/link";
-import AboutHero from "../components/about/AboutHero.jsx";
-import AboutServices from "../components/about/AboutServices.jsx";
-import AboutApproach from "../components/about/AboutApproach.jsx";
-import AboutImages from "../components/about/AboutImages.jsx";
-import TeamCard from "../components/about/TeamCard.jsx";
-import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+'use client';
+import Image from 'next/image';
+import man1 from '../../public/team1.jpg';
+import man2 from '../../public/team1.jpg';
+import man3 from '../../public/team1.jpg';
+import LinkIcon from '/app/components/icons/LinkIcon';
+import Link from 'next/link';
+import AboutHero from '../components/about/AboutHero.jsx';
+import AboutServices from '../components/about/AboutServices.jsx';
+import AboutApproach from '../components/about/AboutApproach.jsx';
+import AboutImages from '../components/about/AboutImages.jsx';
+import TeamCard from '../components/about/TeamCard.jsx';
+import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 
 export default function about() {
   const teamlist = [
     {
       id: 1,
       image: man1,
-      name: "Brian Azukaeme",
-      role: "Senior Front-end Engineer",
-      slug: "brian-azukaeme",
-      location: "Madrid, Spain",
+      name: 'Brian Azukaeme',
+      role: 'Senior Front-end Engineer',
+      slug: 'brian-azukaeme',
+      location: 'Madrid, Spain',
       socials: [
         {
-          url: "https://www.linkedin.com/in/azukaeme-brian-4329b0246/",
+          url: 'https://www.linkedin.com/in/azukaeme-brian-4329b0246/',
           icon: <FaLinkedin size={24} color="#FFFFFF" />,
         },
         {
-          url: "https://twitter.com/i_amfury",
+          url: 'https://twitter.com/i_amfury',
           icon: <FaTwitter size={24} color="#FFFFFF" />,
         },
         {
-          url: "https://github.com/MadFury94",
+          url: 'https://github.com/MadFury94',
           icon: <FaGithub size={24} color="#FFFFFF" />,
         },
       ],
@@ -39,22 +39,22 @@ export default function about() {
     {
       id: 2,
       image: man2,
-      name: "Obee",
-      role: "Mobile App Developer",
-      slug: "obee-won",
-      location: "Madrid, Spain",
+      name: 'Obee',
+      role: 'Mobile App Developer',
+      slug: 'obee-won',
+      location: 'Madrid, Spain',
 
       socials: [
         {
-          url: "https://www.linkedin.com/brian",
+          url: 'https://www.linkedin.com/brian',
           icon: <FaLinkedin size={24} color="#FFFFFF" />,
         },
         {
-          url: "https://twitter.com/brian",
+          url: 'https://twitter.com/brian',
           icon: <FaTwitter size={24} color="#FFFFFF" />,
         },
         {
-          url: "https://github.com/brian",
+          url: 'https://github.com/brian',
           icon: <FaGithub size={24} color="#FFFFFF" />,
         },
       ],
@@ -62,22 +62,22 @@ export default function about() {
     {
       id: 3,
       image: man3,
-      name: "Samuel Nmeje",
-      role: "Senior Front-end Engineer",
-      slug: "samuel-nmeje",
-      location: "Madrid, Spain",
+      name: 'Samuel Nmeje',
+      role: 'Senior Front-end Engineer',
+      slug: 'samuel-nmeje',
+      location: 'Madrid, Spain',
 
       socials: [
         {
-          url: "https://www.linkedin.com/brian",
+          url: 'https://www.linkedin.com/brian',
           icon: <FaLinkedin size={24} color="#FFFFFF" />,
         },
         {
-          url: "https://twitter.com/brian",
+          url: 'https://twitter.com/brian',
           icon: <FaTwitter size={24} color="#FFFFFF" />,
         },
         {
-          url: "https://github.com/brian",
+          url: 'https://github.com/brian',
           icon: <FaGithub size={24} color="#FFFFFF" />,
         },
       ],

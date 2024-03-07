@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import { cn } from "../utils/cn";
-import { motion, stagger, useAnimate, useInView } from "framer-motion";
-import { useEffect } from "react";
+import { cn } from '../utils/cn';
+import { motion, stagger, useAnimate, useInView } from 'framer-motion';
+import { useEffect } from 'react';
 
 export const TypewriterEffect = ({ words, className, cursorClassName }) => {
   // split text inside of words into array of characters
   const wordsArray = words.map((word) => {
     return {
       ...word,
-      text: word.text.split(""),
+      text: word.text.split(''),
     };
   });
 
@@ -18,16 +18,16 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
   useEffect(() => {
     if (isInView) {
       animate(
-        "span",
+        'span',
         {
-          display: "inline-block",
+          display: 'inline-block',
           opacity: 1,
         },
         {
           duration: 0.3,
           delay: stagger(0.1),
-          ease: "easeInOut",
-        },
+          ease: 'easeInOut',
+        }
       );
     }
   }, [isInView]);
@@ -57,8 +57,8 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
   return (
     <div
       className={cn(
-        "text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-left",
-        className,
+        'text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-left',
+        className
       )}
     >
       {renderWords()}
@@ -72,11 +72,11 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
         transition={{
           duration: 0.8,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: 'reverse',
         }}
         className={cn(
-          "inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-10 bg-blue-500",
-          cursorClassName,
+          'inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-10 bg-blue-500',
+          cursorClassName
         )}
       ></motion.span>
     </div>

@@ -1,6 +1,6 @@
 const LinkIcon = (props) => {
   // Destructure the props and provide default values
-  const { size = "1em", color = "fill-blue-500" } = props;
+  const { size = '1em', color = 'fill-blue-500' } = props;
 
   return (
     <div>

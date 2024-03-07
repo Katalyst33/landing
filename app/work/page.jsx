@@ -1,15 +1,15 @@
-"use client";
-import Image from "next/image";
-import {} from "../../public/team1.jpg";
-import ProjectComponent from "../components/ProjectComponent";
-import { projectList } from "../data/content";
-import BeforeFooter from "../components/BeforeFooter.jsx";
+'use client';
+import Image from 'next/image';
+import {} from '../../public/team1.jpg';
+import ProjectComponent from '../components/ProjectComponent';
+import { projectList } from '../data/content';
+import BeforeFooter from '../components/BeforeFooter.jsx';
 
 export default function about() {
   const workImage = [
     {
       workImage:
-        "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1699510986/Udemba/close-up-people-learning-together-office_cyrj8d.jpg",
+        'https://res.cloudinary.com/dqwfjxn8g/image/upload/v1699510986/Udemba/close-up-people-learning-together-office_cyrj8d.jpg',
     },
   ];
 
@@ -30,7 +30,7 @@ export default function about() {
               technological domains, we strive to showcase our expertise in
               custom software development, cloud services, data analytics, and
               more. Explore our work to witness how we leverage technology to
-              drive success for our clients.{" "}
+              drive success for our clients.{' '}
             </p>
           </div>
           <div className="col-span-2">

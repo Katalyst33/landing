@@ -1,27 +1,27 @@
 const approach = [
   {
-    name: "Branding",
+    name: 'Branding',
 
     image:
-      "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709165713/business_cfjdaq.png",
+      'https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709165713/business_cfjdaq.png',
   },
   {
-    name: "Software Engineering",
+    name: 'Software Engineering',
 
     image:
-      "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709165810/software-development_xwce9n.png",
+      'https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709165810/software-development_xwce9n.png',
   },
   {
-    name: "Cloud Services",
+    name: 'Cloud Services',
 
     image:
-      "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709166006/data_o4qiog.png",
+      'https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709166006/data_o4qiog.png',
   },
   {
-    name: "Digital Marketing",
+    name: 'Digital Marketing',
 
     image:
-      "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709166009/digital-marketing_qgs6hf.png",
+      'https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709166009/digital-marketing_qgs6hf.png',
   },
 ];
 

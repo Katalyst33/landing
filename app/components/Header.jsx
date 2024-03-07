@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import HeaderMain from "../components/HeaderMain";
+import HeaderMain from '../components/HeaderMain';
 
 const Header = () => {
   return (

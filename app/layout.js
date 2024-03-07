@@ -1,16 +1,16 @@
-import "./globals.css";
-import "./styles/main.scss";
-import { Outfit } from "next/font/google";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Head from "next/head";
+import './globals.css';
+import './styles/main.scss';
+import { Outfit } from 'next/font/google';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Head from 'next/head';
 
-const outfit = Outfit({ subsets: ["latin"] });
+const outfit = Outfit({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "Katalyst Technologies",
+  title: 'Katalyst Technologies',
   description:
-    "Design and Development Agency, We build custom software solutions for businesses. We are a team of experienced developers, designers, and digital strategists. We specialize in web and mobile app development, e-commerce, and digital transformation consulting.",
+    'Design and Development Agency, We build custom software solutions for businesses. We are a team of experienced developers, designers, and digital strategists. We specialize in web and mobile app development, e-commerce, and digital transformation consulting.',
 };
 
 export default function RootLayout({ children }) {

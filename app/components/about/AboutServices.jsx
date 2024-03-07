@@ -3,36 +3,36 @@ import {
   CloudArrowUpIcon,
   FingerPrintIcon,
   LockClosedIcon,
-} from "@heroicons/react/24/outline";
+} from '@heroicons/react/24/outline';
 
 const features = [
   {
-    name: "Innovation",
+    name: 'Innovation',
     description:
-      "We thrive on pushing the boundaries of what is possible, constantly seeking new ideas and solutions to drive progress",
+      'We thrive on pushing the boundaries of what is possible, constantly seeking new ideas and solutions to drive progress',
     image:
-      "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709160593/idea_eiftoc.png",
+      'https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709160593/idea_eiftoc.png',
   },
   {
-    name: "integrity",
+    name: 'integrity',
     description:
-      "We uphold the highest standards of ethics and integrity in all our interactions, earning the trust and respect of our clients and partners.",
+      'We uphold the highest standards of ethics and integrity in all our interactions, earning the trust and respect of our clients and partners.',
     image:
-      "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709160893/trust_qavbxk.png",
+      'https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709160893/trust_qavbxk.png',
   },
   {
-    name: "Collaboration",
+    name: 'Collaboration',
     description:
-      "We believe in the power of teamwork and collaboration, fostering an environment where diverse perspectives come together to achieve shared goals.",
+      'We believe in the power of teamwork and collaboration, fostering an environment where diverse perspectives come together to achieve shared goals.',
     image:
-      "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709160948/teamwork_1_lpijzh.png",
+      'https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709160948/teamwork_1_lpijzh.png',
   },
   {
-    name: "Excellence:",
+    name: 'Excellence:',
     description:
-      "We are committed to delivering excellence in everything we do, striving for perfection and continuous improvement in our work.",
+      'We are committed to delivering excellence in everything we do, striving for perfection and continuous improvement in our work.',
     image:
-      "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709160985/excellent_rgyyde.png",
+      'https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709160985/excellent_rgyyde.png',
   },
 ];
 

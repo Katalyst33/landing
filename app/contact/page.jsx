@@ -3,7 +3,7 @@ import {
   BsFacebook,
   BsInstagram,
   BsLinkedin,
-} from "react-icons/bs";
+} from 'react-icons/bs';
 
 export default function about() {
   return (
