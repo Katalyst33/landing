@@ -1,8 +1,14 @@
+'use client';
+
 import Image from 'next/image';
 import PropTypes from 'prop-types';
 
-const ProjectComponent = (props) => {
-  return (
+function ProjectComponent(data) {
+  const { title, description, ...otherProps } = data;
+  console.log(data);
+
+  return {
+    /*
     <main className="rounded-lg border border-gray-300 p-8 mb-8 lg:mb-0">
       <div className="relative w-28 h-32">
         <Image
@@ -32,10 +38,11 @@ const ProjectComponent = (props) => {
         </a>
       </div>
     </main>
-  );
-};
+     */
+  };
+}
 
-ProjectComponent.propTypes = {
+/* ProjectComponent.propTypes = {
   logo: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   year: PropTypes.number.isRequired,
@@ -43,5 +50,13 @@ ProjectComponent.propTypes = {
   tech: PropTypes.string.isRequired,
   projectUrl: PropTypes.string.isRequired,
 };
+ */
 
+ProjectComponent.propTypes = {
+  data: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    // ... define other properties that you expect to receive in the `data` object
+  }).isRequired,
+};
 export default ProjectComponent;

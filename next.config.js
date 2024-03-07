@@ -7,6 +7,7 @@ const nextConfig = {
 
   env: {
     companyName: 'Katalyst Technologies',
+    serverUrl: 'http://localhost:5004',
   },
 };
 
