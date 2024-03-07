@@ -11,7 +11,7 @@ import {truncateString} from "../utils/index";
 export default function about() {
   return (
     <main>
-      <section className="xl:container mx-auto">
+      <section className="container mx-auto lg:px-10">
         <div>
           <div>
             <span className="rounded-full px-3 py-1 text-sm font-semibold leading-6 text-primary-400 ring-1 ring-inset ring-secondary-500/20">
@@ -48,18 +48,18 @@ export default function about() {
             <p>Projects Completed</p>
           </div>
         </div>
+        <div className="py-20 ">
+          <ProjectList data={projectList} />
+        </div>
       </section>
 
-      <div className="mt-8 ">
-        <ProjectList data={projectList} />
-      </div>
+
       <BeforeFooter />
     </main>
   );
 }
 
-function ProjectList(props) {
-  const allProjects = props.data;
+function ProjectList() {
 
   const [projects, setProjects] = useState([]);
 
@@ -85,14 +85,14 @@ function ProjectList(props) {
       <div >
 
         {projects.length > 0 ? (
-            <ul className={`grid grid-cols-2 gap-4 `}>
-              {allProjects.map((project, index) => (
+            <ul className={`grid grid-cols-3 gap-10 `}>
+              {projects.map((project, index) => (
 
                 <div key={index}>
-              <main className="rounded-lg border border-gray-100 shadow p-4 lg:mb-0 h-[400px] ">
-                <div className="relative w-28 ">
+              <main className="rounded-lg border border-gray-100 shadow p-4 lg:mb-0 lg:h-[400px] ">
+                <div>
                   <Image
-                      className="h-40 w-auto object-contain"
+                      className="h-20 py-2 w-auto object-contain"
                       src={project.logo}
                       alt="logo"
                       width={160}
