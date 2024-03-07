@@ -27,7 +27,7 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
           duration: 0.3,
           delay: stagger(0.1),
           ease: "easeInOut",
-        }
+        },
       );
     }
   }, [isInView]);
@@ -58,7 +58,7 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
     <div
       className={cn(
         "text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-left",
-        className
+        className,
       )}
     >
       {renderWords()}
@@ -76,7 +76,7 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
         }}
         className={cn(
           "inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-10 bg-blue-500",
-          cursorClassName
+          cursorClassName,
         )}
       ></motion.span>
     </div>

@@ -3,7 +3,7 @@ import { useCallback } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import "../styles/testimonial.scss";
-import {ChevronLeftIcon, ChevronRight} from "lucide-react";
+import { ChevronLeftIcon, ChevronRight } from "lucide-react";
 
 const testimonials = [
   {
@@ -73,20 +73,20 @@ export default function TestimonialFeature() {
       <div className="flex justify-end gap-x-10 lg:gap-x-20 py-4">
         <button className="embla__prev" onClick={scrollPrev}>
           <ChevronLeftIcon />
-
         </button>
         <button className="embla__next" onClick={scrollNext}>
-
-          <ChevronRight/>
+          <ChevronRight />
         </button>
       </div>
       <div>
-      <div className="embla">
+        <div className="embla">
           <div className="embla__viewport" ref={emblaRef}>
             <div className="embla__container ">
               {testimonials.map((testimonial) => (
                 <div key={testimonial.name}>
-                  <div className={` p-10 w-[400px] md:w-[600px] lg:w-[1200px] mx-2`}>
+                  <div
+                    className={` p-10 w-[400px] md:w-[600px] lg:w-[1200px] mx-2`}
+                  >
                     <Testify data={testimonial} />
                   </div>
                 </div>
@@ -94,7 +94,7 @@ export default function TestimonialFeature() {
             </div>
           </div>
         </div>
-    {/*    <div className="">
+        {/*    <div className="">
           {testimonials.map((testimonial) => (
               <div key={testimonial.name}>
                 <Testify data={testimonial} />
@@ -105,7 +105,6 @@ export default function TestimonialFeature() {
     </div>
   );
 }
-
 
 function Testify(props) {
   return (
