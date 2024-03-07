@@ -2,11 +2,13 @@
 import Image from 'next/image';
 import { projectList } from '../data/content';
 import BeforeFooter from '../components/BeforeFooter.jsx';
-
+import { ExternalLink } from 'lucide-react';
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 import { LoadingBlog } from '../components/LoadingBlog.jsx';
-import {truncateString} from "../utils/index";
+import { truncateString } from '../utils/index';
+import Link from 'next/link';
+import { Link1Icon, LinkBreak1Icon } from '@radix-ui/react-icons';
 
 export default function about() {
   return (
@@ -53,16 +55,13 @@ export default function about() {
         </div>
       </section>
 
-
       <BeforeFooter />
     </main>
   );
 }
 
 function ProjectList() {
-
   const [projects, setProjects] = useState([]);
-
 
   useEffect(() => {
     const fetchData = async () => {
@@ -70,7 +69,6 @@ function ProjectList() {
         const response = await fetch(`${process.env.serverUrl}/projects`); // Replace with your API endpoint
         const data = await response.json();
         setProjects(data);
-
       } catch (error) {
         console.error(error);
       }
@@ -79,56 +77,58 @@ function ProjectList() {
     fetchData();
   }, []);
 
-
   return (
-
-      <div >
-
-        {projects.length > 0 ? (
-            <ul className={`grid grid-cols-1 md:grid-cols-2  gap-10 `}>
-              {projects.map((project, index) => (
-
-                <div key={index}>
-              <main className="rounded-lg border border-gray-100 shadow p-4 lg:mb-0 lg:h-[400px] ">
+    <div>
+      {projects.length > 0 ? (
+        <ul className={`grid grid-cols-1 md:grid-cols-2  gap-10 `}>
+          {projects.map((project, index) => (
+            <div key={index}>
+              <main className="rounded-lg border border-gray-100 shadow p-4 lg:mb-0 lg:h-[380px] ">
                 <div>
                   <Image
-                      className="h-20 py-2 w-auto object-contain"
-                      src={project.logo}
-                      alt="logo"
-                      width={160}
-                      height={40}
-                      priority={true}
+                    className="h-20 py-2 w-auto object-contain"
+                    src={project.logo}
+                    alt="logo"
+                    width={160}
+                    height={40}
+                    priority={true}
                   />
                 </div>
-                <div className="flex justify-between items-center">
+                <div className="">
                   <p className="font-semibold text-lg">{project.title}</p>
-                  <p>
+                  <p className={`text-xs`}>
                     <span className=""> Completed:</span>
                     <span className=""> {project.year}</span>
                   </p>
                 </div>
-                <p className="text-justify">{ truncateString (project.description, 300)}</p>
+                <p className="text-justify">
+                  {truncateString(project.description, 300)}
+                </p>
                 <div className="flex justify-between">
-                  <p className="font-semibold text-sm mt-4 italic">
-                    {' '}
-                    {project.tech}
+                  <p className="font-semibold text-sm mt-4 ">
+                    <Link href={`/project/${project.slug}`}>
+                      {' '}
+                      About Project
+                    </Link>
                   </p>
-                  <a
+                  <div className={``}>
+                    <a
                       href={project.projectUrl}
-                      className="font-semibold text-sm mt-4 italic text-blue-500"
-                  >
-                    Visit Url
-                  </a>
+                      className="font-semibold flex items-center gap-x-4 text-sm mt-4 italic text-blue-500"
+                    >
+                      Visit Url
+                      <ExternalLink />
+                    </a>
+                  </div>
                 </div>
               </main>
             </div>
-              ))}
-            </ul>
-        ) : (
-            <LoadingBlog />
-        )}
-      </div>
-
+          ))}
+        </ul>
+      ) : (
+        <LoadingBlog />
+      )}
+    </div>
   );
 }
 
