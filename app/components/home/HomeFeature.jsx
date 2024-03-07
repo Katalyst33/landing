@@ -67,7 +67,7 @@ export default function HomeFeature() {
           <p className="mt-6 text-lg leading-8 text-gray-900">
             With a focus on collaboration, innovation, and excellence, we are
             dedicated to helping you stay ahead in today's competitive
-            landscape. Discover how Katalyst Technologies can empower your
+            landscape. Discover how {process.env.companyName} can empower your
             business to thrive in the digital age.
           </p>
         </div>

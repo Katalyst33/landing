@@ -94,13 +94,6 @@ export default function TestimonialFeature() {
             </div>
           </div>
         </div>
-        {/*    <div className="">
-          {testimonials.map((testimonial) => (
-              <div key={testimonial.name}>
-                <Testify data={testimonial} />
-              </div>
-          ))}
-        </div>*/}
       </div>
     </div>
   );

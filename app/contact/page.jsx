@@ -25,7 +25,6 @@ export default function about() {
             <p className="mb-2 text-lg font-semibold">Contact Us</p>
             <div className="flex justify-between">
               <p>info@katalyst.tech</p>
-              {/* <p>(234) 806 314 5125</p> */}
             </div>
           </div>
 

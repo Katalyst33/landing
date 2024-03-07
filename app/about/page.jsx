@@ -174,10 +174,10 @@ export default function about() {
             Leave us a message
           </button>
           <hr className="text-gray-500 mb-10" />
-          <p className="font-semibold mb-2">Katalyst Technologies</p>
+          <p className="font-semibold mb-2">{process.env.companyName}</p>
           <p>
-            At Katalyst Technologies we don't just design digital products, we
-            design experiences for people like you, You need the right minds
+            At {process.env.companyName} we don't just design digital products,
+            we design experiences for people like you, You need the right minds
             that can interpret your ideas and make it a reality we are glad you
             found us.
           </p>

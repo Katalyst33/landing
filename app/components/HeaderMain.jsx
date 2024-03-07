@@ -25,7 +25,7 @@ export default function HeaderMain() {
               alt="Katalyst Logo"
               className="h-10"
             />
-            <h1>Katalyst Technologies</h1>
+            <h1>{process.env.companyName}</h1>
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -65,7 +65,7 @@ export default function HeaderMain() {
                 src="/logos/katalyst-logo.png"
                 alt=""
               />
-              <h1 className=" text-black">Katalyst Technologies</h1>
+              <h1 className=" text-black">{process.env.companyName}</h1>
             </Link>
             <button
               type="button"
@@ -89,14 +89,6 @@ export default function HeaderMain() {
                   </a>
                 ))}
               </div>
-              {/*   <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
-                  Log in
-                </a>
-              </div>*/}
             </div>
           </div>
         </Dialog.Panel>

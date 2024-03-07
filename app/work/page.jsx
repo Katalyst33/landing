@@ -21,16 +21,18 @@ export default function about() {
             <span className="rounded-full px-3 py-1 text-sm font-semibold leading-6 text-primary-400 ring-1 ring-inset ring-secondary-500/20">
               Our Work
             </span>
-            <p className="text-4xl font-semibold">Projects we have handled </p>
+            <p className="text-4xl font-semibold">
+              Projects we {process.env.companyName}
+            </p>
             <p className="mt-3 text-lg text-gray-700 text-justify">
-              At Katalyst Technologies, we take immense pride in the projects we
-              undertake and the solutions we deliver. Our portfolio reflects our
-              commitment to excellence, innovation, and client satisfaction.
-              With a diverse range of projects spanning various industries and
-              technological domains, we strive to showcase our expertise in
-              custom software development, cloud services, data analytics, and
-              more. Explore our work to witness how we leverage technology to
-              drive success for our clients.{' '}
+              At {process.env.companyName}, we take immense pride in the
+              projects we undertake and the solutions we deliver. Our portfolio
+              reflects our commitment to excellence, innovation, and client
+              satisfaction. With a diverse range of projects spanning various
+              industries and technological domains, we strive to showcase our
+              expertise in custom software development, cloud services, data
+              analytics, and more. Explore our work to witness how we leverage
+              technology to drive success for our clients.{' '}
             </p>
           </div>
           <div className="col-span-2">

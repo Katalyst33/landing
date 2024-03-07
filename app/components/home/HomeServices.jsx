@@ -58,8 +58,8 @@ export default function HomeServices() {
             Whether it's enhancing operational efficiency, driving revenue
             growth, or improving customer experiences, each project demonstrates
             our dedication to client success and innovation. Take a closer look
-            at our featured projects to see how Katalyst Technologies can make a
-            difference for your business.
+            at our featured projects to see how {process.env.companyName} can
+            make a difference for your business.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
             <a

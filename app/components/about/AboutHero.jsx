@@ -160,8 +160,6 @@ const footerNavigation = {
 };
 
 export default function AboutHero() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   return (
     <div className="bg-white">
       {/* Header */}
@@ -178,9 +176,9 @@ export default function AboutHero() {
               <h1 className="title">Innovating Beyond Boundaries</h1>
               <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-lg leading-8 text-gray-600">
-                  At Katalyst Technologies, we believe in pushing the boundaries
-                  of innovation to drive transformative change. With a
-                  relentless commitment to excellence, we combine cutting-edge
+                  At {process.env.companyName}, we believe in pushing the
+                  boundaries of innovation to drive transformative change. With
+                  a relentless commitment to excellence, we combine cutting-edge
                   technology with unparalleled expertise to deliver solutions
                   that revolutionize industries and empower businesses. Our
                   journey is defined by a passion for innovation, a dedication

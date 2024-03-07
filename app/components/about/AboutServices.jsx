@@ -43,8 +43,8 @@ export default function AboutServices() {
         <div className="px-6">
           <p className="title">Exploring Our Core Values</p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            At Katalyst Technologies, our foundation is built upon a set of core
-            values that guide everything we do. These values serve as the
+            At {process.env.companyName}, our foundation is built upon a set of
+            core values that guide everything we do. These values serve as the
             cornerstone of our culture and drive our actions every day. Explore
             below to learn more about the principles that define us and shape
             our approach to business:

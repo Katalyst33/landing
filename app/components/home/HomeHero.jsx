@@ -80,13 +80,12 @@ export default function HomeHero() {
             </a>
           </div>
           <TypewriterEffect words={words} />
-          {/* Your Business needs the best.....Your business needs cutting edge technology */}
 
           <p className="mt-6 text-lg leading-8 text-gray-800">
             By leveraging cutting-edge technologies and industry best practices,
             we empower your business to adapt, evolve, and thrive in an
-            ever-changing landscape. Partner with Katalyst Technologies, and
-            together, we'll unlock the full potential of your business.
+            ever-changing landscape. Partner with {process.env.companyName}, and
+            together, we&apos;ll unlock the full potential of your business.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
             <a
