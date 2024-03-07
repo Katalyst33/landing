@@ -1,7 +1,7 @@
 export const LoadingBlog = () => {
   const array = [1, 2, 3, 4, 6];
   return (
-    <div className={`grid grid-cols-3 gap-4`}>
+    <div className={`grid grid-cols-1  md:grid-cols-2  gap-4`}>
       {array.map((index) => (
         <div key={index}>
           <div className=" p-2">

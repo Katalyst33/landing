@@ -85,7 +85,7 @@ function ProjectList() {
       <div >
 
         {projects.length > 0 ? (
-            <ul className={`grid grid-cols-3 gap-10 `}>
+            <ul className={`grid grid-cols-1 md:grid-cols-2  gap-10 `}>
               {projects.map((project, index) => (
 
                 <div key={index}>
