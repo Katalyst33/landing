@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import PropTypes from 'prop-types';
 
 const ProjectComponent = (props) => {
   return (
@@ -32,6 +33,15 @@ const ProjectComponent = (props) => {
       </div>
     </main>
   );
+};
+
+ProjectComponent.propTypes = {
+  logo: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  year: PropTypes.number.isRequired,
+  description: PropTypes.string.isRequired,
+  tech: PropTypes.string.isRequired,
+  projectUrl: PropTypes.string.isRequired,
 };
 
 export default ProjectComponent;
