@@ -29,7 +29,6 @@ export const LoadingBlog = () => {
           </div>
         </div>
       ))}
-
     </div>
   );
 };

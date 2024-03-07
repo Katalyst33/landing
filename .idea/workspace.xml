@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="refactor projects&#10;&#10;using api now">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/work/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/work/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/LoadingBlog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/LoadingBlog.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +97,7 @@
       <recent name="$PROJECT_DIR$/app/components" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.fake-server">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -107,8 +108,30 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="fake-server" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="fake-server" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="format" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.fake-server" />
+        <item itemvalue="npm.format" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -123,7 +146,7 @@
       <updated>1692113741029</updated>
       <workItem from="1708881107040" duration="5153000" />
       <workItem from="1708931056841" duration="458000" />
-      <workItem from="1709825711777" duration="3244000" />
+      <workItem from="1709825711777" duration="3342000" />
     </task>
     <task id="LOCAL-00001" summary="add slider">
       <option name="closed" value="true" />
@@ -189,7 +212,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709828537075</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="refactor projects&#10;&#10;using api now">
+      <option name="closed" value="true" />
+      <created>1709828962903</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709828962903</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
