@@ -85,7 +85,6 @@ function ProjectList(props) {
       <div className="grid grid-cols-1 lg:grid-cols-2  gap-4 ">
         {allProjects.map((project, index) => (
           <div key={index}>
-            <div>{project.logo}</div>
             <main className="rounded-lg border border-gray-300 p-8 mb-8 lg:mb-0">
               <div className="relative w-28 h-32">
                 <Image
