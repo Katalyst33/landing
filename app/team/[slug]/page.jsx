@@ -10,7 +10,7 @@ export default function TeamPost({ params }) {
     }
   }
 
-  const { name, position, summary, experience, education, skills } = selected;
+  const { name, position, summary } = selected;
 
   return (
     <div className="overflow-hidden bg-white">
@@ -25,6 +25,7 @@ export default function TeamPost({ params }) {
           <p className="mt-2 text-xl font-medium text-gray-600">{position}</p>
           <p className="mt-4 text-lg text-gray-500">{summary}</p>
         </div>
+        {/*
         <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="relative lg:col-start-2 lg:row-start-1">
             <div className="relative mx-auto max-w-prose text-base lg:max-w-none">
@@ -74,6 +75,8 @@ export default function TeamPost({ params }) {
             </div>
           </div>
         </div>
+
+        */}
       </div>
     </div>
   );

@@ -1,11 +1,12 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -14,7 +15,7 @@ module.exports = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
-        "lg": "1024px",
+        lg: "1024px",
       },
     },
     extend: {
@@ -35,4 +36,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};

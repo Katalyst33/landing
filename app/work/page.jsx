@@ -1,57 +1,17 @@
 "use client";
 import Image from "next/image";
-import {
-  default as man1,
-  default as man2,
-  default as man3,
-} from "../../public/team1.jpg";
+import {} from "../../public/team1.jpg";
 import ProjectComponent from "../components/ProjectComponent";
 import { projectList } from "../data/content";
 import BeforeFooter from "../components/BeforeFooter.jsx";
 
 export default function about() {
-  const teamlist = [
-    {
-      id: 1,
-      image: man1,
-      name: "Brian Azukaeme",
-      role: "Senior Front-end Engineer",
-    },
-    {
-      id: 2,
-      image: man2,
-      name: "Chima Peter",
-      role: "Mobile App Developer",
-    },
-    {
-      id: 3,
-      image: man3,
-      name: "Samuel Nmeje",
-      role: "Senior Front-end Engineer",
-    },
-  ];
   const workImage = [
     {
       workImage:
         "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1699510986/Udemba/close-up-people-learning-together-office_cyrj8d.jpg",
     },
   ];
-  const Teamcard = (props) => {
-    return (
-      <div className="relative mb-12 lg:mb-0">
-        <Image
-          priority={true}
-          src={props.image}
-          alt="Picture or Brian Azukaeme"
-          className="lg:w-52  "
-        />
-        <div className="absolute bottom-6 text-white left-4">
-          <p>{props.name}</p>
-          <p>{props.role}</p>
-        </div>
-      </div>
-    );
-  };
 
   return (
     <main>
