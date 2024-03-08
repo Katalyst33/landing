@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="added company logo">
+    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="remove lint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/icons/icon.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/icons/icon.style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -378,7 +377,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709909969809</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="remove lint">
+      <option name="closed" value="true" />
+      <created>1709916456977</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1709916456977</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,7 +433,8 @@
     <MESSAGE value="fixed relative link issue" />
     <MESSAGE value="save work" />
     <MESSAGE value="added company logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="added company logo" />
+    <MESSAGE value="remove lint" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove lint" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
