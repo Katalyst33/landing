@@ -1,5 +1,7 @@
 import './icon.style.scss';
 
+import PropTypes from 'prop-types';
+
 export const AppIcon = (props) => {
   const { className, name } = props;
 
@@ -52,4 +54,11 @@ export const AppIcon = (props) => {
       {name && <h1 className=" text-black">{process.env.companyName}</h1>}
     </>
   );
+};
+
+
+
+AppIcon.propTypes = {
+    className: PropTypes.string,
+    name: PropTypes.bool,
 };

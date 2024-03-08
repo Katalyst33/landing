@@ -1,6 +1,6 @@
-import { ChevronRightIcon } from '@heroicons/react/20/solid';
+import Image from 'next/image';
 import { TypewriterEffect } from '../typewriter-effect';
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function HomeHero() {
   const words = [
@@ -64,6 +64,7 @@ export default function HomeHero() {
           }}
         />
       </div>
+
       <div className="mx-auto max-w-7xl px-6 pb-24  sm:pb-32 lg:flex lg:px-8 ">
         <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl">
           <div>
@@ -71,7 +72,6 @@ export default function HomeHero() {
               <span className="rounded-full px-3 py-1 text-sm font-semibold leading-6 text-primary-400 ring-1 ring-inset ring-secondary-500/20">
                 About Us
               </span>
-
             </a>
           </div>
           <TypewriterEffect words={words} />
@@ -83,38 +83,44 @@ export default function HomeHero() {
             together, we&apos;ll unlock the full potential of your business.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
-
             <Link
-                href={{
-                  pathname: '/contact',
-                  query: { type: 'meeeting' },
-                }}
+              href={{
+                pathname: '/contact',
+                query: { type: 'meeting' },
+              }}
               className="rounded-md bg-gray-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
             >
               Book Appointment
             </Link>
-            <a
-              href="#"
+            <Link
+              href="/"
               className="text-sm font-semibold leading-6 text-gray-800"
             >
               Learn more <span aria-hidden="true">→</span>
-            </a>
+            </Link>
           </div>
           {/* Add typewriter */}
         </div>
 
+        {/*
+
+
+          */}
+
         <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10  lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
           <div className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
-            <img
+            <Image
               src="/image/hero-team.jpg"
               alt="App screenshot"
+              priority={true}
               width={600}
               height={1442}
-              className=" h-[700px] object-contain  rounded-md "
+              className=" h-[700px] w-auto object-contain  rounded-md "
             />
           </div>
         </div>
       </div>
+
     </div>
   );
 }

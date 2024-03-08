@@ -6,8 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="remove lint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/team/[slug]/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/team/[slug]/page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@/components/ui/card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/@/components/ui/card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/LoadingBlog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/LoadingBlog.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/TestimonialFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/TestimonialFeature.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/home/HomeFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeFeature.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/home/HomeHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeHero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/icons/AppIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/icons/AppIcon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/icons/LinkIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/icons/LinkIcon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/icons/icon.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/icons/icon.style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/typewriter-effect.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/typewriter-effect.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/project/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/project/page.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,24 +70,24 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/centurion-pc/k-apps/katalyst-tech/public/logos",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/centurion-pc/k-apps/katalyst-tech/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/Users/centurion-pc/k-apps/katalyst-tech/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/centurion-pc/k-apps/katalyst-tech/public/logos&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/centurion-pc/k-apps/katalyst-tech/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/centurion-pc/k-apps/katalyst-tech/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -172,6 +183,7 @@
       <workItem from="1708881107040" duration="5153000" />
       <workItem from="1708931056841" duration="458000" />
       <workItem from="1709825711777" duration="29427000" />
+      <workItem from="1709923150065" duration="2158000" />
     </task>
     <task id="LOCAL-00001" summary="add slider">
       <option name="closed" value="true" />

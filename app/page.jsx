@@ -27,15 +27,14 @@ export default function Home() {
     <main className=" ">
       <HomeHero />
 
-      <HomeFeature />
+
+        <HomeFeature />
 
       <section className="py-40 w-11/12 mx-auto">
         <div className="mx-auto ">
           <HomeServices />
-
-        {/*
             <TestimonialFeature />
-          */}
+
         </div>
       </section>
       <BeforeFooter />

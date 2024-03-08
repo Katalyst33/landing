@@ -66,7 +66,7 @@ export default function HomeFeature() {
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-900">
             With a focus on collaboration, innovation, and excellence, we are
-            dedicated to helping you stay ahead in today's competitive
+            dedicated to helping you stay ahead in today&rsquo;s competitive
             landscape. Discover how {process.env.companyName} can empower your
             business to thrive in the digital age.
           </p>
@@ -96,14 +96,12 @@ export default function HomeFeature() {
                     </a>
                   </p>
                 </dd>
-
               </div>
             ))}
           </dl>
         </div>
 
         {/*error here */}
-
       </div>
     </div>
   );

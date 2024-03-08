@@ -60,17 +60,10 @@ function ProjectList() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(`${process.env.serverUrl}/projects`); // Replace with your API endpoint
-        const data = await response.json();
-        setProjects(data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchData();
+    fetch(`${process.env.serverUrl}/projects`)
+        .then((response) => response.json())
+        .then((data) => setProjects(data))
+        .catch((error) => console.error(error));
   }, []);
 
   return (

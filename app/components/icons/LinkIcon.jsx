@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 const LinkIcon = (props) => {
   // Destructure the props and provide default values
   const { size = '1em', color = 'fill-blue-500' } = props;
@@ -12,3 +13,8 @@ const LinkIcon = (props) => {
 };
 
 export default LinkIcon;
+
+LinkIcon.propTypes = {
+  size: PropTypes.string,
+  color: PropTypes.string,
+};

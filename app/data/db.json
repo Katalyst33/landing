@@ -5,9 +5,7 @@
       "name": "Brian Azukaeme",
       "position": "Senior Front-end Engineer",
       "slug": "brian-azukaeme",
-
       "image": "/team/team.jpg",
-
       "summary": "Experienced Front-end Engineer with a passion for creating responsive and user-friendly web applications. Skilled in HTML, CSS, JavaScript, and React.",
       "experience": [
         {
@@ -48,7 +46,6 @@
       "position": " Front-end Engineer",
       "slug": "samuel-nmeje",
       "image": "/team/team.jpg",
-
       "summary": "Experienced Front-end Engineer with a passion for creating responsive and user-friendly web applications. Skilled in HTML, CSS, JavaScript, and React.",
       "experience": [
         {
@@ -84,7 +81,7 @@
       ]
     },
     {
-        "id": "3",
+      "id": "3",
       "name": "Obee",
       "position": "Mobile Developer",
       "slug": "obee-won",
@@ -98,7 +95,6 @@
       "logo": "/logos/merilebon.webp",
       "year": 2022,
       "projectUrl": "#",
-
       "title": "Merilebon Academy School Project",
       "description": "Merilebon Academy entrusted us to design their website, built with WordPress and Elementor. Our focus was on showcasing their commitment to providing a nurturing and fulfilling educational experience. By meeting with each student and offering places selectively, Merilebon ensures a happy and successful learning environment. Prospective parents and pupils are encouraged to visit the academy to experience firsthand why Merilebon is the right choice.",
       "tech": "WordPress, PHP, Elementor, Laravel"
@@ -115,7 +111,6 @@
     {
       "id": "3",
       "logo": "/logos/Anbe.webp",
-
       "year": 2022,
       "title": "Anbe Nigeria",
       "description": "An influential player in the construction, oil, and gas sector, Anbe Nigeria required a web presence that reflected its stature. Collaborating with giants like Shell, Chevron, and ExxonMobil, our design for Anbe, crafted with Vue.js, manifests sophistication and efficiency, integrated with features like project showcases, client testimonials, and real-time contract updates.",
@@ -124,11 +119,9 @@
     {
       "id": "4",
       "logo": "/logos/sprynx.png",
-
       "year": 2021,
       "title": "Sprynx Multi",
       "projectUrl": "#",
-
       "description": "A cutting-edge web app tailored for Sprynx Multi, a renowned car wash and detailing company. We delivered a seamless booking system, complete with diverse washing packages. Designed using the progressive Nuxt.js framework, the platform boasts of intuitive user experience and efficient performance.",
       "tech": "Nuxt, Node.js, Tailwind"
     },
@@ -138,7 +131,6 @@
       "year": 2021,
       "title": "Nass Contracting",
       "projectUrl": "#",
-
       "description": "Nass Contracting Company Limited, an esteemed engineering and contracting firm, entrusted us with the development of their website. As your premier partner in building and general contracting services, Nass Contracting Company Limited required a digital platform that reflects their rich history of excellence and commitment to quality. Leveraging WordPress with Elementor, we meticulously crafted a bespoke website that embodies Nass Contracting's ethos of innovation and client satisfaction.",
       "tech": "WordPress, Elementor"
     },
@@ -170,7 +162,7 @@
       "projectUrl": "#"
     },
     {
-      "id":"9",
+      "id": "9",
       "logo": "/logos/bdcam.png",
       "year": 2023,
       "title": "Behind DCAM",
@@ -215,6 +207,44 @@
       "description": "Strategic guidance and support for organizations looking to modernize their operations, embrace emerging technologies, and adapt to evolving market trends.",
       "href": "#",
       "icon": "ArrowPathIcon"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Chika Okonkwo",
+      "company": "Anbe",
+      "description": "Working with Katalyst Technologies has been a game-changer for our business. Their custom software development services helped us streamline our operations and enhance our productivity. We highly recommend their expertise to any organization seeking innovative IT solutions.",
+      "image": "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709034092/1043_ah7rtl.jpg"
+    },
+    {
+      "name": "Adewale Adekunle",
+      "company": "H2O Water Delivery",
+      "description": "We are immensely grateful for the exceptional IT infrastructure management services delivered by Katalyst Technologies. Their comprehensive approach ensured that our systems were secure, reliable, and optimized for performance. It has been a pleasure working with such a competent team.",
+      "image": "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709034709/290_qnpjlo.jpg"
+    },
+    {
+      "name": "Ngozi Onuoha",
+      "company": "Online Banker Reporting System",
+      "description": "Katalyst Technologies played a pivotal role in our digital transformation journey. Their strategic consulting services provided invaluable insights, enabling us to modernize our operations and stay ahead of the curve. We commend their professionalism and commitment to excellence.",
+      "image": "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709034185/1392_ldt8zi.jpg"
+    },
+    {
+      "name": "Emeka Nwachukwu",
+      "company": "TechGenius Solutions",
+      "description": "Katalyst Technologies exceeded our expectations with their e-commerce solutions. Their team has a unique attention to detail and dedication to delivering a seamless online shopping experience significantly boosted our sales and customer satisfaction. We highly endorse their services .",
+      "image": "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709034699/doctor-consulting-patient-giving-recommendation-african-american-doctor-during-his-work-with-patients-explaining-recipes-drug-daily-hard-work-health-lives-saving-during-epidemic_fehwz7.jpg"
+    },
+    {
+      "name": "Aisha Mohammed",
+      "company": "HealthCare Innovations",
+      "description": "We are immensely impressed by the data analytics and business intelligence solutions provided by Katalyst Technologies. Their insights-driven approach empowered us to make data-driven decisions, leading to improved patient outcomes and operational efficiency. Kudos to their team for their expertise and professionalism.",
+      "image": "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709034167/african-woman-working-psychology-clinic-waiving-saying-hello-happy-smiling-friendly-welcome-gesture_lwod4y.jpg"
+    },
+    {
+      "name": "Olufemi Okeke",
+      "company": "Global Logistics Network",
+      "description": "Katalyst Technologies played a crucial role in our digital transformation journey. Their strategic consulting services helped us navigate complex challenges and leverage emerging technologies to optimize our logistics operations. We are grateful for their partnership and highly recommend their services to others.",
+      "image": "https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709034792/business-man-relaxing-after-finishing-task-taking-break-startup-office-employee-feeling-carefree-sitting-with-hands-head-relax-daydream-after-job-is-done-peaceful-adult_1_v2ljxf.jpg"
     }
   ]
 }

@@ -17,6 +17,9 @@ import { LoadingBlog } from '../components/LoadingBlog';
 export default function about() {
   return (
     <main className="container mx-auto lg:px-10">
+      {/*
+
+      */}
       <AboutHero />
       <section className="container mb-10 mx-auto">
         <h2 className="title py-8">Our Team</h2>

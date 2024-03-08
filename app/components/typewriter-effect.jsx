@@ -4,8 +4,9 @@ import { cn } from '../utils/cn';
 import { motion, stagger, useAnimate, useInView } from 'framer-motion';
 import { useEffect } from 'react';
 
+import PropTypes from 'prop-types';
+
 export const TypewriterEffect = ({ words, className, cursorClassName }) => {
-  // split text inside of words into array of characters
   const wordsArray = words.map((word) => {
     return {
       ...word,
@@ -34,24 +35,33 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope} className="inline text-left">
-        {wordsArray.map((word, idx) => {
-          return (
-            <div key={`word-${idx}`} className="inline-block">
-              {word.text.map((char, index) => (
-                <motion.span
-                  initial={{}}
-                  key={`char-${index}`}
-                  className={cn(` text-black opacity-0 hidden`, word.className)}
-                >
-                  {char}
-                </motion.span>
-              ))}
-              &nbsp;
-            </div>
-          );
-        })}
-      </motion.div>
+      <div>
+        {Array.length > 0 && (
+          <div>
+            <motion.div ref={scope} className="inline text-left">
+              {wordsArray.map((word, idx) => {
+                return (
+                  <div key={`word-${idx}`} className="inline-block">
+                    {word.text.map((char, index) => (
+                      <motion.span
+                        initial={{}}
+                        key={`char-${index}`}
+                        className={cn(
+                          ` text-black opacity-0 hidden`,
+                          word.className
+                        )}
+                      >
+                        {char}
+                      </motion.span>
+                    ))}
+                    &nbsp;
+                  </div>
+                );
+              })}
+            </motion.div>
+          </div>
+        )}
+      </div>
     );
   };
   return (
@@ -81,4 +91,15 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
       ></motion.span>
     </div>
   );
+};
+
+TypewriterEffect.propTypes = {
+  words: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string,
+      className: PropTypes.string,
+    })
+  ),
+  className: PropTypes.string,
+  cursorClassName: PropTypes.string,
 };
