@@ -1,10 +1,11 @@
+import "./icon.style.scss"
 export const AppIcon = (props) => {
   const { className } = props;
 
   return (
     <>
       <svg
-        className={className}
+        className={className + " svgStyle"}
         version="1.1"
         x="0px"
         y="0px"
