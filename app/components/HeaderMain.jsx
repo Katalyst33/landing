@@ -21,8 +21,7 @@ export default function HeaderMain() {
       >
         <div className={` w-52`}>
           <Link className="flex items-center " href="/">
-            <AppIcon  className={`h-10 w-10`} />
-            <h1 className={``}>{process.env.companyName}</h1>
+            <AppIcon name={true} className={`h-10 w-10`} />
           </Link>
         </div>
         <div className="flex lg:hidden">
