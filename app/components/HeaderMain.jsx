@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import { AppIcon } from '../components/icons/AppIcon';
 
 const navigation = [
   { name: 'Our Work', href: '/project' },
@@ -18,14 +19,10 @@ export default function HeaderMain() {
         className="mx-auto flex max-w-7xl items-center justify-between py-4"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
-          <Link className="flex items-center" href="/">
-            <img
-              src="/logos/katalyst-logo.png"
-              alt="Katalyst Logo"
-              className="h-10"
-            />
-            <h1>{process.env.companyName}</h1>
+        <div className={` w-52`}>
+          <Link className="flex items-center " href="/">
+            <AppIcon  className={`h-10 w-10`} />
+            <h1 className={``}>{process.env.companyName}</h1>
           </Link>
         </div>
         <div className="flex lg:hidden">
