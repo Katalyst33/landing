@@ -1,14 +1,10 @@
 'use client';
-import Image from 'next/image';
 import { projectList } from '../data/content';
 import BeforeFooter from '../components/BeforeFooter.jsx';
-import { ExternalLink } from 'lucide-react';
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 import { LoadingBlog } from '../components/LoadingBlog.jsx';
-import { truncateString } from '../utils/index';
-import Link from 'next/link';
-import ProjectComponent from "../components/ProjectComponent";
+import ProjectComponent from "../components/projects/ProjectComponent";
 
 export default function about() {
   return (
@@ -20,7 +16,7 @@ export default function about() {
               Our Work
             </span>
             <p className="text-4xl font-semibold">
-              Projects we {process.env.companyName}
+              Projects at {process.env.companyName}
             </p>
             <p className="mt-3 text-lg text-gray-700 text-justify">
               At {process.env.companyName}, we take immense pride in the

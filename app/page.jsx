@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import ProjectComponent from './components/ProjectComponent';
+import ProjectComponent from './components/projects/ProjectComponent';
 import { projectList, services, tools } from './data/content';
 import HomeHero from './components/home/HomeHero.jsx';
 import HomeFeature from './components/home/HomeFeature.jsx';
