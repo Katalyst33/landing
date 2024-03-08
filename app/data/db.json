@@ -94,9 +94,8 @@
   ],
   "projects": [
     {
-      "id": 1,
+      "id": "1",
       "logo": "/logos/merilebon.webp",
-
       "year": 2022,
       "projectUrl": "#",
 
@@ -105,7 +104,7 @@
       "tech": "WordPress, PHP, Elementor, Laravel"
     },
     {
-      "id": 2,
+      "id": "2",
       "logo": "/logos/martoni.webp",
       "year": 2023,
       "title": "Martoni Concepts",
@@ -114,7 +113,7 @@
       "tech": "WordPress, PHP, Elementor, Laravel"
     },
     {
-      "id": 3,
+      "id": "3",
       "logo": "/logos/Anbe.webp",
 
       "year": 2022,
@@ -123,7 +122,7 @@
       "tech": "Vue.js, Tailwind"
     },
     {
-      "id": 4,
+      "id": "4",
       "logo": "/logos/sprynx.png",
 
       "year": 2021,
@@ -134,7 +133,7 @@
       "tech": "Nuxt, Node.js, Tailwind"
     },
     {
-      "id": 5,
+      "id": "5",
       "logo": "/logos/nass.png",
       "year": 2021,
       "title": "Nass Contracting",
@@ -144,7 +143,7 @@
       "tech": "WordPress, Elementor"
     },
     {
-      "id": 6,
+      "id": "6",
       "logo": "/logos/buck-apex-logo.png",
       "year": 2022,
       "title": "BuckApex",
@@ -153,7 +152,7 @@
       "projectUrl": "#"
     },
     {
-      "id": 7,
+      "id": "7",
       "logo": "/logos/h2o.svg",
       "year": 2023,
       "title": "H2O Nigeria",
@@ -162,7 +161,7 @@
       "projectUrl": "#"
     },
     {
-      "id": 8,
+      "id": "8",
       "logo": "/logos/wildstream.webp",
       "year": 2023,
       "title": "Wildstream",
@@ -171,7 +170,7 @@
       "projectUrl": "#"
     },
     {
-      "id": 8,
+      "id":"9",
       "logo": "/logos/bdcam.png",
       "year": 2023,
       "title": "Behind DCAM",
