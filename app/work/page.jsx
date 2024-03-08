@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import { LoadingBlog } from '../components/LoadingBlog.jsx';
 import ProjectComponent from "../components/projects/ProjectComponent";
 
-export default function about() {
+export default function work() {
   return (
     <main>
       <section className="container mx-auto lg:px-10">

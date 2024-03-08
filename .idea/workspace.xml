@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="reactor home">
+      <change afterPath="$PROJECT_DIR$/public/image/about/about-hero.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/team/team.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/home/HomeFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeFeature.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/home/HomeServices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeServices.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/about/AboutHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/about/AboutHero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/about/TeamCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/about/TeamCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/work/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/work/page.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +70,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "fake-server",
-    "last_opened_file_path": "/Users/centurion-pc/k-apps/katalyst-tech/app/components",
+    "last_opened_file_path": "/Users/centurion-pc/k-apps/katalyst-tech/public/image/team",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -88,6 +92,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/image/team" />
+      <recent name="$PROJECT_DIR$/public/image/about" />
       <recent name="$PROJECT_DIR$/app/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -141,9 +147,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.fake-server" />
         <item itemvalue="npm.lint" />
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.fake-server" />
         <item itemvalue="npm.format" />
       </list>
     </recent_temporary>
@@ -158,7 +164,7 @@
       <updated>1692113741029</updated>
       <workItem from="1708881107040" duration="5153000" />
       <workItem from="1708931056841" duration="458000" />
-      <workItem from="1709825711777" duration="13106000" />
+      <workItem from="1709825711777" duration="17476000" />
     </task>
     <task id="LOCAL-00001" summary="add slider">
       <option name="closed" value="true" />
@@ -280,7 +286,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709886283642</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="reactor home">
+      <option name="closed" value="true" />
+      <created>1709889762739</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709889762739</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

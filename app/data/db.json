@@ -5,6 +5,8 @@
       "position": "Senior Front-end Engineer",
       "slug": "brian-azukaeme",
 
+      "image": "/team/team.jpg",
+
       "summary": "Experienced Front-end Engineer with a passion for creating responsive and user-friendly web applications. Skilled in HTML, CSS, JavaScript, and React.",
       "experience": [
         {
@@ -43,6 +45,7 @@
       "name": "Sam Nmeje",
       "position": " Front-end Engineer",
       "slug": "samuel-nmeje",
+      "image": "/team/team.jpg",
 
       "summary": "Experienced Front-end Engineer with a passion for creating responsive and user-friendly web applications. Skilled in HTML, CSS, JavaScript, and React.",
       "experience": [
@@ -82,6 +85,7 @@
       "name": "Obee",
       "position": "Mobile Developer",
       "slug": "obee-won",
+      "image": "/team/team.jpg",
 
       "summary": "Experienced Front-end Engineer with a passion for creating responsive and user-friendly web applications. Skilled in HTML, CSS, JavaScript, and React."
     }
