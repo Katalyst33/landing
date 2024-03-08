@@ -105,3 +105,5 @@ export default async function TeamPost({ params }) {
     </main>
   );
 }
+
+
