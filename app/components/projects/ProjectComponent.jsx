@@ -40,11 +40,10 @@ function ProjectComponent({ data }) {
             <div className="flex justify-between  ">
               <p className="font-semibold text-sm mt-4 ">
                 <Link href={`/project/${id}`}>
-                  {' '}
-                  About Project
-                  {
 
-                  }
+
+      About Project
+
                 </Link>
               </p>
               <div className={``}>

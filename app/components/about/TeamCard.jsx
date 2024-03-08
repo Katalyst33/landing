@@ -1,8 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Image from 'next/image';
 import Link from 'next/link';
-import { LinkIcon } from '@heroicons/react/24/outline';
 
 function TeamCard({data}) {
 

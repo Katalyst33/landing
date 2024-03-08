@@ -22,26 +22,12 @@ export default function about() {
       <AboutHero />
 
       <section className="container mb-10 mx-auto">
-        <h2 className="title">Our Team</h2>
+        <h2 className="title py-4">Our Team</h2>
         <p className=" text-lg leading-8 text-gray-600 py-6">
           Excepturi repudiandae alias ut. Totam aut facilis. Praesentium in
           neque vel omnis. Eos error odio. Qui fugit voluptatibus eum culpa.
         </p>
         <TeamList  />
-
-        {/*
-         <div className="grid md:grid-cols-2   lg:grid-cols-3 gap-10">
-          {teamlist.map((n, index) => (
-          <div  key={index}>
-            <TeamCard data={n} />
-
-          </div>
-          ))}
-
-        </div>
-
-
-        */}
 
         <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8 mb-20">
           <div className="mx-auto max-w-2xl lg:mx-0"></div>
@@ -54,7 +40,7 @@ export default function about() {
 
    {/*   <AboutServices />*/}
 {/*      <AboutApproach />*/}
-    {/*  <AboutImages />*/}
+    <AboutImages />
       <section className="bg-black text-white rounded-3xl py-20 my-40">
         <div className="w-5/6 mx-auto">
           <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl lg:col-span-2 xl:col-auto">
