@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="added company logo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/HeaderMain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HeaderMain.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/icons/AppIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/icons/AppIcon.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/icons/icon.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/icons/icon.style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logos/katalyst-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/logos/katalyst-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +28,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1709251309" />
+                    <option name="lastUsedInstant" value="1709916417" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="carousel" />
@@ -66,7 +64,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "fake-server",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/centurion-pc/k-apps/katalyst-tech/public/logos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

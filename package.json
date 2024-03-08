@@ -6,8 +6,7 @@
     "dev": "next dev -p 3300",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ext .js,.jsx",
-    "format": "npx prettier . --write /app",
+
     "fake-server": "json-server --watch ./app/data/db.json --port 5004"
   },
   "dependencies": {
