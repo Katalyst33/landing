@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function HomeServices() {
   return (
     <div className="relative isolate overflow-hidden ">
@@ -62,12 +64,11 @@ export default function HomeServices() {
             make a difference for your business.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
-            <a
-              href="#"
+            <Link href="/work"
               className="rounded-md bg-gray-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
             >
               View Projects
-            </a>
+            </Link>
             <a
               href="#"
               className="text-sm font-semibold leading-6 text-gray-800"

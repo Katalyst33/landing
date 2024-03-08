@@ -1,7 +1,8 @@
-import { useParams } from 'next/navigation';
 
-async function getData() {
-  const res = await fetch(`${process.env.serverUrl}/projects/1`);
+async function getData(id) {
+  const res = await fetch(`${process.env.serverUrl}/projects/${id}`, {
+      // cache: 'force-cache',
+  });
 
   if (!res.ok) {
     // This will activate the closest `error.js` Error Boundary
@@ -12,7 +13,9 @@ async function getData() {
 }
 
 export default async function ProjectPost({ params }) {
-  const data = await getData();
+
+    const slug = params.slug;
+  const data = await getData(slug);
 
   return (
     <main>
