@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="refactor projects&#10;&#10;using api now">
+    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="refactor data fecthing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/about/AboutHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/about/AboutHero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/about/AboutServices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/about/AboutServices.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/ProjectComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/ProjectComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/work/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/work/page.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +146,7 @@
       <updated>1692113741029</updated>
       <workItem from="1708881107040" duration="5153000" />
       <workItem from="1708931056841" duration="458000" />
-      <workItem from="1709825711777" duration="4408000" />
+      <workItem from="1709825711777" duration="5387000" />
     </task>
     <task id="LOCAL-00001" summary="add slider">
       <option name="closed" value="true" />
@@ -229,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709829058361</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="refactor data fecthing">
+      <option name="closed" value="true" />
+      <created>1709880059654</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709880059654</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +249,8 @@
     <MESSAGE value="fixed layout  padding" />
     <MESSAGE value="small refactor" />
     <MESSAGE value="refactor projects&#10;&#10;using api now" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor projects&#10;&#10;using api now" />
+    <MESSAGE value="refactor data fecthing" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor data fecthing" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

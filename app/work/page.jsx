@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 import { LoadingBlog } from '../components/LoadingBlog.jsx';
 import { truncateString } from '../utils/index';
 import Link from 'next/link';
-import { Link1Icon, LinkBreak1Icon } from '@radix-ui/react-icons';
+import ProjectComponent from "../components/ProjectComponent";
 
 export default function about() {
   return (
@@ -83,45 +83,9 @@ function ProjectList() {
         <ul className={`grid grid-cols-1 md:grid-cols-2  gap-10 `}>
           {projects.map((project, index) => (
             <div key={index}>
-              <main className="rounded-lg border border-gray-100 shadow p-4 lg:mb-0 lg:h-[380px] ">
                 <div>
-                  <Image
-                    className="h-20 py-2 w-auto object-contain"
-                    src={project.logo}
-                    alt="logo"
-                    width={160}
-                    height={40}
-                    priority={true}
-                  />
-                </div>
-                <div className="">
-                  <p className="font-semibold text-lg">{project.title}</p>
-                  <p className={`text-xs`}>
-                    <span className=""> Completed:</span>
-                    <span className=""> {project.year}</span>
-                  </p>
-                </div>
-                <p className="text-justify">
-                  {truncateString(project.description, 300)}
-                </p>
-                <div className="flex justify-between">
-                  <p className="font-semibold text-sm mt-4 ">
-                    <Link href={`/project/${project.slug}`}>
-                      {' '}
-                      About Project
-                    </Link>
-                  </p>
-                  <div className={``}>
-                    <a
-                      href={project.projectUrl}
-                      className="font-semibold flex items-center gap-x-4 text-sm mt-4 italic text-blue-500"
-                    >
-                      Visit Url
-                      <ExternalLink />
-                    </a>
-                  </div>
-                </div>
-              </main>
+                  <ProjectComponent data={project} />
+              </div>
             </div>
           ))}
         </ul>
@@ -131,6 +95,10 @@ function ProjectList() {
     </div>
   );
 }
+
+
+
+
 
 /*    <ProjectComponent data={project} /> */
 

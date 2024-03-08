@@ -2,55 +2,63 @@
 
 import Image from 'next/image';
 import PropTypes from 'prop-types';
+import {truncateString} from "../utils/index";
+import Link from "next/link";
+import {ExternalLink} from "lucide-react";
 
-function ProjectComponent(data) {
-  const { title, description, ...otherProps } = data;
-  console.log(data);
+function ProjectComponent({ data }) {
 
-  return {
-    /*
-    <main className="rounded-lg border border-gray-300 p-8 mb-8 lg:mb-0">
-      <div className="relative w-28 h-32">
-        <Image
-          className="h-20 w-auto object-contain"
-          src={props.logo}
-          alt="logo"
-          width={160}
-          height={20}
-          priority={true}
-        />
+  const {logo, title, description, year, slug, projectUrl }   = data
+
+  return (
+      <div>
+        <main className="rounded-lg border border-gray-100 shadow lg:mb-0 ">
+          <div>
+            <Image
+                className="h-20  p-4 w-auto object-contain"
+                src={logo}
+                alt="logo"
+                width={160}
+                height={40}
+                priority={true}
+            />
+          </div>
+          <div className="p-4">
+            <p className="font-semibold text-lg">{title}</p>
+            <p className={`text-green-500 text-xs bg-green-100 p-1 my-2 rounded-full inline px-1`}>
+              <span className=""> Completed:</span>
+              <span className=""> {year}</span>
+            </p>
+          </div>
+          <p className="text-justify p-4">
+            {truncateString(description, 300)}
+          </p>
+          <div className="flex justify-between">
+            <p className="font-semibold text-sm mt-4 ">
+              <Link href={`/project/${slug}`}>
+                {' '}
+                About Project
+              </Link>
+            </p>
+            <div className={``}>
+              <a
+                  href={projectUrl}
+                  className="font-semibold flex items-center gap-x-4 text-sm mt-4 italic text-blue-500"
+              >
+                Visit Url
+                <ExternalLink />
+              </a>
+            </div>
+          </div>
+          <footer className={` flex justify-between border-t mt-4 `}>
+             <div>here</div>
+             <div>here</div>
+
+          </footer>
+        </main>
       </div>
-      <div className="flex justify-between items-center">
-        <p className="font-semibold text-lg">{props.title}</p>
-        <p>
-          <span className=""> Completed:</span>
-          <span className=""> {props.year}</span>
-        </p>
-      </div>
-      <p className="text-justify">{props.description}</p>
-      <div className="flex justify-between">
-        <p className="font-semibold text-sm mt-4 italic"> {props.tech}</p>
-        <a
-          href={props.projectUrl}
-          className="font-semibold text-sm mt-4 italic text-blue-500"
-        >
-          Visit Url
-        </a>
-      </div>
-    </main>
-     */
-  };
+  )
 }
-
-/* ProjectComponent.propTypes = {
-  logo: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  year: PropTypes.number.isRequired,
-  description: PropTypes.string.isRequired,
-  tech: PropTypes.string.isRequired,
-  projectUrl: PropTypes.string.isRequired,
-};
- */
 
 ProjectComponent.propTypes = {
   data: PropTypes.shape({
