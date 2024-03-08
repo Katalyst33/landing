@@ -121,6 +121,29 @@ export default function about() {
     <main className="container mx-auto lg:px-10">
       <AboutHero />
 
+      <section className="container mb-10 mx-auto">
+        <h2 className="title">Our Team</h2>
+        <p className=" text-lg leading-8 text-gray-600 py-6">
+          Excepturi repudiandae alias ut. Totam aut facilis. Praesentium in
+          neque vel omnis. Eos error odio. Qui fugit voluptatibus eum culpa.
+        </p>
+        <div className="grid md:grid-cols-2   lg:grid-cols-3 gap-10">
+          {teamlist.map((n, index) => (
+          <div  key={index}>
+            <TeamCard data={n} />
+
+          </div>
+          ))}
+        </div>
+        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8 mb-20">
+          <div className="mx-auto max-w-2xl lg:mx-0"></div>
+          <div
+              role="list"
+              className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
+          ></div>
+        </div>
+      </section>
+
       <AboutServices />
       <AboutApproach />
       <AboutImages />
@@ -145,25 +168,7 @@ export default function about() {
 
       <hr className="my-10 text-gray-700  mx-auto" />
 
-      <section className="container mb-10 mx-auto">
-        <h2 className="title">Our Team</h2>
-        <p className=" text-lg leading-8 text-gray-600 py-6">
-          Excepturi repudiandae alias ut. Totam aut facilis. Praesentium in
-          neque vel omnis. Eos error odio. Qui fugit voluptatibus eum culpa.
-        </p>
-        <div className="grid md:grid-cols-2   lg:grid-cols-3 gap-10">
-          {teamlist.map((n) => (
-            <TeamCard data={n} />
-          ))}
-        </div>
-        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8 mb-20">
-          <div className="mx-auto max-w-2xl lg:mx-0"></div>
-          <div
-            role="list"
-            className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
-          ></div>
-        </div>
-      </section>
+
 
       <section className=" mx-auto rounded-3xl bg-black text-white">
         <div className="px-10 mx-auto py-20">
