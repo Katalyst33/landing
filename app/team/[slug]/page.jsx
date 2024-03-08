@@ -4,7 +4,7 @@ async function getData(id) {
   });
 
   if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
+    // This will activate the closest `error.jsx` Error Boundary
     throw new Error('Failed to fetch data');
   }
   return res.json();
