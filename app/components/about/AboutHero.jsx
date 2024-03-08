@@ -23,7 +23,7 @@ export default function AboutHero() {
                   height={500}
                   src="/image/about/about-hero.jpg"
                   alt=""
-                  className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
+                  className="mt-10 aspect-[6/5] w-auto h-auto max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
                 />
               </div>
               <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
@@ -34,9 +34,9 @@ export default function AboutHero() {
                   technology with unparalleled expertise to deliver solutions
                   that revolutionize industries and empower businesses. Our
                   journey is defined by a passion for innovation, a dedication
-                  to our clients' success, and a vision to shape a future where
-                  possibilities are limitless. Join us on this journey as we
-                  continue to redefine what's possible in the world of
+                  to our clients&apos; success, and a vision to shape a future
+                  where possibilities are limitless. Join us on this journey as
+                  we continue to redefine what&apos;s possible in the world of
                   technology.
                 </p>
               </div>

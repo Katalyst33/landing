@@ -1,25 +1,16 @@
 'use client';
-import Image from 'next/image';
-import man1 from '../../public/team1.jpg';
-import man2 from '../../public/team1.jpg';
-import man3 from '../../public/team1.jpg';
-import LinkIcon from '/app/components/icons/LinkIcon';
-import Link from 'next/link';
+
 import AboutHero from '../components/about/AboutHero.jsx';
 import AboutServices from '../components/about/AboutServices.jsx';
 import AboutApproach from '../components/about/AboutApproach.jsx';
 import AboutImages from '../components/about/AboutImages.jsx';
 import TeamCard from '../components/about/TeamCard.jsx';
-import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import { LoadingBlog } from '../components/LoadingBlog';
 
 export default function about() {
   return (
     <main className="container mx-auto lg:px-10">
-      {/*
-
-      */}
       <AboutHero />
       <section className="container mb-10 mx-auto">
         <h2 className="title py-8">Our Team</h2>
@@ -37,8 +28,8 @@ export default function about() {
         </div>
       </section>
 
-      {/*   <AboutServices />*/}
-      {/*      <AboutApproach />*/}
+      <AboutServices />
+      <AboutApproach />
       <AboutImages />
       <section className="bg-black text-white rounded-3xl py-20 my-40">
         <div className="w-5/6 mx-auto">
@@ -72,10 +63,10 @@ export default function about() {
           <hr className="text-gray-500 mb-10" />
           <p className="font-semibold mb-2">{process.env.companyName}</p>
           <p>
-            At {process.env.companyName} we don't just design digital products,
-            we design experiences for people like you, You need the right minds
-            that can interpret your ideas and make it a reality we are glad you
-            found us.
+            At {process.env.companyName} we don&apos;t just design digital
+            products, we design experiences for people like you, You need the
+            right minds that can interpret your ideas and make it a reality we
+            are glad you found us.
           </p>
         </div>
       </section>
@@ -87,17 +78,10 @@ function TeamList() {
   const [team, setTeam] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(`${process.env.serverUrl}/team`); // Replace with your API endpoint
-        const data = await response.json();
-        setTeam(data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-
-    fetchData();
+    fetch(`${process.env.serverUrl}/team`)
+      .then((response) => response.json())
+      .then((data) => setTeam(data))
+      .catch((error) => console.error(error));
   }, []);
 
   return (
@@ -119,41 +103,3 @@ function TeamList() {
   );
 }
 
-/*
-
-  const Teamcard = (props) => {
-    return (
-      <div className="relative mb-12 lg:mb-0">
-        <Image
-          src={props.image}
-          alt="Picture or Brian Azukaeme"
-          className=" rounded-lg "
-          priority={true}
-        />
-        <div className="absolute bottom-6 text-white left-4">
-          <div className="flex items-center gap-x-2">
-            <Link href={`/team/${props.slug}`}>
-              <p>{props.name}</p>
-            </Link>
-            <LinkIcon size="1em" color="fill-blue-500" />
-          </div>
-          <p>{props.role}</p>
-          <div className="flex gap-x-2 mt-2 ">
-            {props.socials.map((social, index) => (
-              <a
-                className=""
-                href={social.url}
-                key={index}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {social.icon}
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
-    );
-  };
-*
-* */

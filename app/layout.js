@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Head from 'next/head';
 
+import PropTypes from 'prop-types';
 const outfit = Outfit({ subsets: ['latin'] });
 
 export const metadata = {
@@ -36,3 +37,7 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+RootLayout.propTypes = {
+  children: PropTypes.node,
+};

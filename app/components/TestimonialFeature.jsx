@@ -1,12 +1,12 @@
 import useEmblaCarousel from 'embla-carousel-react';
-import {useCallback, useEffect, useState} from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Autoplay from 'embla-carousel-autoplay';
 import Image from 'next/image';
 import '../styles/testimonial.scss';
 import { ChevronLeftIcon, ChevronRight } from 'lucide-react';
-import {LoadingSpinner} from "../components/LoadingBlog";
+import { LoadingSpinner } from '../components/LoadingBlog';
 
-
+import PropTypes from 'prop-types';
 export default function TestimonialFeature() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
@@ -18,13 +18,9 @@ export default function TestimonialFeature() {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
 
-
   const [testimonials, setTestimonial] = useState([]);
 
-
-
   useEffect(() => {
-
     fetch(`${process.env.serverUrl}/testimonials`)
       .then((response) => response.json())
       .then((data) => setTestimonial(data))
@@ -41,35 +37,33 @@ export default function TestimonialFeature() {
           <ChevronRight />
         </button>
       </div>
-      {
-        testimonials.length > 0 ? (
-            <div>
-              <div className="embla">
-                <div className="embla__viewport" ref={emblaRef}>
-                  <div className="embla__container ">
-                    {testimonials.map((testimonial) => (
-                        <div key={testimonial.name}>
-                          <div
-                              className={` p-10 w-[400px] md:w-[600px] lg:w-[1200px] mx-2`}
-                          >
-                            <Testify data={testimonial} />
-                          </div>
-                        </div>
-                    ))}
+      {testimonials.length > 0 ? (
+        <div>
+          <div className="embla">
+            <div className="embla__viewport" ref={emblaRef}>
+              <div className="embla__container ">
+                {testimonials.map((testimonial) => (
+                  <div key={testimonial.name}>
+                    <div
+                      className={` p-10 w-[400px] md:w-[600px] lg:w-[1200px] mx-2`}
+                    >
+                      <Testify data={testimonial} />
+                    </div>
                   </div>
-                </div>
+                ))}
               </div>
             </div>
-        ) : (
-            <LoadingSpinner />
-        )
-      }
-
+          </div>
+        </div>
+      ) : (
+        <LoadingSpinner />
+      )}
     </div>
   );
 }
 
-function Testify(props) {
+function Testify({ data }) {
+  const { name, company, description, image } = data;
   return (
     <div className="bg-gray-900 pb-20 sm:pb-24 xl:pb-0">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6 sm:gap-y-8 lg:px-8 xl:flex-row xl:items-stretch">
@@ -80,7 +74,7 @@ function Testify(props) {
               height={400}
               priority={true}
               className="absolute inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl"
-              src={props.data.image}
+              src={image}
               alt=""
             />
           </div>
@@ -100,15 +94,20 @@ function Testify(props) {
               <use href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" x={86} />
             </svg>
             <blockquote className="lg:text-xl lg:font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
-              <p className={``}>{props.data.description}</p>
+              <p className={``}>{description}</p>
             </blockquote>
             <figcaption className="mt-8 text-base">
-              <div className="font-semibold text-white">{props.data.name}</div>
-              <div className="mt-1 text-gray-400">{props.data.company}</div>
+              <div className="font-semibold text-white">{name}</div>
+              <div className="mt-1 text-gray-400">{company}</div>
             </figcaption>
           </figure>
         </div>
       </div>
     </div>
   );
+}
+
+
+Testify.propTypes = {
+    data: PropTypes.object,
 }

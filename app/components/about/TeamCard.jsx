@@ -2,19 +2,17 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-function TeamCard({data}) {
+import PropTypes from 'prop-types';
 
-  const  {id, image, name,position,summary,  socials} = data
+function TeamCard({ data }) {
+  const { id, image, name, position, summary, socials } = data;
 
   return (
-
-
-   <div className=" ">
+    <div className=" ">
       <div className="relative mb-12 lg:mb-0">
         <Link href={`/team/${id}`}>
           <Image
             src={`/image${image}`}
-
             height={200}
             width={200}
             alt="Picture or Brian Azukaeme"
@@ -28,7 +26,10 @@ function TeamCard({data}) {
         </Link>
         <p className="text-base leading-7 text-gray-700">{position}</p>
         <p className="text-sm leading-6 text-gray-500">{summary}</p>
-   {/*     <div className="flex gap-x-2 mt-2 ">
+        {
+          socials && (
+
+              <div className="flex gap-x-2 mt-2 ">
           {socials.map((social, index) => (
             <a
               className="bg-gray-500 text-gray-400 hover:text-gray-500"
@@ -40,12 +41,30 @@ function TeamCard({data}) {
               {social.icon}
             </a>
           ))}
-        </div>*/}
+        </div>
+
+            )
+        }
+
       </div>
     </div>
   );
 }
 
-TeamCard.propTypes = {};
+TeamCard.propTypes = {
+  data: PropTypes.shape({
+    id: PropTypes.string,
+    image: PropTypes.string,
+    name: PropTypes.string,
+    position: PropTypes.string,
+    summary: PropTypes.string,
+    socials: PropTypes.arrayOf(
+      PropTypes.shape({
+        url: PropTypes.string,
+        icon: PropTypes.string,
+      })
+    ),
+  }),
+};
 
 export default TeamCard;

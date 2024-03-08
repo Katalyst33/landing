@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 async function getData(id) {
   const res = await fetch(`${process.env.serverUrl}/projects/${id}`, {
     // cache: 'force-cache',
@@ -20,3 +21,7 @@ export default async function ProjectPost({ params }) {
     </main>
   );
 }
+
+ProjectPost.propTypes = {
+    params: PropTypes.object.isRequired,
+};

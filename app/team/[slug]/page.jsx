@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 async function getData(id) {
   const res = await fetch(`${process.env.serverUrl}/team/${id}`, {
     // cache: 'force-cache',
@@ -106,4 +107,6 @@ export default async function TeamPost({ params }) {
   );
 }
 
-
+TeamPost.propTypes = {
+  params: PropTypes.object,
+};

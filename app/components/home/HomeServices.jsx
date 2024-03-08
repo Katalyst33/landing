@@ -16,7 +16,6 @@ export default function HomeServices() {
             y={-1}
             patternUnits="userSpaceOnUse"
           >
-
             <path d="M.5 200V.5H200" fill="none" />
           </pattern>
         </defs>
@@ -54,11 +53,9 @@ export default function HomeServices() {
               </span>
             </a>
           </div>
-          <h1 className="mt-4  ">
-            Our Projects
-          </h1>
+          <h1 className="mt-4  ">Our Projects</h1>
           <p className="mt-6 text-lg leading-8 text-gray-800">
-            Whether it's enhancing operational efficiency, driving revenue
+            Whether it&apos;s enhancing operational efficiency, driving revenue
             growth, or improving customer experiences, each project demonstrates
             our dedication to client success and innovation. Take a closer look
             at our featured projects to see how {process.env.companyName} can

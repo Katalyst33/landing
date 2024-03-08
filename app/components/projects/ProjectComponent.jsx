@@ -70,7 +70,12 @@ ProjectComponent.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    // ... define other properties that you expect to receive in the `data` object
+    year: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    projectUrl: PropTypes.string.isRequired,
+    tech: PropTypes.string.isRequired,
+      logo:PropTypes.string.isRequired
+
   }).isRequired,
 };
 export default ProjectComponent;

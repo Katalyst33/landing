@@ -5,6 +5,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 
+import PropTypes from 'prop-types';
 const CarouselContext = React.createContext(null);
 
 function useCarousel() {
@@ -223,3 +224,47 @@ export {
   CarouselPrevious,
   CarouselNext,
 };
+
+
+
+
+Carousel.propTypes = {
+    orientation: PropTypes.oneOf(['horizontal', 'vertical']),
+    opts: PropTypes.object,
+    setApi: PropTypes.func,
+    plugins: PropTypes.array,
+    className: PropTypes.string,
+    children: PropTypes.node,
+};
+
+
+
+CarouselContent.propTypes = {
+className: PropTypes.string,
+    children: PropTypes.node,
+
+}
+
+
+CarouselItem.propTypes = {
+className: PropTypes.string,
+    children: PropTypes.node,
+}
+
+
+
+
+CarouselPrevious.propTypes = {
+className: PropTypes.string,
+    variant: PropTypes.oneOf(['solid', 'outline', 'ghost']),
+    size: PropTypes.oneOf(['icon', 'sm', 'md', 'lg', 'xl']),
+    children: PropTypes.node,
+}
+
+
+CarouselNext.propTypes = {
+className: PropTypes.string,
+    variant: PropTypes.oneOf(['solid', 'outline', 'ghost']),
+    size: PropTypes.oneOf(['icon', 'sm', 'md', 'lg', 'xl']),
+    children: PropTypes.node,
+}

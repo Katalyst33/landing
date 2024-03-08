@@ -4,21 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="remove lint">
+    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="refactor home">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/@/components/ui/card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/@/components/ui/card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@/components/ui/carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/@/components/ui/carousel.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/about/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/LoadingBlog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/LoadingBlog.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/TestimonialFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/TestimonialFeature.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/home/HomeFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeFeature.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/home/HomeHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeHero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/icons/AppIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/icons/AppIcon.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/icons/LinkIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/icons/LinkIcon.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/icons/icon.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/icons/icon.style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/typewriter-effect.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/typewriter-effect.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/about/AboutApproach.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/about/AboutApproach.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/about/AboutHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/about/AboutHero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/about/TeamCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/about/TeamCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/home/HomeServices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeServices.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/projects/ProjectComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/projects/ProjectComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/error.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/error.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/project/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/project/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/project/[slug]/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/project/[slug]/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/team/[slug]/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/team/[slug]/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +185,7 @@
       <workItem from="1708881107040" duration="5153000" />
       <workItem from="1708931056841" duration="458000" />
       <workItem from="1709825711777" duration="29427000" />
-      <workItem from="1709923150065" duration="2158000" />
+      <workItem from="1709923150065" duration="4007000" />
     </task>
     <task id="LOCAL-00001" summary="add slider">
       <option name="closed" value="true" />
@@ -417,7 +419,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709916516093</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="refactor home">
+      <option name="closed" value="true" />
+      <created>1709928665065</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1709928665065</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +476,8 @@
     <MESSAGE value="save work" />
     <MESSAGE value="added company logo" />
     <MESSAGE value="remove lint" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove lint" />
+    <MESSAGE value="refactor home" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor home" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
