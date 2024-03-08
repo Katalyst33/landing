@@ -23,7 +23,6 @@ export default async function ProjectPost({ params }) {
     <main>
       <h1>
         {JSON.stringify(data)}
-        One Work !!!
       </h1>
     </main>
   );

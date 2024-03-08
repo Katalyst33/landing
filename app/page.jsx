@@ -32,7 +32,10 @@ export default function Home() {
       <section className="py-40 w-11/12 mx-auto">
         <div className="mx-auto ">
           <HomeServices />
-          {/*<TestimonialFeature />*/}
+
+        {/*
+            <TestimonialFeature />
+          */}
         </div>
       </section>
       <BeforeFooter />
