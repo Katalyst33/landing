@@ -11,36 +11,32 @@ import AboutApproach from '../components/about/AboutApproach.jsx';
 import AboutImages from '../components/about/AboutImages.jsx';
 import TeamCard from '../components/about/TeamCard.jsx';
 import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
-import {useEffect, useState} from "react";
-import {LoadingBlog} from "../components/LoadingBlog";
+import { useEffect, useState } from 'react';
+import { LoadingBlog } from '../components/LoadingBlog';
 
 export default function about() {
-
-
   return (
     <main className="container mx-auto lg:px-10">
       <AboutHero />
-
       <section className="container mb-10 mx-auto">
-        <h2 className="title py-4">Our Team</h2>
-        <p className=" text-lg leading-8 text-gray-600 py-6">
+        <h2 className="title py-8">Our Team</h2>
+        <p className=" text-lg leading-8 text-gray-600 pb-4">
           Excepturi repudiandae alias ut. Totam aut facilis. Praesentium in
           neque vel omnis. Eos error odio. Qui fugit voluptatibus eum culpa.
         </p>
-        <TeamList  />
-
+        <TeamList />
         <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8 mb-20">
           <div className="mx-auto max-w-2xl lg:mx-0"></div>
           <div
-              role="list"
-              className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
+            role="list"
+            className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
           ></div>
         </div>
       </section>
 
-   {/*   <AboutServices />*/}
-{/*      <AboutApproach />*/}
-    <AboutImages />
+      {/*   <AboutServices />*/}
+      {/*      <AboutApproach />*/}
+      <AboutImages />
       <section className="bg-black text-white rounded-3xl py-20 my-40">
         <div className="w-5/6 mx-auto">
           <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl lg:col-span-2 xl:col-auto">
@@ -84,7 +80,6 @@ export default function about() {
   );
 }
 
-
 function TeamList() {
   const [team, setTeam] = useState([]);
 
@@ -103,25 +98,23 @@ function TeamList() {
   }, []);
 
   return (
-      <div>
-        {team.length > 0 ? (
-            <ul className={`grid grid-cols-1 md:grid-cols-2  gap-10 `}>
-              {team.map((item, index) => (
-                  <div key={index}>
-                    <div>
-                      <TeamCard data={item} />
-
-                    </div>
-                  </div>
-              ))}
-            </ul>
-        ) : (
-            <LoadingBlog />
-        )}
-      </div>
+    <div>
+      {team.length > 0 ? (
+        <ul className={`grid grid-cols-1 md:grid-cols-2  gap-10 `}>
+          {team.map((item, index) => (
+            <div key={index}>
+              <div>
+                <TeamCard data={item} />
+              </div>
+            </div>
+          ))}
+        </ul>
+      ) : (
+        <LoadingBlog />
+      )}
+    </div>
   );
 }
-
 
 /*
 
