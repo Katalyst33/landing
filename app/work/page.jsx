@@ -46,7 +46,7 @@ export default function about() {
             <p>Projects Completed</p>
           </div>
         </div>
-        <div className="py-20 ">
+        <div className={`my-10`} >
           <ProjectList data={projectList} />
         </div>
       </section>

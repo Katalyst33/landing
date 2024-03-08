@@ -1,5 +1,6 @@
 import { ChevronRightIcon } from '@heroicons/react/20/solid';
 import { TypewriterEffect } from '../typewriter-effect';
+import Link from "next/link";
 
 export default function HomeHero() {
   const words = [
@@ -70,13 +71,7 @@ export default function HomeHero() {
               <span className="rounded-full px-3 py-1 text-sm font-semibold leading-6 text-primary-400 ring-1 ring-inset ring-secondary-500/20">
                 About Us
               </span>
-              <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-800">
-                <span>Just shipped v1.0</span>
-                <ChevronRightIcon
-                  className="h-5 w-5 text-gray-800"
-                  aria-hidden="true"
-                />
-              </span>
+
             </a>
           </div>
           <TypewriterEffect words={words} />
@@ -88,12 +83,16 @@ export default function HomeHero() {
             together, we&apos;ll unlock the full potential of your business.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
-            <a
-              href="#"
+
+            <Link
+                href={{
+                  pathname: '/contact',
+                  query: { type: 'meeeting' },
+                }}
               className="rounded-md bg-gray-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
             >
               Book Appointment
-            </a>
+            </Link>
             <a
               href="#"
               className="text-sm font-semibold leading-6 text-gray-800"

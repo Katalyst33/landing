@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function HomeServices() {
   return (
@@ -44,16 +44,16 @@ export default function HomeServices() {
           }}
         />
       </div>
-      <div className="mx-auto max-w-7xl px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-8 lg:py-40">
-        <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8">
-          <div className="mt-24 sm:mt-32 lg:mt-16">
+      <div>
+        <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl">
+          <div>
             <a href="#" className="inline-flex space-x-6">
               <span className="rounded-full px-3 py-1 text-sm font-semibold leading-6 text-primary-400 ring-1 ring-inset ring-secondary-500/20">
                 Concluded Projects
               </span>
             </a>
           </div>
-          <h1 className="mt-10 text-4xl font-bold tracking-tight text-grey-800 sm:text-6xl">
+          <h1 className="mt-4  ">
             Our Projects
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-800">
@@ -64,7 +64,8 @@ export default function HomeServices() {
             make a difference for your business.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
-            <Link href="/work"
+            <Link
+              href="/work"
               className="rounded-md bg-gray-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
             >
               View Projects

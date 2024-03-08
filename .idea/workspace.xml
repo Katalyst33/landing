@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="fetch one  project data">
+    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="fetch one  project data&#10;&#10;refactor button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/BeforeFooter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/BeforeFooter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/home/HomeFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeFeature.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/home/HomeHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeHero.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/home/HomeServices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeServices.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/work/[slug]/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/work/[slug]/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/work/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/work/page.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +151,7 @@
       <updated>1692113741029</updated>
       <workItem from="1708881107040" duration="5153000" />
       <workItem from="1708931056841" duration="458000" />
-      <workItem from="1709825711777" duration="8729000" />
+      <workItem from="1709825711777" duration="10585000" />
     </task>
     <task id="LOCAL-00001" summary="add slider">
       <option name="closed" value="true" />
@@ -252,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709883680313</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fetch one  project data&#10;&#10;refactor button">
+      <option name="closed" value="true" />
+      <created>1709884391303</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709884391303</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +303,8 @@
     <MESSAGE value="refactor data fecthing" />
     <MESSAGE value="project component as a file" />
     <MESSAGE value="fetch one  project data" />
-    <option name="LAST_COMMIT_MESSAGE" value="fetch one  project data" />
+    <MESSAGE value="fetch one  project data&#10;&#10;refactor button" />
+    <option name="LAST_COMMIT_MESSAGE" value="fetch one  project data&#10;&#10;refactor button" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

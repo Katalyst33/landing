@@ -61,9 +61,9 @@ export default function HomeFeature() {
               </span>
             </a>
           </div>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-500 sm:text-4xl">
-            Everything you need to reinvogorate your Business Online
-          </p>
+          <h1 className="title">
+            Everything you need to reinvigorate your Business Online
+          </h1>
           <p className="mt-6 text-lg leading-8 text-gray-900">
             With a focus on collaboration, innovation, and excellence, we are
             dedicated to helping you stay ahead in today's competitive
