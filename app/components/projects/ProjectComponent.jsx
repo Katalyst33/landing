@@ -39,12 +39,11 @@ function ProjectComponent({ data }) {
           <footer className={`border-t p-2 space-y-1`}>
             <div className="flex justify-between  ">
               <p className="font-semibold text-sm mt-4 ">
-                <Link href={`/work/${id}`}>
-                  {' '}
-                  About Project
-                  {
+                <Link href={`/project/${id}`}>
 
-                  }
+
+      About Project
+
                 </Link>
               </p>
               <div className={``}>

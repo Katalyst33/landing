@@ -24,7 +24,7 @@ const features = [
   {
     name: 'Excellence:',
     description:
-      'We are committed to delivering excellence in everything we do, striving for perfection and continuous improvement in our work.',
+      'We are committed to delivering excellence in everything we do, striving for perfection and continuous improvement in our project.',
     image:
       'https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709160985/excellent_rgyyde.png',
   },

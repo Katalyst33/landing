@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function HomeServices() {
   return (
-    <div className="relative isolate overflow-hidden ">
+    <div className="relative isolate overflow-hidden">
       <svg
         className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
         aria-hidden="true"
@@ -16,6 +16,7 @@ export default function HomeServices() {
             y={-1}
             patternUnits="userSpaceOnUse"
           >
+
             <path d="M.5 200V.5H200" fill="none" />
           </pattern>
         </defs>

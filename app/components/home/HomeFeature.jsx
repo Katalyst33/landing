@@ -71,6 +71,9 @@ export default function HomeFeature() {
             business to thrive in the digital age.
           </p>
         </div>
+
+        {/*error here */}
+
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {features.map((feature) => (
@@ -93,10 +96,14 @@ export default function HomeFeature() {
                     </a>
                   </p>
                 </dd>
+
               </div>
             ))}
           </dl>
         </div>
+
+        {/*error here */}
+
       </div>
     </div>
   );

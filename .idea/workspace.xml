@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="fetch one  project data&#10;&#10;refactor button">
+    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="added company logo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/BeforeFooter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/BeforeFooter.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/home/HomeFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeFeature.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/home/HomeHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeHero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/home/HomeServices.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeServices.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/data/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/work/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/work/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/HeaderMain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HeaderMain.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/icons/AppIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/icons/AppIcon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/icons/icon.style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/icons/icon.style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logos/katalyst-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/logos/katalyst-logo.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +67,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "fake-server",
-    "last_opened_file_path": "/Users/centurion-pc/k-apps/katalyst-tech/app/components",
+    "last_opened_file_path": "/Users/centurion-pc/k-apps/katalyst-tech/public/logos",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -92,6 +89,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/logos" />
+      <recent name="$PROJECT_DIR$/public/image/team" />
+      <recent name="$PROJECT_DIR$/public/image/about" />
       <recent name="$PROJECT_DIR$/app/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -102,7 +102,7 @@
       <recent name="$PROJECT_DIR$/app" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.fake-server">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -133,10 +133,21 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.fake-server" />
+        <item itemvalue="npm.lint" />
         <item itemvalue="npm.format" />
       </list>
     </recent_temporary>
@@ -151,7 +162,7 @@
       <updated>1692113741029</updated>
       <workItem from="1708881107040" duration="5153000" />
       <workItem from="1708931056841" duration="458000" />
-      <workItem from="1709825711777" duration="10585000" />
+      <workItem from="1709825711777" duration="29427000" />
     </task>
     <task id="LOCAL-00001" summary="add slider">
       <option name="closed" value="true" />
@@ -265,7 +276,111 @@
       <option name="project" value="LOCAL" />
       <updated>1709884391303</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="reactor home">
+      <option name="closed" value="true" />
+      <created>1709886283642</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1709886283642</updated>
+    </task>
+    <task id="LOCAL-00016" summary="reactor home">
+      <option name="closed" value="true" />
+      <created>1709889762739</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1709889762739</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fix team card">
+      <option name="closed" value="true" />
+      <created>1709894539153</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1709894539153</updated>
+    </task>
+    <task id="LOCAL-00018" summary="integrated team page">
+      <option name="closed" value="true" />
+      <created>1709895336400</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1709895336400</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fixed team page">
+      <option name="closed" value="true" />
+      <created>1709899040969</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1709899040969</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fixed team page">
+      <option name="closed" value="true" />
+      <created>1709899287906</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1709899287906</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fixed team page and project page">
+      <option name="closed" value="true" />
+      <created>1709899769625</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1709899769625</updated>
+    </task>
+    <task id="LOCAL-00022" summary="added error page">
+      <option name="closed" value="true" />
+      <created>1709900348718</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1709900348718</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fixed relative link issue">
+      <option name="closed" value="true" />
+      <created>1709900925088</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1709900925088</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fixed relative link issue">
+      <option name="closed" value="true" />
+      <created>1709903691636</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1709903691636</updated>
+    </task>
+    <task id="LOCAL-00025" summary="save work">
+      <option name="closed" value="true" />
+      <created>1709904421826</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1709904421826</updated>
+    </task>
+    <task id="LOCAL-00026" summary="added company logo">
+      <option name="closed" value="true" />
+      <created>1709909385634</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1709909385634</updated>
+    </task>
+    <task id="LOCAL-00027" summary="added company logo">
+      <option name="closed" value="true" />
+      <created>1709909969809</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1709909969809</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +419,16 @@
     <MESSAGE value="project component as a file" />
     <MESSAGE value="fetch one  project data" />
     <MESSAGE value="fetch one  project data&#10;&#10;refactor button" />
-    <option name="LAST_COMMIT_MESSAGE" value="fetch one  project data&#10;&#10;refactor button" />
+    <MESSAGE value="reactor home" />
+    <MESSAGE value="fix team card" />
+    <MESSAGE value="integrated team page" />
+    <MESSAGE value="fixed team page" />
+    <MESSAGE value="fixed team page and project page" />
+    <MESSAGE value="added error page" />
+    <MESSAGE value="fixed relative link issue" />
+    <MESSAGE value="save work" />
+    <MESSAGE value="added company logo" />
+    <option name="LAST_COMMIT_MESSAGE" value="added company logo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
