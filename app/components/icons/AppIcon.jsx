@@ -60,7 +60,7 @@ export const AppIcon = (props) => {
           points="40.3,510 45,504 44,504 100.6,431 450.5,431 512.6,510"
         />
       </svg>
-      {name && <h1 className=" text-black">{process.env.companyName}</h1>}
+      {name && <h1 className=" ">{process.env.companyName}</h1>}
     </>
   );
 };

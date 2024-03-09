@@ -7,9 +7,13 @@ function ServiceList() {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.serverUrl}/services`)
+    fetch(`${process.env.apiUrl}/services`)
       .then((response) => response.json())
-      .then((data) => setServices(data))
+      .then((data) => {
+        console.log(data);
+
+        setServices(data);
+      })
       .catch((error) => console.error(error));
   }, []);
 
@@ -17,10 +21,10 @@ function ServiceList() {
     <div>
       {services.length > 0 ? (
         <ul className={`grid grid-cols-1 md:grid-cols-2  gap-10 `}>
-          {services.map((project, index) => (
+          {services.map((service, index) => (
             <div key={index}>
               <div>
-                <ServiceComponent data={project} />
+                <ServiceComponent data={service} />
               </div>
             </div>
           ))}
