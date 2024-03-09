@@ -45,6 +45,8 @@ export default function AboutImages() {
               <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                 <div className="relative">
                   <Image
+                    width={200}
+                    height={200}
                     src={`/image/about/young-man-working-night.jpg`}
                     alt=""
                     className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
