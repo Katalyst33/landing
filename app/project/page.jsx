@@ -4,14 +4,14 @@ import BeforeFooter from '../components/BeforeFooter.jsx';
 import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 import { LoadingBlog } from '../components/LoadingBlog.jsx';
-import ProjectComponent from "../components/projects/ProjectComponent";
+import ProjectComponent from '../components/projects/ProjectComponent';
 
 export default function work() {
   return (
     <main>
       <section className="container mx-auto lg:px-10">
-        <div>
-          <div>
+        <div className=" container">
+          <div className="mb-10  py-10">
             <span className="rounded-full px-3 py-1 text-sm font-semibold leading-6 text-primary-400 ring-1 ring-inset ring-secondary-500/20">
               Our Work
             </span>
@@ -32,7 +32,7 @@ export default function work() {
           <div className="col-span-2"></div>
         </div>
         {/* Number Counter */}
-        <div className="mt-2 lg:flex justify-center">
+        <div className=" py-7 lg:flex justify-center">
           <div className="lg:border-r border-gray-500 px-20 mb-10 lg:mb-0">
             <p className="text-xl font-semibold mb-2">Over 5</p>
             <p>Years of Experience</p>
@@ -46,8 +46,10 @@ export default function work() {
             <p>Projects Completed</p>
           </div>
         </div>
-        <div className={`my-10`} >
-          <ProjectList data={projectList} />
+        <div className="py-10">
+          <div className={`my-10`}>
+            <ProjectList data={projectList} />
+          </div>
         </div>
       </section>
 
@@ -61,9 +63,9 @@ function ProjectList() {
 
   useEffect(() => {
     fetch(`${process.env.serverUrl}/projects`)
-        .then((response) => response.json())
-        .then((data) => setProjects(data))
-        .catch((error) => console.error(error));
+      .then((response) => response.json())
+      .then((data) => setProjects(data))
+      .catch((error) => console.error(error));
   }, []);
 
   return (
@@ -72,8 +74,8 @@ function ProjectList() {
         <ul className={`grid grid-cols-1 md:grid-cols-2  gap-10 `}>
           {projects.map((project, index) => (
             <div key={index}>
-                <div>
-                  <ProjectComponent data={project} />
+              <div>
+                <ProjectComponent data={project} />
               </div>
             </div>
           ))}
@@ -84,10 +86,6 @@ function ProjectList() {
     </div>
   );
 }
-
-
-
-
 
 /*    <ProjectComponent data={project} /> */
 
