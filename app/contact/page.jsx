@@ -9,9 +9,11 @@ export default function about() {
   return (
     <main>
       <section className=" container mx-auto">
-        <div className="lg:w-3/6">
-          <p className="mb-2">Contact us</p>
-          <p className="text-4xl font-semibold">Let’s Build Something</p>
+        <div className="lg:w-3/6 mb-5">
+          <span className="rounded-full px-3 py-1 text-sm font-semibold leading-6 text-primary-400 ring-1 ring-inset ring-secondary-500/20">
+            Contact us
+          </span>
+          <p className="title">Let’s Build Something</p>
           <p className="mt-3 text-lg text-gray-700">
             Don’t be shy, say hello! Ready to change the world with your project
             or have questions

@@ -53,7 +53,7 @@ export default function HomeServices() {
               </span>
             </a>
           </div>
-          <h1 className="mt-4  ">Our Projects</h1>
+          <h1 className="mt-4 title ">Our Projects</h1>
           <p className="mt-6 text-lg leading-8 text-gray-800">
             Whether it&apos;s enhancing operational efficiency, driving revenue
             growth, or improving customer experiences, each project demonstrates
@@ -62,16 +62,10 @@ export default function HomeServices() {
             make a difference for your business.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
-            <Link
-              href="/work"
-              className="rounded-md bg-gray-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-            >
+            <Link href="/work" className="button">
               View Projects
             </Link>
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-800"
-            >
+            <a href="#" className="sub-button">
               Set Meeting <span aria-hidden="true">→</span>
             </a>
           </div>

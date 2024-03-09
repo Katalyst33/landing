@@ -48,6 +48,27 @@ const features = [
     href: '#',
     icon: ArrowPathIcon,
   },
+  {
+    name: 'UI/UX Design',
+    description:
+      'Crafting intuitive and visually appealing user interfaces (UI) and user experiences (UX) to enhance user engagement, interaction, and satisfaction on websites and web applications.',
+    href: '#',
+    icon: ArrowPathIcon,
+  },
+  {
+    name: 'Mobile App Development',
+    description:
+      'Creating native and cross-platform mobile applications for iOS and Android devices, leveraging modern technologies and frameworks to deliver seamless mobile experiences.',
+    href: '#',
+    icon: ArrowPathIcon,
+  },
+  {
+    name: 'Cybersecurity Solutions',
+    description:
+      'Implementing robust cybersecurity measures to protect websites, web applications, and digital assets from cyber threats, including malware detection, intrusion prevention, and security audits.',
+    href: '#',
+    icon: ArrowPathIcon,
+  },
 ];
 
 export default function HomeFeature() {
@@ -74,7 +95,7 @@ export default function HomeFeature() {
         </div>
 
         {/*error here */}
-        <div className={`my-20`}>
+        <div className={`my-10`}>
           <ServiceList />
         </div>
 

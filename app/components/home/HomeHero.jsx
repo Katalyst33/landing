@@ -65,7 +65,7 @@ export default function HomeHero() {
         />
       </div>
 
-      <div className="mx-auto max-w-7xl px-6 pb-24  sm:pb-32 lg:flex lg:px-8 ">
+      <div className="mx-auto max-w-7xl px-6 sm:pb-20 lg:flex lg:px-8 ">
         <div className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl">
           <div>
             <a href="#" className="inline-flex space-x-6">
@@ -88,14 +88,11 @@ export default function HomeHero() {
                 pathname: '/contact',
                 query: { type: 'meeting' },
               }}
-              className="rounded-md bg-gray-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+              className="button"
             >
               Book Appointment
             </Link>
-            <Link
-              href="/"
-              className="text-sm font-semibold leading-6 text-gray-800"
-            >
+            <Link href="/" className="sub-button">
               Learn more <span aria-hidden="true">→</span>
             </Link>
           </div>
