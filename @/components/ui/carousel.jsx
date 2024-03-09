@@ -225,46 +225,35 @@ export {
   CarouselNext,
 };
 
-
-
-
 Carousel.propTypes = {
-    orientation: PropTypes.oneOf(['horizontal', 'vertical']),
-    opts: PropTypes.object,
-    setApi: PropTypes.func,
-    plugins: PropTypes.array,
-    className: PropTypes.string,
-    children: PropTypes.node,
+  orientation: PropTypes.oneOf(['horizontal', 'vertical']),
+  opts: PropTypes.object,
+  setApi: PropTypes.func,
+  plugins: PropTypes.array,
+  className: PropTypes.string,
+  children: PropTypes.node,
 };
 
-
-
 CarouselContent.propTypes = {
-className: PropTypes.string,
-    children: PropTypes.node,
-
-}
-
+  className: PropTypes.string,
+  children: PropTypes.node,
+};
 
 CarouselItem.propTypes = {
-className: PropTypes.string,
-    children: PropTypes.node,
-}
-
-
-
+  className: PropTypes.string,
+  children: PropTypes.node,
+};
 
 CarouselPrevious.propTypes = {
-className: PropTypes.string,
-    variant: PropTypes.oneOf(['solid', 'outline', 'ghost']),
-    size: PropTypes.oneOf(['icon', 'sm', 'md', 'lg', 'xl']),
-    children: PropTypes.node,
-}
-
+  className: PropTypes.string,
+  variant: PropTypes.oneOf(['solid', 'outline', 'ghost']),
+  size: PropTypes.oneOf(['icon', 'sm', 'md', 'lg', 'xl']),
+  children: PropTypes.node,
+};
 
 CarouselNext.propTypes = {
-className: PropTypes.string,
-    variant: PropTypes.oneOf(['solid', 'outline', 'ghost']),
-    size: PropTypes.oneOf(['icon', 'sm', 'md', 'lg', 'xl']),
-    children: PropTypes.node,
-}
+  className: PropTypes.string,
+  variant: PropTypes.oneOf(['solid', 'outline', 'ghost']),
+  size: PropTypes.oneOf(['icon', 'sm', 'md', 'lg', 'xl']),
+  children: PropTypes.node,
+};

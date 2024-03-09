@@ -107,7 +107,6 @@ function Testify({ data }) {
   );
 }
 
-
 Testify.propTypes = {
-    data: PropTypes.object,
-}
+  data: PropTypes.object,
+};

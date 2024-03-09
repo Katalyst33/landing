@@ -4,9 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="image property fix">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="ignore">
+      <change afterPath="$PROJECT_DIR$/app/services/[slug]/page.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/@/components/ui/carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/@/components/ui/carousel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/BeforeFooter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/BeforeFooter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/HeaderMain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HeaderMain.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/LoadingBlog.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/LoadingBlog.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/TestimonialFeature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/TestimonialFeature.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/about/AboutImages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/about/AboutImages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/about/TeamCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/about/TeamCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/home/HomeHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/home/HomeHero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/icons/AppIcon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/icons/AppIcon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/projects/ProjectComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/projects/ProjectComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/project/[slug]/page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/project/[slug]/page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +79,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "services",
-    "last_opened_file_path": "/Users/centurion-pc/k-apps/katalyst-tech/public/image/about",
+    "last_opened_file_path": "/Users/centurion-pc/k-apps/katalyst-tech/app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,6 +101,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/public/image/about" />
       <recent name="$PROJECT_DIR$/public/logos" />
       <recent name="$PROJECT_DIR$/public/image/team" />
@@ -99,7 +115,7 @@
       <recent name="$PROJECT_DIR$/app/components/home" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.lint">
+  <component name="RunManager" selected="npm.format">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -152,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.format" />
         <item itemvalue="npm.fake-server" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.lint" />
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.format" />
       </list>
     </recent_temporary>
   </component>
@@ -438,7 +454,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709985196851</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="ignore">
+      <option name="closed" value="true" />
+      <created>1709985766406</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1709985766406</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +515,8 @@
     <MESSAGE value="successful build" />
     <MESSAGE value="successful build&#10;no errors" />
     <MESSAGE value="image property fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="image property fix" />
+    <MESSAGE value="ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="ignore" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

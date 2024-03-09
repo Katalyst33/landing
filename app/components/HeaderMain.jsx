@@ -6,6 +6,7 @@ import { AppIcon } from '../components/icons/AppIcon';
 
 const navigation = [
   { name: 'Our Work', href: '/project' },
+  { name: 'Our Services', href: '/services' },
   { name: 'About Us', href: '/about' },
   { name: 'Contact Us', href: '/contact' },
 ];

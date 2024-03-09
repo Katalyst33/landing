@@ -56,9 +56,7 @@ export const AppIcon = (props) => {
   );
 };
 
-
-
 AppIcon.propTypes = {
-    className: PropTypes.string,
-    name: PropTypes.bool,
+  className: PropTypes.string,
+  name: PropTypes.bool,
 };
