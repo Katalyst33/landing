@@ -1,0 +1,18 @@
+import { NextResponse } from 'next/server';
+
+export function middleware(request) {
+  // const isAuthenticated = authenticate(request);
+  const isAuthenticated = true;
+
+  // If the user is authenticated, continue as normal
+  if (isAuthenticated) {
+    return NextResponse.next();
+  }
+
+  // Redirect to login page if not authenticated
+  return NextResponse.redirect(new URL('/', request.url));
+}
+
+export const config = {
+  matcher: '/admin',
+};
