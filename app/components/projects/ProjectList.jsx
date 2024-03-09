@@ -1,26 +1,24 @@
-import React from 'react';
 import { useState, useEffect } from 'react';
-import ServiceComponent from './ServiceComponent.jsx';
+import ProjectComponent from './ProjectComponent.jsx';
 import { LoadingBlog } from '../LoadingBlog.jsx';
-
-function ServiceList() {
-  const [services, setServices] = useState([]);
+function ProjectList() {
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.serverUrl}/services`)
+    fetch(`${process.env.serverUrl}/projects`)
       .then((response) => response.json())
-      .then((data) => setServices(data))
+      .then((data) => setProjects(data))
       .catch((error) => console.error(error));
   }, []);
 
   return (
     <div>
-      {services.length > 0 ? (
+      {projects.length > 0 ? (
         <ul className={`grid grid-cols-1 md:grid-cols-2  gap-10 `}>
-          {services.map((project, index) => (
+          {projects.map((project, index) => (
             <div key={index}>
               <div>
-                <ServiceComponent data={project} />
+                <ProjectComponent data={project} />
               </div>
             </div>
           ))}
@@ -32,4 +30,4 @@ function ServiceList() {
   );
 }
 
-export default ServiceList;
+export default ProjectList;

@@ -1,6 +1,6 @@
 'use client';
 import BeforeFooter from '../components/BeforeFooter.jsx';
-import ServiceListA from '../components/services/ServiceList.jsx';
+import ServiceList from '../components/services/ServiceList.jsx';
 
 export default function work() {
   return (
@@ -21,9 +21,8 @@ export default function work() {
           </p>
         </div>
         <div className="col-span-2"></div>
-        <ServiceListA />
+        <ServiceList />
       </section>
-
       <BeforeFooter />
     </main>
   );
