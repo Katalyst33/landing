@@ -1,8 +1,4 @@
-import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  LockClosedIcon,
-} from '@heroicons/react/20/solid';
+
 import ServiceList from '../services/ServiceList';
 
 
