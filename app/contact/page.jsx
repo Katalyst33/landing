@@ -12,7 +12,7 @@ export default function about() {
         <div className="lg:w-3/6">
           <p className="mb-2">Contact us</p>
           <p className="text-4xl font-semibold">Let’s Build Something</p>
-          <p className="mt-3 text-lg text-gray-700">
+          <p className="mt-3 text-lg dark:text-gray-300 text-gray-700">
             Don’t be shy, say hello! Ready to change the world with your project
             or have questions
           </p>

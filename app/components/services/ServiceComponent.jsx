@@ -20,7 +20,7 @@ function ServiceComponent({ data }) {
             <p className="mt-6">
               <Link
                 href={href}
-                className="text-sm font-semibold leading-6 text-gray-700"
+                className="text-sm font-semibold leading-6 dark:text-gray-300 text-gray-700"
               >
                 Learn more <span aria-hidden="true">→</span>
               </Link>

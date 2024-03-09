@@ -5,11 +5,11 @@ export default function BeforeFooter() {
     <div className="pb-8">
       <div className="px-6 sm:px-6  lg:px-8">
         <div className="mx-auto max-w-2xl text-center ">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight  sm:text-4xl">
             Ready to Revolutionize Your Business?
             <br />
           </h2>
-          <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-700">
+          <p className="mx-auto mt-6 max-w-xl text-lg leading-8  dark:text-gray-300 text-gray-700">
             Contact us today to discuss your project and see how we can
             collaborate to achieve your goals.
           </p>

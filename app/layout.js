@@ -1,4 +1,3 @@
-
 import './globals.css';
 import './styles/main.scss';
 import { Outfit } from 'next/font/google';
@@ -16,10 +15,9 @@ export const metadata = {
     'Design and Development Agency, We build custom software solutions for businesses. We are a team of experienced developers, designers, and digital strategists. We specialize in web and mobile app development, e-commerce, and digital transformation consulting.',
 };
 
-
 export default function RootLayout({ children }) {
   return (
-      <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <Head>
         {/* Global metadata */}
         <title>{metadata.title}</title>
@@ -30,7 +28,7 @@ export default function RootLayout({ children }) {
         {/* Additional metadata can be added here */}
       </Head>
       <body className={outfit.className} suppressHydrationWarning={false}>
-        <div className={`bg-white text-neutral-950`}>
+        <div className={`dark:bg-gray-900 text-neutral-950 dark:text-gray-200`}>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"

@@ -54,7 +54,7 @@ export default function HomeServices() {
             </a>
           </div>
           <h1 className="mt-4  ">Our Projects</h1>
-          <p className="mt-6 text-lg leading-8 text-gray-800">
+          <p className="mt-6 text-lg leading-8 ">
             Whether it&apos;s enhancing operational efficiency, driving revenue
             growth, or improving customer experiences, each project demonstrates
             our dedication to client success and innovation. Take a closer look
@@ -68,10 +68,7 @@ export default function HomeServices() {
             >
               View Projects
             </Link>
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-gray-800"
-            >
+            <a href="#" className="text-sm font-semibold leading-6 ">
               Set Meeting <span aria-hidden="true">→</span>
             </a>
           </div>

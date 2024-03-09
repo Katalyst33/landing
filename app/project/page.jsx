@@ -14,7 +14,7 @@ export default function work() {
             <p className="text-4xl font-semibold">
               Projects at {process.env.companyName}
             </p>
-            <p className="mt-3 text-lg text-gray-700 text-justify">
+            <p className="mt-3 text-lg dark:text-gray-300 text-gray-700 text-justify">
               At {process.env.companyName}, we take immense pride in the
               projects we undertake and the solutions we deliver. Our portfolio
               reflects our commitment to excellence, innovation, and client

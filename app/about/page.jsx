@@ -50,7 +50,7 @@ export default function about() {
         </div>
       </section>
 
-      <hr className="my-10 text-gray-700  mx-auto" />
+      <hr className="my-10 dark:text-gray-300 text-gray-700  mx-auto" />
 
       <section className=" mx-auto rounded-3xl bg-black text-white">
         <div className="px-10 mx-auto py-20">

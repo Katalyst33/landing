@@ -77,7 +77,7 @@ export default function HomeHero() {
           </div>
           <TypewriterEffect words={words} />
 
-          <p className="mt-6 text-lg leading-8 text-gray-800">
+          <p className="mt-6 text-lg leading-8 ">
             By leveraging cutting-edge technologies and industry best practices,
             we empower your business to adapt, evolve, and thrive in an
             ever-changing landscape. Partner with {process.env.companyName}, and
@@ -104,10 +104,7 @@ export default function HomeHero() {
               Book Appointment
             </Link>
 
-            <Link
-              href="/"
-              className="text-sm font-semibold leading-6 text-gray-800"
-            >
+            <Link href="/" className="text-sm font-semibold leading-6 ">
               Learn more <span aria-hidden="true">→</span>
             </Link>
           </div>

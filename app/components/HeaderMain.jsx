@@ -16,7 +16,7 @@ export default function HeaderMain() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-red-500 dark:bg-green-400 border-b lg:px-32 px-4">
+    <header className=" border-b lg:px-32 px-4">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between py-4"
         aria-label="Global"
@@ -41,7 +41,7 @@ export default function HeaderMain() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="text-sm font-semibold leading-6 "
             >
               {item.name}
             </Link>
@@ -63,7 +63,7 @@ export default function HeaderMain() {
             </Link>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 dark:text-gray-300 text-gray-700"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
