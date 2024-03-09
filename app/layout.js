@@ -1,10 +1,11 @@
+
 import './globals.css';
 import './styles/main.scss';
 import { Outfit } from 'next/font/google';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Head from 'next/head';
-import { ThemeProvider } from '../@/components/theme-provider';
+import { ThemeProvider } from '@/components/theme-provider';
 
 import PropTypes from 'prop-types';
 const outfit = Outfit({ subsets: ['latin'] });
@@ -15,9 +16,10 @@ export const metadata = {
     'Design and Development Agency, We build custom software solutions for businesses. We are a team of experienced developers, designers, and digital strategists. We specialize in web and mobile app development, e-commerce, and digital transformation consulting.',
 };
 
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+      <html lang="en" suppressHydrationWarning>
       <Head>
         {/* Global metadata */}
         <title>{metadata.title}</title>
