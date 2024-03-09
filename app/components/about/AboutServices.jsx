@@ -1,3 +1,4 @@
+import Image from 'next/image';
 
 const features = [
   {
@@ -50,7 +51,10 @@ export default function AboutServices() {
               <div key={feature.name} className="relative pl-16">
                 <dt className="text-base font-semibold leading-7 text-gray-900">
                   <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-600">
-                    <img
+                    <Image
+                      width={40}
+                      height={40}
+                      priority={true}
                       className="absolute inset-0 h-full w-full rounded-2xl bg-white object-cover shadow-2xl"
                       src={feature.image}
                       alt=""

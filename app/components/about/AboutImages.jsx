@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutImages() {
   return (
     <div className="">
@@ -20,16 +22,20 @@ export default function AboutImages() {
               <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80"></div>
               <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                 <div className="relative">
-                  <img
-                    src="https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709167148/side-view-young-man-casualwear-listening-music-earphones-work_cqmhmx.jpg"
+                  <Image
+                    width={200}
+                    height={200}
+                    src={`/image/about/young-man-working.jpg`}
                     alt=""
                     className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                   />
                   <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                 </div>
                 <div className="relative">
-                  <img
-                    src="https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709165290/2150376770_teaeot.jpg"
+                  <Image
+                    width={200}
+                    height={200}
+                    src={`/image/about/desktop.jpg`}
                     alt=""
                     className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                   />
@@ -38,16 +44,18 @@ export default function AboutImages() {
               </div>
               <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                 <div className="relative">
-                  <img
-                    src="https://res.cloudinary.com/dqwfjxn8g/image/upload/v1709167341/75301_uahi99.jpg"
+                  <Image
+                    src={`/image/about/young-man-working-night.jpg`}
                     alt=""
                     className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                   />
                   <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                 </div>
                 <div className="relative">
-                  <img
-                    src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                  <Image
+                    width={200}
+                    height={200}
+                    src={`/image/about/woman-office.avif`}
                     alt=""
                     className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                   />
