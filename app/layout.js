@@ -4,6 +4,7 @@ import { Outfit } from 'next/font/google';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Head from 'next/head';
+import { ThemeProvider } from '../@/components/theme-provider';
 
 import PropTypes from 'prop-types';
 const outfit = Outfit({ subsets: ['latin'] });
@@ -28,10 +29,18 @@ export default function RootLayout({ children }) {
       </Head>
       <body className={outfit.className} suppressHydrationWarning={false}>
         <div className={`bg-white text-neutral-950`}>
-          <Header />
-          <div className="lg:container mx-auto pt-10">{children}</div>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
 
-          <Footer />
+            <div className="lg:container mx-auto pt-10">{children}</div>
+
+            <Footer />
+          </ThemeProvider>
         </div>
       </body>
     </html>

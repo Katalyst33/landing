@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { TypewriterEffect } from '../typewriter-effect';
 import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 export default function HomeHero() {
   const words = [
@@ -83,6 +84,16 @@ export default function HomeHero() {
             together, we&apos;ll unlock the full potential of your business.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
+            <Button variant={`destructive`} asChild>
+              <Link
+                href={{
+                  pathname: '/contact',
+                  query: { type: 'meeting' },
+                }}
+              >
+                Book Appointment
+              </Link>
+            </Button>
             <Link
               href={{
                 pathname: '/contact',
@@ -92,6 +103,7 @@ export default function HomeHero() {
             >
               Book Appointment
             </Link>
+
             <Link
               href="/"
               className="text-sm font-semibold leading-6 text-gray-800"

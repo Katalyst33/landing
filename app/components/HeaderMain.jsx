@@ -3,6 +3,7 @@ import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { AppIcon } from '../components/icons/AppIcon';
+import ThemeToggle from '../../@/components/ui/ThemeToggle';
 
 const navigation = [
   { name: 'Our Projects', href: '/project' },
@@ -15,7 +16,7 @@ export default function HeaderMain() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white border-b lg:px-32 px-4">
+    <header className="bg-red-500 dark:bg-green-400 border-b lg:px-32 px-4">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between py-4"
         aria-label="Global"
@@ -46,6 +47,7 @@ export default function HeaderMain() {
             </Link>
           ))}
         </div>
+        <ThemeToggle />
       </nav>
       <Dialog
         as="div"
