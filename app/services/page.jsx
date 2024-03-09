@@ -1,9 +1,6 @@
 'use client';
 import BeforeFooter from '../components/BeforeFooter.jsx';
-import PropTypes from 'prop-types';
-import { useState, useEffect } from 'react';
-import { LoadingBlog } from '../components/LoadingBlog.jsx';
-import ServiceComponent from '../components/services/ServiceComponent.jsx';
+import ServiceListA from '../components/services/ServiceList.jsx';
 
 export default function work() {
   return (
@@ -24,43 +21,10 @@ export default function work() {
           </p>
         </div>
         <div className="col-span-2"></div>
-        {/* Number Counter */}
-
-        <ServiceList className="py-10" />
+        <ServiceListA />
       </section>
 
       <BeforeFooter />
     </main>
   );
 }
-
-function ServiceList() {
-  const [services, setServices] = useState([]);
-
-  useEffect(() => {
-    fetch(`${process.env.serverUrl}/services`)
-      .then((response) => response.json())
-      .then((data) => setServices(data))
-      .catch((error) => console.error(error));
-  }, []);
-
-  return (
-    <div>
-      {services.length > 0 ? (
-        <ul className={`grid grid-cols-1 md:grid-cols-2  gap-10 `}>
-          {services.map((project, index) => (
-            <div key={index}>
-              <div>
-                <ServiceComponent data={project} />
-              </div>
-            </div>
-          ))}
-        </ul>
-      ) : (
-        <LoadingBlog />
-      )}
-    </div>
-  );
-}
-
-/*    <ProjectComponent data={project} /> */
