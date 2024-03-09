@@ -171,7 +171,7 @@
       "projectUrl": "#"
     }
   ],
-  "features": [
+  "services": [
     {
       "name": "Custom Software Development",
       "description": "A cutting-edge web app tailored for Sprynx Multi, a renowned car wash and detailing company. We delivered a seamless booking system, complete with diverse washing packages. Designed using the progressive Nuxt.js framework, the platform boasts of intuitive user experience and efficient performance.",

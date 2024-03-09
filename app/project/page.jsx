@@ -1,7 +1,6 @@
 'use client';
 import { projectList } from '../data/content';
 import BeforeFooter from '../components/BeforeFooter.jsx';
-import PropTypes from 'prop-types';
 import { useState, useEffect } from 'react';
 import { LoadingBlog } from '../components/LoadingBlog.jsx';
 import ProjectComponent from '../components/projects/ProjectComponent';
@@ -48,7 +47,7 @@ export default function work() {
         </div>
         <div className="py-10">
           <div className={`my-10`}>
-            <ProjectList data={projectList} />
+            <ProjectList />
           </div>
         </div>
       </section>
@@ -88,7 +87,3 @@ function ProjectList() {
 }
 
 /*    <ProjectComponent data={project} /> */
-
-ProjectList.propTypes = {
-  data: PropTypes.array.isRequired,
-};
