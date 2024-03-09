@@ -21,7 +21,7 @@
     "embla-carousel-autoplay": "^8.0.0",
     "embla-carousel-react": "^8.0.0",
     "eslint": "^8.57.0",
-    "eslint-config-next": "13.4.19",
+    "eslint-config-next": "13.4.19",---
     "framer-motion": "^11.0.6",
     "json-server": "^1.0.0-alpha.23",
     "lucide-react": "^0.343.0",
