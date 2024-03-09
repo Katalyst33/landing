@@ -7,7 +7,6 @@
     <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="image property fix">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/HeaderMain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HeaderMain.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +26,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1709916417" />
+                    <option name="branchName" value="services" />
+                    <option name="lastUsedInstant" value="1709985735" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="carousel" />
-                    <option name="lastUsedInstant" value="1709251308" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1709916417" />
                   </RecentBranch>
                 </list>
               </option>
@@ -64,7 +63,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "services",
     "last_opened_file_path": "/Users/centurion-pc/k-apps/katalyst-tech/public/image/about",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

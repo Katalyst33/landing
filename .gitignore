@@ -8,3 +8,8 @@ git config user.name "katalyst33"
 
 bun.lockb
 *.xml
+*.xml
+
+.idea
+
+.env
