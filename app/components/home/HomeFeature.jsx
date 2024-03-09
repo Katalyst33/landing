@@ -3,6 +3,7 @@ import {
   CloudArrowUpIcon,
   LockClosedIcon,
 } from '@heroicons/react/20/solid';
+import ServiceList from '../services/ServiceList';
 
 const features = [
   {
@@ -73,32 +74,8 @@ export default function HomeFeature() {
         </div>
 
         {/*error here */}
-
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-            {features.map((feature) => (
-              <div key={feature.name} className="flex flex-col">
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
-                  <feature.icon
-                    className="h-5 w-5 flex-none text-gray-900"
-                    aria-hidden="true"
-                  />
-                  <h1 className=" text-xl text-gray-900"> {feature.name}</h1>
-                </dt>
-                <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
-                  <p className="flex-auto">{feature.description}</p>
-                  <p className="mt-6">
-                    <a
-                      href={feature.href}
-                      className="text-sm font-semibold leading-6 text-gray-700"
-                    >
-                      Learn more <span aria-hidden="true">→</span>
-                    </a>
-                  </p>
-                </dd>
-              </div>
-            ))}
-          </dl>
+        <div className={`my-20`}>
+          <ServiceList />
         </div>
 
         {/*error here */}
