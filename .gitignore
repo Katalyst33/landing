@@ -7,3 +7,4 @@ git remote add origin https://katalyst33:ghp_wkmiJbyzS5IbvSVH7rbASmNxAPIg9U28pJK
 git config user.name "katalyst33"
 
 bun.lockb
+*.xml

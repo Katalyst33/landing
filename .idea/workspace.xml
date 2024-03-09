@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="successful build&#10;no errors">
+    <list default="true" id="1974105b-78c5-4469-871e-82bd93391bfa" name="Changes" comment="image property fix">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/about/AboutImages.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/about/AboutImages.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/HeaderMain.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/HeaderMain.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +173,7 @@
       <workItem from="1708931056841" duration="458000" />
       <workItem from="1709825711777" duration="29427000" />
       <workItem from="1709923150065" duration="4785000" />
-      <workItem from="1709977839280" duration="2960000" />
+      <workItem from="1709977839280" duration="3277000" />
     </task>
     <task id="LOCAL-00001" summary="add slider">
       <option name="closed" value="true" />
@@ -430,7 +431,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709980162812</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="image property fix">
+      <option name="closed" value="true" />
+      <created>1709985196851</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1709985196851</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -482,7 +491,8 @@
     <MESSAGE value="refactor home" />
     <MESSAGE value="successful build" />
     <MESSAGE value="successful build&#10;no errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="successful build&#10;no errors" />
+    <MESSAGE value="image property fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="image property fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
