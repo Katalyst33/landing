@@ -4,13 +4,13 @@ import Image from 'next/image';
 
 export default function AboutHero() {
   return (
-    <div className="bg-white">
+    <div >
       {/* Header */}
       <main className="isolate">
         {/* Hero section */}
-        <div className="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/20">
+        <div className="relative isolate -z-10 overflow-hidden bg-gradient-to-b from-indigo-100/50 dark:bg-gradient-to-b dark:from-indigo-100/5">
           <div
-            className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 "
+            className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:-mr-80 "
             aria-hidden="true"
           />
           <div className="mx-auto px-6">
@@ -27,7 +27,7 @@ export default function AboutHero() {
                 />
               </div>
               <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-                <p className="text-lg leading-8 text-justify text-gray-600">
+                <p className="text-lg leading-8 text-justify ">
                   At {process.env.companyName}, we believe in pushing the
                   boundaries of innovation to drive transformative change. With
                   a relentless commitment to excellence, we combine cutting-edge

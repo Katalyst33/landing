@@ -37,7 +37,7 @@ export default function AboutServices() {
       <div className=" ">
         <div className="px-6">
           <p className="title">Exploring Our Core Values</p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg leading-8">
             At {process.env.companyName}, our foundation is built upon a set of
             core values that guide everything we do. These values serve as the
             cornerstone of our culture and drive our actions every day. Explore
@@ -62,7 +62,7 @@ export default function AboutServices() {
                   </div>
                   {feature.name}
                 </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-600">
+                <dd className="mt-2 text-base leading-7 ">
                   {feature.description}
                 </dd>
               </div>

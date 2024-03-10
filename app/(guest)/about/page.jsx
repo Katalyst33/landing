@@ -14,7 +14,7 @@ export default function about() {
       <AboutHero />
       <section className="container mb-10 mx-auto">
         <h2 className="title py-8">Our Team</h2>
-        <p className=" text-lg leading-8 text-gray-600 pb-4">
+        <p className=" text-lg leading-8  pb-4">
           Excepturi repudiandae alias ut. Totam aut facilis. Praesentium in
           neque vel omnis. Eos error odio. Qui fugit voluptatibus eum culpa.
         </p>
@@ -31,7 +31,7 @@ export default function about() {
       <AboutServices />
       <AboutApproach />
       <AboutImages />
-      <section className="bg-black text-white rounded-3xl py-20 my-40">
+      <section className="dark:bg-gray-950 text-white rounded-xl py-20 my-40">
         <div className="w-5/6 mx-auto">
           <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl lg:col-span-2 xl:col-auto">
             Our Mission
@@ -50,26 +50,7 @@ export default function about() {
         </div>
       </section>
 
-      <hr className="my-10 dark:text-gray-300 text-gray-700  mx-auto" />
 
-      <section className=" mx-auto rounded-3xl bg-black text-white">
-        <div className="px-10 mx-auto py-20">
-          <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl lg:col-span-2 xl:col-auto">
-            Tell us about your project
-          </p>
-          <button className="px-3 py-2 my-10 text-black bg-white rounded-lg">
-            Leave us a message
-          </button>
-          <hr className="text-gray-500 mb-10" />
-          <p className="font-semibold mb-2">{process.env.companyName}</p>
-          <p>
-            At {process.env.companyName} we don&apos;t just design digital
-            products, we design experiences for people like you, You need the
-            right minds that can interpret your ideas and make it a reality we
-            are glad you found us.
-          </p>
-        </div>
-      </section>
     </main>
   );
 }

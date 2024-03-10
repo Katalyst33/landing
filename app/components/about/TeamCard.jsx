@@ -27,7 +27,7 @@ function TeamCard({ data }) {
         <p className="text-base leading-7 dark:text-gray-300 text-gray-700">
           {position}
         </p>
-        <p className="text-sm leading-6 text-gray-500">{summary}</p>
+        <p className="text-sm leading-6">{summary}</p>
         {socials && (
           <div className="flex gap-x-2 mt-2 ">
             {socials.map((social, index) => (

@@ -50,6 +50,26 @@ export default function project() {
         </div>
       </section>
 
+      <section className=" mx-auto rounded-3xl bg-black text-white">
+        <div className="px-10 mx-auto py-20">
+          <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl lg:col-span-2 xl:col-auto">
+            Tell us about your project
+          </p>
+          <button className="px-3 py-2 my-10 text-black bg-white rounded-lg">
+            Leave us a message
+          </button>
+          <hr className="text-gray-500 mb-10" />
+          <p className="font-semibold mb-2">{process.env.companyName}</p>
+          <p>
+            At {process.env.companyName} we don&apos;t just design digital
+            products, we design experiences for people like you, You need the
+            right minds that can interpret your ideas and make it a reality we
+            are glad you found us.
+          </p>
+        </div>
+      </section>
+
+
       <BeforeFooter />
     </main>
   );
