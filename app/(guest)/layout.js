@@ -30,6 +30,7 @@ export default function RootLayout({children}) {
             <meta property="og:title" content={metadata.title}/>
             <meta property="og:description" content={metadata.description}/>
             <meta property="twitter:card" content="summary_large_image"/>
+            <link rel="icon" href="favicon.ico" sizes="any" />
         </Head>
         <body className={outfit.className} suppressHydrationWarning={false}>
 

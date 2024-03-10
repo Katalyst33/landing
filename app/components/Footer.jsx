@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <section className="  py-24 border-t">
@@ -13,6 +15,7 @@ const Footer = () => {
             <p className="font-semibold">Company</p>
             <p>About</p>
             <p>Work Process</p>
+            <Link href={`/branding`}>Branding</Link>
             <p>Contact Us</p>
           </div>
           <div className="flex flex-col gap-2 lg:mt-0">

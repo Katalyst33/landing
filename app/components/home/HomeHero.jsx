@@ -84,7 +84,7 @@ export default function HomeHero() {
             together, we&apos;ll unlock the full potential of your business.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
-            <Button variant={`destructive`} asChild>
+            <Button  className={`text-white dark:text-gray-800`}   variant={`primary`} asChild>
               <Link
                 href={{
                   pathname: '/contact',
@@ -94,19 +94,23 @@ export default function HomeHero() {
                 Book Appointment
               </Link>
             </Button>
-            <Link
-              href={{
-                pathname: '/contact',
-                query: { type: 'meeting' },
-              }}
-              className="rounded-md bg-gray-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
-            >
-              Book Appointment
-            </Link>
 
-            <Link href="/" className="text-sm font-semibold leading-6 ">
-              Learn more <span aria-hidden="true">→</span>
-            </Link>
+
+            <Button  variant={`link`} asChild>
+
+
+
+              <Link
+                  className={`text-gray-600 dark:text-gray-50`}
+                  href={{
+                    pathname: '/services',
+                  }}
+              >
+                Learn more <span aria-hidden="true">→</span>
+              </Link>
+            </Button>
+
+
           </div>
           {/* Add typewriter */}
         </div>

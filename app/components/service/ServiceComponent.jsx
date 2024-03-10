@@ -4,14 +4,14 @@ import Link from 'next/link';
 import './service.scss';
 
 function ServiceComponent({ data }) {
-  const { name, description, slug } = data;
+  const { title, description, slug } = data;
 
   return (
     <div className="">
       <dl>
         <div key={name} className="flex flex-col">
           <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 ">
-            <h1 className=" text-xl "> {name}</h1>
+            <h1 className=" text-xl "> {title}</h1>
           </dt>
           <dd className="mt-4 flex flex-auto flex-col text-base leading-7 ">
             <p className="flex-auto">{truncateString(description, 300)}</p>

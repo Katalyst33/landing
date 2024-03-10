@@ -21,7 +21,7 @@ export default function TestimonialFeature() {
   const [testimonials, setTestimonial] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.serverUrl}/testimonials`)
+    fetch(`${process.env.apiUrl}/testimonials`)
       .then((response) => response.json())
       .then((data) => setTestimonial(data))
       .catch((error) => console.error(error));

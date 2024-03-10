@@ -59,7 +59,7 @@ function TeamList() {
   const [team, setTeam] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.serverUrl}/team`)
+    fetch(`${process.env.apiUrl}/team`)
       .then((response) => response.json())
       .then((data) => setTeam(data))
       .catch((error) => console.error(error));

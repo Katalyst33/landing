@@ -9,7 +9,7 @@ import { ExternalLink } from 'lucide-react';
 import './project.scss';
 
 function ProjectComponent({ data }) {
-  const { logo, title, description, year, id, projectUrl, tech } = data;
+  const { logo, title, description, year, slug, projectUrl, tags } = data;
 
   return (
     <div>
@@ -17,7 +17,7 @@ function ProjectComponent({ data }) {
         <div>
           <Image
             className="h-20  p-4 w-auto object-contain"
-            src={logo}
+            src={`${process.env.serverUrl}/${logo}`}
             alt="logo"
             width={160}
             height={40}
@@ -38,7 +38,7 @@ function ProjectComponent({ data }) {
         <footer className={` p-2 space-y-1`}>
           <div className="flex justify-between  ">
             <p className="font-semibold text-sm mt-4 ">
-              <Link href={`/project/${id}`}>About Project</Link>
+              <Link href={`/project/${slug}`}>About Project</Link>
             </p>
             <div className={``}>
               <a
@@ -51,7 +51,7 @@ function ProjectComponent({ data }) {
             </div>
           </div>
 
-          <p className="font-semibold text-sm  italic"> {tech}</p>
+          {/*<p className="font-semibold text-sm  italic"> {tags}</p>*/}
         </footer>
       </main>
     </div>
@@ -62,10 +62,9 @@ ProjectComponent.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    year: PropTypes.number.isRequired,
-    id: PropTypes.string.isRequired,
+    year: PropTypes.string.isRequired ,
+    slug: PropTypes.string.isRequired,
     projectUrl: PropTypes.string,
-    tech: PropTypes.string.isRequired,
     logo: PropTypes.string.isRequired,
   }).isRequired,
 };

@@ -8,7 +8,7 @@ function ServiceList() {
 
 
     useEffect(() => {
-        fetch(`${process.env.serverUrl}/services`)
+        fetch(`${process.env.apiUrl}/services`)
             .then((response) => response.json())
             .then((data) => setServices(data))
             .catch((error) => console.error(error));
