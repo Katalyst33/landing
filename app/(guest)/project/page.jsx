@@ -50,7 +50,7 @@ export default function project() {
         </div>
       </section>
 
-      <section className=" mx-auto rounded-3xl bg-black text-white">
+      <section className=" mx-auto rounded-xl bg-gray-800  my-10 text-white">
         <div className="px-10 mx-auto py-20">
           <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl lg:col-span-2 xl:col-auto">
             Tell us about your project

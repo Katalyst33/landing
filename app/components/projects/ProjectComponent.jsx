@@ -13,7 +13,7 @@ function ProjectComponent({ data }) {
 
   return (
     <div>
-      <main className="rounded-lg border border-gray-100 shadow lg:mb-0 ">
+      <main className="rounded-lg border dark:border-gray-700 border-gray-100 shadow lg:mb-0 ">
         <div>
           <Image
             className="h-20  p-4 w-auto object-contain"
@@ -27,7 +27,7 @@ function ProjectComponent({ data }) {
         <div className="p-4">
           <p className="font-semibold text-lg">{title}</p>
           <p
-            className={`text-green-500 text-xs bg-green-100 p-1 rounded-full inline px-1`}
+            className={` text-xs  p-1 rounded-full inline px-1`}
           >
             <span className=""> Completed:</span>
             <span className=""> {year}</span>
@@ -35,7 +35,7 @@ function ProjectComponent({ data }) {
         </div>
         <p className="text-justify px-4">{truncateString(description, 300)}</p>
 
-        <footer className={`border-t p-2 space-y-1`}>
+        <footer className={` p-2 space-y-1`}>
           <div className="flex justify-between  ">
             <p className="font-semibold text-sm mt-4 ">
               <Link href={`/project/${id}`}>About Project</Link>
