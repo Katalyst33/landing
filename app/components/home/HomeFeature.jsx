@@ -1,6 +1,4 @@
-
-import ServiceList from '../services/ServiceList';
-
+import ServiceList from '../service/ServiceList';
 
 export default function HomeFeature() {
   return (

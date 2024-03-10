@@ -1,12 +1,12 @@
 'use client';
 
-import AboutHero from '../components/about/AboutHero.jsx';
-import AboutServices from '../components/about/AboutServices.jsx';
-import AboutApproach from '../components/about/AboutApproach.jsx';
-import AboutImages from '../components/about/AboutImages.jsx';
-import TeamCard from '../components/about/TeamCard.jsx';
+import AboutHero from '../../components/about/AboutHero.jsx';
+import AboutServices from '../../components/about/AboutServices.jsx';
+import AboutApproach from '../../components/about/AboutApproach.jsx';
+import AboutImages from '../../components/about/AboutImages.jsx';
+import TeamCard from '../../components/about/TeamCard.jsx';
 import { useEffect, useState } from 'react';
-import { LoadingBlog } from '../components/LoadingBlog';
+import { LoadingBlog } from '../../components/LoadingBlog';
 
 export default function about() {
   return (

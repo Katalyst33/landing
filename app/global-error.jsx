@@ -1,17 +1,19 @@
 'use client';
-// Error components must be Client Components
+// GlobalError components must be Client Components
 
 import { useEffect } from 'react';
 
 import PropTypes from 'prop-types';
 
-export default function Error({ error }) {
+export default function GlobalError({ error }) {
   useEffect(() => {
     // Log the error to an error reporting service
     console.log(error);
   }, [error]);
 
   return (
+      <html>
+      <body>
     <div>
       <main className="mx-auto flex w-full max-w-7xl flex-auto flex-col justify-center px-6 h-screen lg:px-8">
         <p className="text-base font-semibold leading-8 text-blue-600">404</p>
@@ -28,9 +30,11 @@ export default function Error({ error }) {
         </div>
       </main>
     </div>
+    </body>
+    </html>
   );
 }
 
-Error.propTypes = {
+GlobalError.propTypes = {
   error: PropTypes.object,
 };

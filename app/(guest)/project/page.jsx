@@ -1,8 +1,9 @@
 'use client';
-import BeforeFooter from '../components/BeforeFooter.jsx';
-import ProjectList from '../components/projects/ProjectList.jsx';
+import BeforeFooter from '../../components/BeforeFooter.jsx';
+import ProjectList from '../../components/projects/ProjectList.jsx';
+import GuestLayout from "../../layouts/guest-layouts";
 
-export default function work() {
+export default function project() {
   return (
     <main>
       <section className="container mx-auto lg:px-10">
@@ -53,5 +54,8 @@ export default function work() {
     </main>
   );
 }
+
+project.layout = GuestLayout;
+
 
 /*    <ProjectComponent data={project} /> */

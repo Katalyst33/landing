@@ -21,7 +21,7 @@ export default function HeaderMain() {
         className="mx-auto flex max-w-7xl items-center justify-between py-4"
         aria-label="Global"
       >
-        <div className={` w-52`}>
+        <div className={`w-52`}>
           <Link className="flex items-center " href="/">
             <AppIcon name={true} className={`h-10 w-10`} />
           </Link>
