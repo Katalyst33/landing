@@ -20,7 +20,7 @@ function ServiceList() {
 
         <div>
             {services.length > 0 ? (
-                <ul className={`grid grid-cols-1 md:grid-cols-2  gap-10 `}>
+                <ul className={`grid grid-cols-1 md:grid-cols-2 gap-10 `}>
                     {services.map((item, index) => (
                         <div key={index}>
                             <div>

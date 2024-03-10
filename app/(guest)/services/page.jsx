@@ -28,10 +28,8 @@ export default async function service() {
                         clients,
                     </p>
                 </div>
-                <div className="py-10">
-                    <div className={`my-10`}>
+                <div className="py-2">
                         <ServiceList/>
-                    </div>
                 </div>
 
             </section>

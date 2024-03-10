@@ -31,9 +31,9 @@ export default function about() {
       <AboutServices />
       <AboutApproach />
       <AboutImages />
-      <section className="dark:bg-gray-950 text-white rounded-xl py-20 my-40">
+      <section className="dark:bg-gray-950 bg-gray-200  rounded-xl py-20 my-40">
         <div className="w-5/6 mx-auto">
-          <p className="max-w-2xl text-4xl font-bold tracking-tight text-gray-200 sm:text-6xl lg:col-span-2 xl:col-auto">
+          <p className="max-w-2xl text-4xl font-bold tracking-tight sm:text-6xl lg:col-span-2 xl:col-auto">
             Our Mission
           </p>
           <p className="text-2xl font-semibold mb-4">

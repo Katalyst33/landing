@@ -10,15 +10,15 @@ function ServiceComponent({ data }) {
     <div className="">
       <dl>
         <div key={name} className="flex flex-col">
-          <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
-            <h1 className=" text-xl text-gray-900"> {name}</h1>
+          <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 ">
+            <h1 className=" text-xl "> {name}</h1>
           </dt>
-          <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
+          <dd className="mt-4 flex flex-auto flex-col text-base leading-7 ">
             <p className="flex-auto">{truncateString(description, 300)}</p>
             <p className="mt-6">
               <Link
                 href={`/services/${slug}`}
-                className="text-sm font-semibold leading-6 dark:text-gray-300 text-gray-700"
+                className="text-sm font-semibold leading-6 "
               >
                 Learn more <span aria-hidden="true">→</span>
               </Link>
