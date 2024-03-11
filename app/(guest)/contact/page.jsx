@@ -6,6 +6,15 @@ import {
   BsLinkedin,
 } from 'react-icons/bs';
 
+import {
+  Drawer,
+  DrawerContent,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "../../components/ui/drawer"
+
 import ContactForm from './contact.form';
 import { useState } from 'react';
 import {
@@ -13,8 +22,13 @@ import {
 
 } from '../../config/http';
 
+import {Button} from "../../components/ui/button";
+import PropTypes from "prop-types";
+
 export default function About() {
   const [errors, setErrors] = useState({});
+
+  const [openDrawer, setOpenDrawer] = useState(false);
 
   async function handleSubmit(formData) {
     try {
@@ -26,6 +40,7 @@ export default function About() {
         body: JSON.stringify(formData),
       });
 
+      setOpenDrawer(true)
       console.log(res, 'error');
     } catch (errors) {
       setErrors(errors.errors);
@@ -67,10 +82,55 @@ export default function About() {
             </div>
             <div className={`col-span-2`}>
               <ContactForm handleSubmit={handleSubmit} errors={errors} />
+           <DrawerLayout openDrawer={openDrawer} toggleDrawer={setOpenDrawer}/>
             </div>
           </div>
         </div>
       </section>
     </main>
   );
+}
+
+
+function DrawerLayout({...props}) {
+
+
+
+  console.log(props, 'props')
+
+
+  function handleToggle (value){
+    props.toggleDrawer(value)
+
+    console.log(value, 'value')
+  }
+
+
+  return (
+      <Drawer open={props.openDrawer} >
+        <DrawerTrigger></DrawerTrigger>
+        <DrawerContent>
+          <div className="mx-auto w-full max-w-sm">
+          <DrawerHeader>
+            <DrawerTitle>We got your message and will get back in touch</DrawerTitle>
+            {/*<DrawerDescription>This action cannot be undone.</DrawerDescription>*/}
+          </DrawerHeader>
+          <DrawerFooter>
+            <Button onClick={()=> handleToggle(false)}>Okay</Button>
+
+          </DrawerFooter>
+          </div>
+        </DrawerContent>
+      </Drawer>
+
+  );
+}
+
+
+
+
+
+DrawerLayout.propTypes = {
+    openDrawer: PropTypes.bool,
+    toggleDrawer: PropTypes.func,
 }
