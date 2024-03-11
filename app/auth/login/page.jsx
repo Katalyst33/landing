@@ -27,6 +27,7 @@ export default function Login() {
 
     const [errors, setErrors] = useState({});
 
+    console.log(errors);
     const handleChange = (e) => {
         const {name, value} = e.target;
         setFormData({...formData, [name]: value});
@@ -74,7 +75,7 @@ export default function Login() {
                     width={100}
                     height={100}
                     className="mx-auto h-10 w-auto"
-                    src="/logos/sprynx.png"
+                    src="/logos/katalyst-logo.svg"
                     alt="Your Company"
                 />
                 <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
