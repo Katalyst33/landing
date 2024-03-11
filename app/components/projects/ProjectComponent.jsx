@@ -9,7 +9,7 @@ import { ExternalLink } from 'lucide-react';
 import './project.scss';
 
 function ProjectComponent({ data }) {
-  const { logo, title, description, year, slug, projectUrl, tags } = data;
+  const { logo, title, description, year, slug, projectUrl } = data;
 
   return (
     <div>

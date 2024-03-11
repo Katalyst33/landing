@@ -1,9 +1,5 @@
 import Link from 'next/link'
-import { headers } from 'next/headers'
 
-async function getSiteData(domain) {
-
-}
 
 export default async function NotFound() {
 /*    const headersList = headers()

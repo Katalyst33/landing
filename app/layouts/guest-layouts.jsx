@@ -1,4 +1,3 @@
-import Head from "next/head";
 import {ThemeProvider} from "../../@/components/theme-provider";
 import PropTypes from "prop-types";
 import Header from "../components/Header";
