@@ -4,6 +4,7 @@ import {Outfit} from 'next/font/google';
 
 
 import PropTypes from 'prop-types';
+import Link from "next/link";
 
 
 const outfit = Outfit({subsets: ['latin']});
@@ -26,7 +27,8 @@ export default function RootLayout({children}) {
 
             <div>
 
-                admin
+                <Link href={`admin/service`}>Services</Link>
+
             </div>
 
             <div>{children}</div>
