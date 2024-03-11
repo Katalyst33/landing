@@ -13,3 +13,4 @@ bun.lockb
 .idea
 
 .env
+.vercel/**/*

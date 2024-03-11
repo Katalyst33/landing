@@ -25,3 +25,7 @@ export default async function ProjectPost({ params }) {
 ProjectPost.propTypes = {
   params: PropTypes.object.isRequired,
 };
+
+
+
+export const runtime = "experimental-edge"

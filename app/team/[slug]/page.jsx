@@ -110,3 +110,6 @@ export default async function TeamPost({ params }) {
 TeamPost.propTypes = {
   params: PropTypes.object,
 };
+
+
+export const runtime = "experimental-edge"

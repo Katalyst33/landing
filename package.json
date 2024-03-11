@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev -p 3300",
     "build": "next build",
+    "build-cloudflare": "npx @cloudflare/next-on-pages@1",
     "start": "next start -p 4330",
     "lint": "next lint",
     "eslint": "eslint . --ext .js,.jsx",
@@ -12,6 +13,7 @@
     "fake-server": "json-server --watch ./app/data/db.json --port 5004"
   },
   "dependencies": {
+    "@cloudflare/next-on-pages": "^1.10.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "@radix-ui/react-dialog": "^1.0.5",
@@ -49,6 +51,7 @@
     "@types/node": "20.8.7",
     "@types/react": "18.2.29",
     "eslint-plugin-react": "^7.34.0",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "vercel": "^33.5.5"
   }
 }
