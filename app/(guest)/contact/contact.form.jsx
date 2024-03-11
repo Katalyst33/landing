@@ -20,7 +20,7 @@ export default function ContactForm({...props}) {
     });
 
     const handleChange = (e) => {
-        const {name, value} = e.target;
+        const { name, value } = e.target;
 
         setFormData((prevState) => ({
             ...prevState,
@@ -28,8 +28,27 @@ export default function ContactForm({...props}) {
         }));
 
         // Validate the changed field and update errors state
-    };
+        const updatedField = { [name]: value };
+        const fieldValidationSchema = schema.pick({ [name]: true }); // Assuming `schema` is your Zod schema
 
+        fieldValidationSchema.safeParseAsync(updatedField).then((result) => {
+            if (result.success) {
+                // If the field is valid, remove any existing error for this field
+                setErrors((prevErrors) => {
+                    const newErrors = { ...prevErrors };
+                    delete newErrors[name]; // Remove the error for this field
+                    return newErrors;
+                });
+            } else {
+                // If the field is invalid, update the error message for this field
+                const errorMessage = result.error.errors[0]?.message || "Invalid input";
+                setErrors((prevErrors) => ({
+                    ...prevErrors,
+                    [name]: errorMessage,
+                }));
+            }
+        });
+    };
     const schema = z.object({
         name: z.string().min(2, {
             message: 'Name must be at least 2 characters long',
