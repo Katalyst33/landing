@@ -20,12 +20,14 @@ function TeamCard({ data }) {
             priority={true}
           />
 
-          <h3 className="mt-6 text-lg font-bold leading-8 tracking-tight text-gray-800">
+          <h3 className="mt-6 text-lg font-bold leading-8 tracking-tight ">
             {name}
           </h3>
         </Link>
-        <p className="text-base leading-7 text-gray-700">{position}</p>
-        <p className="text-sm leading-6 text-gray-500">{summary}</p>
+        <p className="text-base leading-7 dark:text-gray-300 text-gray-700">
+          {position}
+        </p>
+        <p className="text-sm leading-6">{summary}</p>
         {socials && (
           <div className="flex gap-x-2 mt-2 ">
             {socials.map((social, index) => (

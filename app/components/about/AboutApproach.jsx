@@ -1,6 +1,6 @@
 export default function AboutApproach() {
   return (
-    <section className="bg-gray-50 py-24 ">
+    <section className=" py-24 ">
       <div className="w-5/6 mx-auto">
         <p className="font-semibold">Our Approach</p>
         <p className=" text-lg mt-2">

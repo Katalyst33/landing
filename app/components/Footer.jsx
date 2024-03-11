@@ -1,6 +1,8 @@
+import Link from 'next/link';
+
 const Footer = () => {
   return (
-    <section className="bg-white text-black py-24 border-t">
+    <section className="  py-24 border-t">
       <div className="lg:flex w-4/5 mx-auto justify-between">
         <div className="flex  flex-wrap gap-32">
           <div className="flex flex-col gap-2">
@@ -13,6 +15,7 @@ const Footer = () => {
             <p className="font-semibold">Company</p>
             <p>About</p>
             <p>Work Process</p>
+            <Link href={`/branding`}>Branding</Link>
             <p>Contact Us</p>
           </div>
           <div className="flex flex-col gap-2 lg:mt-0">

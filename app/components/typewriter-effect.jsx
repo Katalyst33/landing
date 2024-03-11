@@ -31,7 +31,7 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
         }
       );
     }
-  }, [isInView]);
+  }, [isInView, animate]);
 
   const renderWords = () => {
     return (
@@ -46,10 +46,7 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
                       <motion.span
                         initial={{}}
                         key={`char-${index}`}
-                        className={cn(
-                          ` text-black opacity-0 hidden`,
-                          word.className
-                        )}
+                        className={cn(`  opacity-0 hidden`, word.className)}
                       >
                         {char}
                       </motion.span>

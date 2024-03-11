@@ -10,7 +10,7 @@ export default function AboutImages() {
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                 Driving Digital Transformation
               </h1>
-              <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+              <p className="relative mt-6 text-lg leading-8 sm:max-w-md lg:max-w-none">
                 From innovative software solutions to cutting-edge digital
                 strategies, we are dedicated to guiding organizations through
                 their digital journey and empowering them to thrive in the

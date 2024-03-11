@@ -9,15 +9,15 @@ import { ExternalLink } from 'lucide-react';
 import './project.scss';
 
 function ProjectComponent({ data }) {
-  const { logo, title, description, year, id, projectUrl, tech } = data;
+  const { logo, title, description, year, slug, projectUrl } = data;
 
   return (
     <div>
-      <main className="rounded-lg border border-gray-100 shadow lg:mb-0 ">
+      <main className="rounded-lg border dark:border-gray-700 border-gray-100 shadow lg:mb-0 ">
         <div>
           <Image
             className="h-20  p-4 w-auto object-contain"
-            src={logo}
+            src={`${process.env.serverUrl}/${logo}`}
             alt="logo"
             width={160}
             height={40}
@@ -26,19 +26,17 @@ function ProjectComponent({ data }) {
         </div>
         <div className="p-4">
           <p className="font-semibold text-lg">{title}</p>
-          <p
-            className={`text-green-500 text-xs bg-green-100 p-1 rounded-full inline px-1`}
-          >
+          <p className={` text-xs  p-1 rounded-full inline px-1`}>
             <span className=""> Completed:</span>
             <span className=""> {year}</span>
           </p>
         </div>
         <p className="text-justify px-4">{truncateString(description, 300)}</p>
 
-        <footer className={`border-t p-2 space-y-1`}>
+        <footer className={` p-2 space-y-1`}>
           <div className="flex justify-between  ">
             <p className="font-semibold text-sm mt-4 ">
-              <Link href={`/project/${id}`}>About Project</Link>
+              <Link href={`/project/${slug}`}>About Project</Link>
             </p>
             <div className={``}>
               <a
@@ -51,7 +49,7 @@ function ProjectComponent({ data }) {
             </div>
           </div>
 
-          <p className="font-semibold text-sm  italic"> {tech}</p>
+          {/*<p className="font-semibold text-sm  italic"> {tags}</p>*/}
         </footer>
       </main>
     </div>
@@ -62,10 +60,9 @@ ProjectComponent.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    year: PropTypes.number.isRequired,
-    id: PropTypes.string.isRequired,
+    year: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
     projectUrl: PropTypes.string,
-    tech: PropTypes.string.isRequired,
     logo: PropTypes.string.isRequired,
   }).isRequired,
 };

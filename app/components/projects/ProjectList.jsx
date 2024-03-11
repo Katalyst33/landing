@@ -5,7 +5,7 @@ function ProjectList() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.serverUrl}/projects`)
+    fetch(`${process.env.apiUrl}/projects`)
       .then((response) => response.json())
       .then((data) => setProjects(data))
       .catch((error) => console.error(error));

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { TypewriterEffect } from '../typewriter-effect';
 import Link from 'next/link';
+import { Button } from '../../components/ui/button';
 
 export default function HomeHero() {
   const words = [
@@ -76,28 +77,38 @@ export default function HomeHero() {
           </div>
           <TypewriterEffect words={words} />
 
-          <p className="mt-6 text-lg leading-8 text-gray-800">
+          <p className="mt-6 text-lg leading-8 ">
             By leveraging cutting-edge technologies and industry best practices,
             we empower your business to adapt, evolve, and thrive in an
             ever-changing landscape. Partner with {process.env.companyName}, and
             together, we&apos;ll unlock the full potential of your business.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
-            <Link
-              href={{
-                pathname: '/contact',
-                query: { type: 'meeting' },
-              }}
-              className="rounded-md bg-gray-800 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+            <Button
+              className={`text-white dark:text-gray-800`}
+              variant={`primary`}
+              asChild
             >
-              Book Appointment
-            </Link>
-            <Link
-              href="/"
-              className="text-sm font-semibold leading-6 text-gray-800"
-            >
-              Learn more <span aria-hidden="true">→</span>
-            </Link>
+              <Link
+                href={{
+                  pathname: '/contact',
+                  query: { type: 'meeting' },
+                }}
+              >
+                Book Appointment
+              </Link>
+            </Button>
+
+            <Button variant={`link`} asChild>
+              <Link
+                className={`text-gray-600 dark:text-gray-50`}
+                href={{
+                  pathname: '/services',
+                }}
+              >
+                Learn more <span aria-hidden="true">→</span>
+              </Link>
+            </Button>
           </div>
           {/* Add typewriter */}
         </div>
