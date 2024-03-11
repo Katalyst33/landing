@@ -101,10 +101,9 @@ export default function ContactForm({...props}) {
     }
 
     return (
-        <div>
+        <div className={`w-full`}>
             <form onSubmit={handleSubmit}>
-                <div className="mt-20 ">
-                    <div className="">
+                    <div>
 
                         <div>
                             <Label htmlFor="email">Full Name</Label>
@@ -136,8 +135,8 @@ export default function ContactForm({...props}) {
                         </div>
                     </div>
 
-                    <div className="w-full flex justify-end mt-8">
-                        <div className="mt-8 flex justify-center">
+                    <div>
+                        <div className="mt-8 flex justify-start">
                             <Button
                                 variant="primary"
                                 size="lg"
@@ -148,7 +147,6 @@ export default function ContactForm({...props}) {
                             </Button>
                         </div>
                     </div>
-                </div>
             </form>
         </div>
     );
