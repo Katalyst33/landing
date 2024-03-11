@@ -75,7 +75,6 @@ export default function ContactForm({...props}) {
     function handleSubmit(e) {
         e.preventDefault();
 
-        // props.handleSubmit(formData)
 
         handleError();
 
@@ -87,11 +86,7 @@ export default function ContactForm({...props}) {
             <form onSubmit={handleSubmit}>
                 <div className="mt-20 ">
                     <div className="">
-                        {/*       <input
-                            placeholder="Name"
-                            className="border-b border-black px-3 py-1 w-full mb-5 rounded-md  placeholder:text-gray-400 outline-none"
-                        />
-*/}
+
                         <div>
                             <Label htmlFor="email">Full Name</Label>
                             <Input
@@ -121,11 +116,7 @@ export default function ContactForm({...props}) {
                             </div>
                         </div>
                     </div>
-                    {/*   <textarea
-                        className="w-full px-3 py-1 border-b border-black mt-2 lg:mt-5 rounded-md  placeholder:text-gray-400 outline-none"
-                        placeholder="Message"
-                        rows={5}
-                    />*/}
+
                     <div className="w-full flex justify-end mt-8">
                         <div className="mt-8 flex justify-center">
                             <Button
