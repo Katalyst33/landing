@@ -6,21 +6,24 @@ import PropTypes from 'prop-types';
 
 import * as z from 'zod';
 import ErrorField from "../../components/ui/error-field";
+import {Textarea} from "../../components/ui/textarea";
 
 export default function ContactForm({...props}) {
     const [formData, setFormData] = useState({
         email: '',
         name: '',
+        message: '',
     });
 
     const [errors, setErrors] = useState({
         email: '',
         name: '',
+        message: '',
 
     });
 
     const handleChange = (e) => {
-        const { name, value } = e.target;
+        const {name, value} = e.target;
 
         setFormData((prevState) => ({
             ...prevState,
@@ -28,14 +31,14 @@ export default function ContactForm({...props}) {
         }));
 
         // Validate the changed field and update errors state
-        const updatedField = { [name]: value };
-        const fieldValidationSchema = schema.pick({ [name]: true }); // Assuming `schema` is your Zod schema
+        const updatedField = {[name]: value};
+        const fieldValidationSchema = schema.pick({[name]: true}); // Assuming `schema` is your Zod schema
 
         fieldValidationSchema.safeParseAsync(updatedField).then((result) => {
             if (result.success) {
                 // If the field is valid, remove any existing error for this field
                 setErrors((prevErrors) => {
-                    const newErrors = { ...prevErrors };
+                    const newErrors = {...prevErrors};
                     delete newErrors[name]; // Remove the error for this field
                     return newErrors;
                 });
@@ -57,6 +60,15 @@ export default function ContactForm({...props}) {
         email: z.string().email({
             message: 'Invalid email address',
         }),
+
+        message: z
+            .string()
+            .min(10, {
+                message: "Message must be at least 10 characters.",
+            })
+            .max(160, {
+                message: "Message must not be longer than 30 characters.",
+            }),
     });
 
     function handleError() {
@@ -103,50 +115,61 @@ export default function ContactForm({...props}) {
     return (
         <div className={`w-full`}>
             <form onSubmit={handleSubmit}>
-                    <div>
+                <div>
 
+                    <div>
+                        <Label htmlFor="email">Full Name</Label>
+                        <Input
+                            type="text"
+                            placeholder="What can we call you ?"
+                            id="conatct-name"
+                            name="name"
+                            value={formData.name}
+                            onChange={handleChange}
+                            className="w-full"
+                        />
+                        <ErrorField error={errors.name}/>
+                    </div>
+                    <div>
                         <div>
-                            <Label htmlFor="email">Full Name</Label>
+                            <Label htmlFor="email">Email</Label>
                             <Input
-                                type="text"
-                                placeholder="What can we call you ?"
-                                id="conatct-name"
-                                name="name"
-                                value={formData.name}
+                                type="email"
+                                placeholder="Email Address"
+                                id="app-email"
+                                name="email"
+                                value={formData.email}
                                 onChange={handleChange}
                                 className="w-full"
                             />
-                            <ErrorField error={errors.name}/>
-                        </div>
-                        <div>
-                            <div>
-                                <Label htmlFor="email">Email</Label>
-                                <Input
-                                    type="email"
-                                    placeholder="Email Address"
-                                    id="app-email"
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    className="w-full"
-                                />
-                                <ErrorField error={errors.email}/>
-                            </div>
+                            <ErrorField error={errors.email}/>
                         </div>
                     </div>
-
                     <div>
-                        <div className="mt-8 flex justify-start">
-                            <Button
-                                variant="primary"
-                                size="lg"
-                                className="w-80 text-white "
-                                type="submit"
-                            >
-                                Submit Application
-                            </Button>
+                        <div>
+                            <Label htmlFor="message">Email</Label>
+                            <Textarea
+                                name="message"
+
+                                value={formData.message}
+                                      onChange={handleChange} placeholder="Type your message here."/>
+                            <ErrorField error={errors.message}/>
                         </div>
                     </div>
+                </div>
+
+                <div>
+                    <div className="mt-8 flex justify-start">
+                        <Button
+                            variant="primary"
+                            size="lg"
+                            className="w-80 text-white "
+                            type="submit"
+                        >
+                            Submit Application
+                        </Button>
+                    </div>
+                </div>
             </form>
         </div>
     );
