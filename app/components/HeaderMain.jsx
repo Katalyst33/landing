@@ -49,7 +49,7 @@ export default function HeaderMain() {
           ))}
         </div>
         <div className={`flex items-center gap-x-4`}>
-          <UserAuthData></UserAuthData>
+          <UserAuthData/>
 
           <ThemeToggle />
         </div>

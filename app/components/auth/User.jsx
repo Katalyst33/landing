@@ -1,11 +1,15 @@
 import Link from 'next/link';
 
 function UserAuthData() {
-  return (
-    <div>
-      <Link href={`/admin/`}>Admin</Link>
-    </div>
-  );
+    return (
+        <div className={`flex gap-x-2`}>
+            <Link href={`/auth/login/`}>Login</Link>
+            <Link href={`/admin/`}>Admin</Link>
+        </div>
+    );
 }
 
 export default UserAuthData;
+
+
+
