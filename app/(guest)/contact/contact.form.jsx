@@ -1,7 +1,7 @@
 import {Label} from '../../components/ui/label';
 import {Input} from '../../components/ui/input';
 import {Button} from '../../components/ui/button';
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 
 import * as z from 'zod';
@@ -16,11 +16,19 @@ export default function ContactForm({...props}) {
     });
 
     const [errors, setErrors] = useState({
-        email: '',
-        name: '',
-        message: '',
+        email: "",
+        name:"",
+        message: "",
 
     });
+
+    useEffect(() => {
+        setErrors({
+            email: props.errors?.email,
+            name: props.errors?.name,
+            message: props.errors?.message,
+        });
+    }, [props.errors]);
 
     const handleChange = (e) => {
         const {name, value} = e.target;
@@ -74,7 +82,6 @@ export default function ContactForm({...props}) {
     function handleError() {
         const result = schema.safeParse(formData);
 
-        console.log(result);
         if (!result.success) {
             const formattedErrors = {};
             result.error.errors.forEach((error) => {
@@ -107,9 +114,8 @@ export default function ContactForm({...props}) {
         e.preventDefault();
 
 
-        handleError();
-
-        // if (handleError()) props.handleSubmit(formData);
+        if (handleError())
+       props.handleSubmit(formData);
     }
 
     return (
@@ -147,7 +153,7 @@ export default function ContactForm({...props}) {
                     </div>
                     <div>
                         <div>
-                            <Label htmlFor="message">Email</Label>
+                            <Label htmlFor="message">Message</Label>
                             <Textarea
                                 name="message"
 
