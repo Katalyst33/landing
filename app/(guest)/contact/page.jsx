@@ -6,7 +6,7 @@ import {
     BsLinkedin,
 } from 'react-icons/bs';
 import {useState} from "react";
-import {Button} from "../../../@/components/ui/button";
+import {Button} from "@/app/components/ui/button";
 
 export default function About() {
     const [formData, setFormData] = useState({

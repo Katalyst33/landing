@@ -3,7 +3,7 @@ import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { AppIcon } from '../components/icons/AppIcon';
-import ThemeToggle from '../../@/components/ui/ThemeToggle';
+import ThemeToggle from '../components/ui/ThemeToggle';
 import UserAuthData from "../../app/components/auth/User";
 
 const navigation = [

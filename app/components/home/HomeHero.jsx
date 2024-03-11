@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { TypewriterEffect } from '../typewriter-effect';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+import { Button } from '../ui/button';
 
 export default function HomeHero() {
   const words = [
