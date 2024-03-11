@@ -26,9 +26,7 @@ function ProjectComponent({ data }) {
         </div>
         <div className="p-4">
           <p className="font-semibold text-lg">{title}</p>
-          <p
-            className={` text-xs  p-1 rounded-full inline px-1`}
-          >
+          <p className={` text-xs  p-1 rounded-full inline px-1`}>
             <span className=""> Completed:</span>
             <span className=""> {year}</span>
           </p>
@@ -62,7 +60,7 @@ ProjectComponent.propTypes = {
   data: PropTypes.shape({
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
-    year: PropTypes.string.isRequired ,
+    year: PropTypes.string.isRequired,
     slug: PropTypes.string.isRequired,
     projectUrl: PropTypes.string,
     logo: PropTypes.string.isRequired,

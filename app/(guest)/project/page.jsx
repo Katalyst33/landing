@@ -1,7 +1,7 @@
 'use client';
 import BeforeFooter from '../../components/BeforeFooter.jsx';
 import ProjectList from '../../components/projects/ProjectList.jsx';
-import GuestLayout from "../../layouts/guest-layouts";
+import GuestLayout from '../../layouts/guest-layouts';
 
 export default function project() {
   return (
@@ -69,13 +69,11 @@ export default function project() {
         </div>
       </section>
 
-
       <BeforeFooter />
     </main>
   );
 }
 
 project.layout = GuestLayout;
-
 
 /*    <ProjectComponent data={project} /> */

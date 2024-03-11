@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function AboutHero() {
   return (
-    <div >
+    <div>
       {/* Header */}
       <main className="isolate">
         {/* Hero section */}
