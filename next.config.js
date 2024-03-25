@@ -8,8 +8,8 @@ const nextConfig = {
 
   env: {
     companyName: 'Katalyst Technologies',
-    serverUrl: 'http://localhost:5700',
-    apiUrl: 'http://localhost:5700/api',
+    serverUrl: process.env.SERVER_URL,
+    apiUrl: `${process.env.SERVER_URL}/api`,
   },
 };
 
