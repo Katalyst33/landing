@@ -7,7 +7,6 @@ import GuestLayout from '../../layouts/guest-layouts';
 export default async function service() {
   return (
     <main>
-      <input className={`bg-red-500`} type="text" />
 
       <section className="container mx-auto lg:px-10">
         <div className="mb-10  py-10">

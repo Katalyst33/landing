@@ -3,7 +3,7 @@
 
 const nextConfig = {
   images: {
-    domains: ['res.cloudinary.com', 'localhost'],
+    domains: ['res.cloudinary.com', 'localhost', 'api.katalyst.tech'],
   },
 
   env: {
