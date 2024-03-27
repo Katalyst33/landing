@@ -18,7 +18,7 @@ export default function BeforeFooter() {
               href="/work"
               className="rounded-md bg- px-3.5 py-2.5 text-sm font-semibold text-gray-600 shadow-sm hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
             >
-              View Projects
+              View Projects         
             </Link>
             <Link
               href={{

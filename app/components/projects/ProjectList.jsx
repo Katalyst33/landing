@@ -7,7 +7,7 @@ function ProjectList() {
   useEffect(() => {
     fetch(`${process.env.apiUrl}/projects`)
       .then((response) => response.json())
-      .then((data) => setProjects(data))
+      .then((data) => setProjects(data.data))
       .catch((error) => console.error(error));
   }, []);
 
