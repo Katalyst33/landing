@@ -1,9 +1,10 @@
-'use client';
 import BeforeFooter from '../../components/BeforeFooter.jsx';
 import ProjectList from '../../components/projects/ProjectList.jsx';
 import GuestLayout from '../../layouts/guest-layouts';
 
-export default function project() {
+export default async function project() {
+  const data = await getData()
+
   return (
     <main>
       <section className="container mx-auto lg:px-10">
@@ -45,7 +46,7 @@ export default function project() {
         </div>
         <div className="py-10">
           <div className={`my-10`}>
-            <ProjectList />
+            <ProjectList data={data} />
           </div>
         </div>
       </section>
@@ -76,4 +77,21 @@ export default function project() {
 
 project.layout = GuestLayout;
 
-/*    <ProjectComponent data={project} /> */
+
+
+
+
+async function getData() {
+  const res = await fetch(`${process.env.apiUrl}/projects`, {
+    cache: 'no-cache',
+  })
+  // The return value is *not* serialized
+  // You can return Date, Map, Set, etc.
+
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error('Failed to fetch data')
+  }
+
+  return res.json()
+}

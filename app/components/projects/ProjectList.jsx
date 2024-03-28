@@ -1,32 +1,22 @@
-import { useState, useEffect } from 'react';
 import ProjectComponent from './ProjectComponent.jsx';
-import { LoadingBlog } from '../LoadingBlog.jsx';
-function ProjectList() {
-  const [projects, setProjects] = useState([]);
+function ProjectList({...props}) {
 
-  useEffect(() => {
-    fetch(`${process.env.apiUrl}/projects`)
-      .then((response) => response.json())
-      .then((data) => setProjects(data.data))
-      .catch((error) => console.error(error));
-  }, []);
+  const projects = props.data.data;
+
+
 
   return (
-    <div>
-      {projects.length > 0 ? (
+      <div>
         <ul className={`grid grid-cols-1 md:grid-cols-2  gap-10 `}>
           {projects.map((project, index) => (
-            <div key={index}>
-              <div>
-                <ProjectComponent data={project} />
+              <div key={index}>
+                <div>
+                  <ProjectComponent data={project}/>
+                </div>
               </div>
-            </div>
           ))}
         </ul>
-      ) : (
-        <LoadingBlog />
-      )}
-    </div>
+      </div>
   );
 }
 

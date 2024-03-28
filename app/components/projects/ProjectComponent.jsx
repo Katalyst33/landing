@@ -74,10 +74,10 @@ ProjectComponent.propTypes = {
     data: PropTypes.shape({
         title: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
-        year: PropTypes.string.isRequired,
+        year: PropTypes.string,
         slug: PropTypes.string.isRequired,
         projectUrl: PropTypes.string,
-        logo: PropTypes.string.isRequired,
+        logo: PropTypes.string,
     }).isRequired,
 };
 export default ProjectComponent;
