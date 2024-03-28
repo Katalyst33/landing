@@ -1,5 +1,5 @@
 import BeforeFooter from '../../components/BeforeFooter.jsx';
-import ProjectList from '../../components/projects/ProjectList.jsx';
+import ProjectList from './ProjectList.jsx';
 import GuestLayout from '../../layouts/guest-layouts';
 
 export default async function project() {
