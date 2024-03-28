@@ -7,6 +7,7 @@ import { ChevronLeftIcon, ChevronRight } from 'lucide-react';
 import { LoadingSpinner } from '../components/LoadingBlog';
 
 import PropTypes from 'prop-types';
+import {truncateString} from "../utils";
 export default function TestimonialFeature() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
@@ -23,7 +24,7 @@ export default function TestimonialFeature() {
   useEffect(() => {
     fetch(`${process.env.apiUrl}/testimonials`)
       .then((response) => response.json())
-      .then((data) => setTestimonial(data))
+      .then((data) => setTestimonial(data.data))
       .catch((error) => console.error(error));
   }, []);
 
@@ -94,7 +95,14 @@ function Testify({ data }) {
               <use href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" x={86} />
             </svg>
             <blockquote className="lg:text-xl lg:font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
-              <p className={``}>{description}</p>
+              <p className={``}>
+                <span
+
+                    dangerouslySetInnerHTML={{
+                      __html: truncateString(description, 300) || "",
+                    }}
+                />
+              </p>
             </blockquote>
             <figcaption className="mt-8 text-base">
               <div className="font-semibold text-white">{name}</div>
