@@ -1,7 +1,7 @@
 'use client';
 import BeforeFooter from '../../components/BeforeFooter.jsx';
 import React from 'react';
-import ServiceList from '../../components/service/ServiceList';
+import ServiceList from './ServiceList';
 import GuestLayout from '../../layouts/guest-layouts';
 
 export default async function service() {

@@ -1,4 +1,4 @@
-import ServiceList from '../service/ServiceList';
+import ServiceList from '../../(guest)/services/ServiceList';
 
 export default function HomeFeature() {
   return (

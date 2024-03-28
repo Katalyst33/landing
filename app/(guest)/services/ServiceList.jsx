@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ServiceComponent from './ServiceComponent.jsx';
-import { LoadingBlog } from '../LoadingBlog.jsx';
+import { LoadingBlog } from '../../components/LoadingBlog.jsx';
 
 function ServiceList() {
   const [services, setServices] = useState([]);
