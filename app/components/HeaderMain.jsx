@@ -1,6 +1,4 @@
-import {useState} from 'react';
-import {Dialog} from '@headlessui/react';
-import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline';
+import {Bars3Icon, } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import {AppIcon} from '../components/icons/AppIcon';
 import ThemeToggle from '../components/ui/ThemeToggle';
@@ -8,12 +6,8 @@ import UserAuthData from '../../app/components/auth/User';
 import {usePathname} from "next/navigation";
 import {cn} from "../utils/cn";
 import {  Sheet,
-    SheetClose,
     SheetContent,
-    SheetDescription,
-    SheetFooter,
     SheetHeader,
-    SheetTitle,
     SheetTrigger,} from "../components/ui/sheet";
 
 const navigation = [
@@ -74,6 +68,7 @@ export default function HeaderMain() {
                                         </Link>
                                     ))}
                                 </div>
+                                
                             </SheetContent>
                         </Sheet>
                     </div>
