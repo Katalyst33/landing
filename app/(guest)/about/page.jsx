@@ -69,7 +69,7 @@ function TeamList() {
         <ul className={`grid grid-cols-1 md:grid-cols-2  gap-10 `}>
           {team.map((item, index) => (
             <div key={index}>
-              <div>
+              <div>  
                 <TeamCard data={item} />
               </div>
             </div>

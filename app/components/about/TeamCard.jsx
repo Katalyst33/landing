@@ -5,14 +5,15 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 
 function TeamCard({ data }) {
-  const { id, image, name, position, summary, socials } = data;
+  const { id, image, fullName, position, summary, socials } = data;
 
   return (
     <div className=" ">
       <div className="relative mb-12 lg:mb-0">
         <Link href={`/team/${id}`}>
           <Image
-            src={`/image${image}`}
+            src={`${process.env.serverUrl}/${image}`}
+
             height={200}
             width={200}
             alt="Picture or Brian Azukaeme"
@@ -21,7 +22,7 @@ function TeamCard({ data }) {
           />
 
           <h3 className="mt-6 text-lg font-bold leading-8 tracking-tight ">
-            {name}
+            {fullName}
           </h3>
         </Link>
         <p className="text-base leading-7 dark:text-gray-300 text-gray-700">
