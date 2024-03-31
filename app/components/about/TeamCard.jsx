@@ -13,7 +13,6 @@ function TeamCard({ data }) {
         <Link href={`/team/${id}`}>
           <Image
             src={`${process.env.serverUrl}/${image}`}
-
             height={200}
             width={200}
             alt="Picture or Brian Azukaeme"

@@ -3,7 +3,7 @@ import Image from "next/image";
 import {ExternalLink} from "lucide-react";
 async function getData(slug) {
   const res = await fetch(`${process.env.serverUrl}/api/projects/${slug}`, {
-    // cache: 'force-cache',
+    cache: 'no-cache',
   });
 
   if (!res.ok) {
@@ -33,10 +33,10 @@ export default async function ProjectPost({ params }) {
 
             <div className={`flex flex-col mt-10`}>
               {
-                data.tags.map((tag, index)  => {
+                data.services.map((item, index)  => {
                     return (
                         <span key={index} className={`p-1 text-gray-700 capitalize rounded-full`}>
-                            {tag}
+                            {item.name}
                         </span>
                     );
                 })

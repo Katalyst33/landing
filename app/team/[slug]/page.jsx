@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 async function getData(id) {
   const res = await fetch(`${process.env.serverUrl}/team/${id}`, {
-    // cache: 'force-cache',
+    // cache: 'no-cache',
   });
 
   if (!res.ok) {

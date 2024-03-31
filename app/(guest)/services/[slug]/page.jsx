@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 async function getData(slug) {
   const res = await fetch(`${process.env.serverUrl}/api/services/${slug}`, {
-    // cache: 'force-cache',
+    // cache: 'no-cache',
   });
 
   if (!res.ok) {
